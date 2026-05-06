@@ -3,9 +3,9 @@
   "pdf": "paper/main.pdf",
   "page_count": 13,
   "render_dir": "tmp/pdf_review/full_visual",
-  "average_text_chars_per_page": 4414.5,
-  "minimum_text_chars_on_page": 2866,
-  "minimum_nonwhite_share": 0.0734,
+  "average_text_chars_per_page": 4450.5,
+  "minimum_text_chars_on_page": 3346,
+  "minimum_nonwhite_share": 0.087,
   "anchors_checked": [
     {
       "name": "title",
@@ -84,11 +84,11 @@
     },
     {
       "page": 7,
-      "text_chars": 4624,
+      "text_chars": 4598,
       "render_path": "tmp/pdf_review/full_visual/page_07.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1256
+      "nonwhite_share": 0.1244
     },
     {
       "page": 8,
@@ -100,43 +100,43 @@
     },
     {
       "page": 9,
-      "text_chars": 3557,
+      "text_chars": 3537,
       "render_path": "tmp/pdf_review/full_visual/page_09.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1459
+      "nonwhite_share": 0.145
     },
     {
       "page": 10,
-      "text_chars": 4774,
+      "text_chars": 4778,
       "render_path": "tmp/pdf_review/full_visual/page_10.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1221
+      "nonwhite_share": 0.1235
     },
     {
       "page": 11,
-      "text_chars": 4973,
+      "text_chars": 4943,
       "render_path": "tmp/pdf_review/full_visual/page_11.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1322
+      "nonwhite_share": 0.1319
     },
     {
       "page": 12,
-      "text_chars": 4814,
+      "text_chars": 4874,
       "render_path": "tmp/pdf_review/full_visual/page_12.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1226
+      "nonwhite_share": 0.1233
     },
     {
       "page": 13,
-      "text_chars": 2866,
+      "text_chars": 3346,
       "render_path": "tmp/pdf_review/full_visual/page_13.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.0734
+      "nonwhite_share": 0.087
     }
   ],
   "severity_counts": {

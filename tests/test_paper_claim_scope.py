@@ -36,6 +36,16 @@ def test_reasoning_model_claim_is_scoped_to_completed_protocol() -> None:
     assert "broader claims about reasoning models should remain scoped to this prompt and parsing setup" in limitations
 
 
+def test_slice_balanced_stress_split_is_not_canonicalized() -> None:
+    results = _section("05_results.tex")
+    limitations = _section("08_limitations.tex")
+
+    assert "600-example split as sensitivity evidence rather than as a replacement benchmark" in results
+    assert "the headline remains the canonical 560-example split" in results
+    assert "The slice-balanced 600-example variant is a stress split, not the canonical benchmark" in limitations
+    assert "Headline benchmark claims remain tied to the canonical 560-example split" in limitations
+
+
 def test_intervention_claim_reports_answerability_guardrail() -> None:
     intervention = _section("06_intervention.tex")
 

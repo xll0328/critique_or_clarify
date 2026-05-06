@@ -64,3 +64,11 @@ def test_claim_ledger_records_final_lock_wording() -> None:
     assert "anonymous review-package build" in text
     assert "package hygiene scan" in text
     assert "preserving overall utility on the Qwen2.5-1.5B day-1 dev split" not in text
+
+
+def test_claim_ledger_keeps_600_split_as_stress_evidence() -> None:
+    text = (DOCS / "emnlp2026_claim_ledger.md").read_text(encoding="utf-8")
+
+    assert "The slice-balanced 600-example split is useful as stress evidence but is not the canonical benchmark." in text
+    assert "The 600-example split changes answer counts and is currently stress evidence for slice-balance sensitivity." in text
+    assert "the canonical 560-example split remains the headline benchmark" in text
