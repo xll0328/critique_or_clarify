@@ -1,6 +1,6 @@
 # EMNLP 2026 Oral / Best Paper Quality Audit
 
-Date: 2026-04-29
+Date: 2026-05-06
 
 Status: not oral-ready. The current artifact is a credible submission-freeze candidate, but it is not yet an oral/best-paper-grade evidence package.
 

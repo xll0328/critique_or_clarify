@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 import matplotlib
@@ -11,26 +12,13 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODEL_DATA = {
-    "qwen-turbo": {
-        "action_accuracy": 0.6583,
-        "avg_utility": -0.4396,
-        "json_parse": 0.6,
-        "over_answer": 0.1333,
-        "pred_actions": {"answer": 83, "ask": 3, "challenge": 13, "abstain": 21},
-        "input_price": 0.046,
-        "output_price": 0.092,
-    },
-    "ernie-4.5-0.3b": {
-        "action_accuracy": 0.4917,
-        "avg_utility": -0.5813,
-        "json_parse": 0.3167,
-        "over_answer": 0.2667,
-        "pred_actions": {"answer": 91, "ask": 23, "challenge": 0, "abstain": 6},
-        "input_price": 0.0136,
-        "output_price": 0.0544,
-    },
-}
+DEFAULT_METRIC_PATHS = [
+    "outputs/day1/aihubmix_qwenturbo_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt4omini_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt41mini_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_qwenpluslatest_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt5chatlatest_day1_expanded_dev_with_answer_topup_metrics.json",
+]
 
 NAME_ALIASES = {
     "qwenturbo": "qwen-turbo",
@@ -55,6 +43,7 @@ ACTION_COLORS = {
     "challenge": "#D95F02",
     "abstain": "#666666",
 }
+CI_RE = re.compile(r"^\s*([-+]?\d+(?:\.\d+)?)\s*\[\s*([-+]?\d+(?:\.\d+)?)\s*,\s*([-+]?\d+(?:\.\d+)?)\s*\]\s*$")
 
 
 def parse_args() -> argparse.Namespace:
@@ -63,14 +52,19 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-prefix",
-        default="paper/figures/figure6_api_baseline_comparison",
+        default="experiments/day1/figures/figure6_api_baseline_comparison",
         help="Output prefix for .pdf and .png files.",
     )
     parser.add_argument(
         "--metric-paths",
         nargs="*",
-        default=[],
+        default=DEFAULT_METRIC_PATHS,
         help="Optional metric JSON files from scripts/run_aihubmix_baseline.py.",
+    )
+    parser.add_argument(
+        "--ci-md",
+        default="experiments/day1/day1_scale_reasoning_api_ci.md",
+        help="Optional bootstrap-CI markdown report used for figure error bars.",
     )
     return parser.parse_args()
 
@@ -80,10 +74,8 @@ def main() -> None:
     output_prefix = Path(args.output_prefix)
     output_prefix.parent.mkdir(parents=True, exist_ok=True)
 
-    if args.metric_paths:
-        model_data = load_metric_data(args.metric_paths)
-    else:
-        model_data = MODEL_DATA
+    model_data = load_metric_data(args.metric_paths)
+    attach_ci_intervals(model_data, load_ci_intervals(Path(args.ci_md)) if args.ci_md else {})
 
     fig, axes = plt.subplots(
         1,
@@ -124,8 +116,8 @@ def main() -> None:
     plt.close(fig)
 
 
-def load_metric_data(paths: list[str]) -> dict[str, dict[str, float]]:
-    data: dict[str, dict[str, float]] = {}
+def load_metric_data(paths: list[str]) -> dict[str, dict]:
+    data: dict[str, dict] = {}
     for raw_path in paths:
         metric_path = Path(raw_path)
         payload = json.loads(metric_path.read_text(encoding="utf-8"))
@@ -153,6 +145,53 @@ def load_metric_data(paths: list[str]) -> dict[str, dict[str, float]]:
     return data
 
 
+def load_ci_intervals(path: Path) -> dict[str, dict[str, tuple[float, float, float]]]:
+    if not path.exists():
+        return {}
+
+    intervals: dict[str, dict[str, tuple[float, float, float]]] = {}
+    in_main_table = False
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if stripped == "## Main Table":
+            in_main_table = True
+            continue
+        if in_main_table and stripped.startswith("## "):
+            break
+        if not in_main_table or not stripped.startswith("|"):
+            continue
+
+        cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+        if len(cells) < 5 or cells[0] in {"Model", "---"}:
+            continue
+
+        try:
+            intervals[cells[0]] = {
+                "avg_utility": parse_interval(cells[1]),
+                "action_accuracy": parse_interval(cells[2]),
+                "over_answer": parse_interval(cells[3]),
+            }
+        except ValueError:
+            continue
+    return intervals
+
+
+def parse_interval(cell: str) -> tuple[float, float, float]:
+    match = CI_RE.match(cell)
+    if not match:
+        raise ValueError(f"Could not parse interval cell: {cell}")
+    return tuple(float(group) for group in match.groups())
+
+
+def attach_ci_intervals(
+    data: dict[str, dict],
+    intervals: dict[str, dict[str, tuple[float, float, float]]],
+) -> None:
+    for model, metrics in data.items():
+        if model in intervals:
+            metrics["ci"] = intervals[model]
+
+
 def canonicalize_model_id(model_id: str) -> str:
     replacements = {
         "qwenturbo": "qwen-turbo",
@@ -166,12 +205,23 @@ def canonicalize_model_id(model_id: str) -> str:
     return model_id
 
 
-def plot_utility_panel(ax: plt.Axes, data: dict[str, dict[str, float]]) -> None:
+def plot_utility_panel(ax: plt.Axes, data: dict[str, dict]) -> None:
     models = list(data.keys())
     x = [data[m]["action_accuracy"] for m in models]
     y = [data[m]["avg_utility"] for m in models]
     sizes = [700 + 6000 * data[m]["json_parse"] for m in models]
     ax.scatter(x, y, s=sizes, color="#1f78b4", edgecolor="black", linewidth=0.8, zorder=3)
+    ax.errorbar(
+        x,
+        y,
+        xerr=errorbar_arrays(data, models, "action_accuracy"),
+        yerr=errorbar_arrays(data, models, "avg_utility"),
+        fmt="none",
+        ecolor="#333333",
+        elinewidth=0.8,
+        capsize=2.6,
+        zorder=2,
+    )
 
     for model, xx, yy in zip(models, x, y):
         blended = (data[model]["input_price"] + data[model]["output_price"]) / 2
@@ -192,20 +242,31 @@ def plot_utility_panel(ax: plt.Axes, data: dict[str, dict[str, float]]) -> None:
     ax.set_ylim(y_low, y_high)
     ax.set_xlabel("Action accuracy")
     ax.set_ylabel("Average utility")
-    ax.set_title("A. Accuracy-utility profile", fontsize=10, fontweight="bold", loc="left")
+    ax.set_title("A. Accuracy-utility profile\n(error bars = bootstrap 95% CI)", fontsize=10, fontweight="bold", loc="left")
     ax.grid(alpha=0.25, linestyle="--", linewidth=0.7)
     ax.axhline(0.0, color="#888888", linewidth=1.0, linestyle=":")
 
 
-def plot_rate_panel(ax: plt.Axes, data: dict[str, dict[str, float]]) -> None:
+def plot_rate_panel(ax: plt.Axes, data: dict[str, dict]) -> None:
     models = list(data.keys())
     parse_rates = [data[m]["json_parse"] for m in models]
     over_answer = [data[m]["over_answer"] for m in models]
+    over_answer_yerr = errorbar_arrays(data, models, "over_answer")
 
     x = list(range(len(models)))
     width = 0.38
     ax.bar([i - width / 2 for i in x], parse_rates, width=width, label="JSON parse", color="#56B4E9")
-    ax.bar([i + width / 2 for i in x], over_answer, width=width, label="Over-answer", color="#E69F00")
+    ax.bar(
+        [i + width / 2 for i in x],
+        over_answer,
+        width=width,
+        label="Over-answer",
+        color="#E69F00",
+        yerr=over_answer_yerr,
+        ecolor="#333333",
+        capsize=2.4,
+        error_kw={"elinewidth": 0.8},
+    )
 
     ax.set_xticks(list(x))
     ax.set_xticklabels(models, fontsize=8)
@@ -221,7 +282,24 @@ def plot_rate_panel(ax: plt.Axes, data: dict[str, dict[str, float]]) -> None:
         ax.text(i + width / 2, over_answer[i] + 0.015, f"{over_answer[i]:.2f}", ha="center", va="bottom", fontsize=8)
 
 
-def plot_action_mix_panel(ax: plt.Axes, data: dict[str, dict[str, float]]) -> None:
+def errorbar_arrays(data: dict[str, dict], models: list[str], metric: str) -> list[list[float]] | None:
+    lower: list[float] = []
+    upper: list[float] = []
+    found = False
+    for model in models:
+        interval = data[model].get("ci", {}).get(metric)
+        if interval is None:
+            lower.append(0.0)
+            upper.append(0.0)
+            continue
+        point, low, high = interval
+        lower.append(max(0.0, point - low))
+        upper.append(max(0.0, high - point))
+        found = True
+    return [lower, upper] if found else None
+
+
+def plot_action_mix_panel(ax: plt.Axes, data: dict[str, dict]) -> None:
     models = list(data.keys())
     x = list(range(len(models)))
     bottom = [0.0] * len(models)

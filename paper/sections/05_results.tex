@@ -49,6 +49,6 @@ The quick+stale split exposes the stale-premise failure more directly. \DayOneQu
 \begin{figure*}[t]
 \centering
 \includegraphics[width=0.98\linewidth]{figures/figure6_api_baseline_comparison.pdf}
-\caption{API baseline comparison on the 560-example canonical split with decision-first prompting. The left panel plots utility against action accuracy, where marker size indicates JSON parse rate; the middle panel compares format/safety rates; and the right panel shows the predicted action mix. The pattern aligns with Table~\ref{tab:day1-api-baseline}: stronger APIs extend the observed accuracy--utility tradeoff, but boundary slices remain the main error source.}
+\caption{API baseline comparison on the 560-example canonical split with decision-first prompting. The left panel plots utility against action accuracy, where marker size indicates JSON parse rate and error bars show bootstrap 95\% intervals; the middle panel compares format/safety rates with bootstrap intervals for over-answer rate; and the right panel shows the predicted action mix. The pattern aligns with Tables~\ref{tab:day1-api-baseline}--\ref{tab:day1-api-baseline-ci}: stronger APIs extend the observed accuracy--utility tradeoff, but boundary slices remain the main error source.}
 \label{fig:api-baseline-comparison}
 \end{figure*}

@@ -3,9 +3,9 @@
   "pdf": "paper/main.pdf",
   "page_count": 13,
   "render_dir": "tmp/pdf_review/full_visual",
-  "average_text_chars_per_page": 4404.8,
-  "minimum_text_chars_on_page": 2762,
-  "minimum_nonwhite_share": 0.0704,
+  "average_text_chars_per_page": 4414.5,
+  "minimum_text_chars_on_page": 2866,
+  "minimum_nonwhite_share": 0.0734,
   "anchors_checked": [
     {
       "name": "title",
@@ -116,27 +116,27 @@
     },
     {
       "page": 11,
-      "text_chars": 4959,
+      "text_chars": 4973,
       "render_path": "tmp/pdf_review/full_visual/page_11.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1338
+      "nonwhite_share": 0.1322
     },
     {
       "page": 12,
-      "text_chars": 4807,
+      "text_chars": 4814,
       "render_path": "tmp/pdf_review/full_visual/page_12.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.123
+      "nonwhite_share": 0.1226
     },
     {
       "page": 13,
-      "text_chars": 2762,
+      "text_chars": 2866,
       "render_path": "tmp/pdf_review/full_visual/page_13.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.0704
+      "nonwhite_share": 0.0734
     }
   ],
   "severity_counts": {
