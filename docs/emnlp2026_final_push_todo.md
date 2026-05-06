@@ -8,6 +8,8 @@ Source for timing: https://2026.emnlp.org/calls/main_conference_papers/
 
 This document is the operational TODO board for turning the current submission-freeze candidate into the strongest defensible EMNLP submission. It does not replace final human scientific judgment, final PDF sign-off, author metadata review, conflicts review, reviewer registration, venue-form transfer, or the submit click.
 
+Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap_closure_plan.md`.
+
 ## Current Position
 
 - The paper is submission-close: the final lock gate passes, the PDF builds to 13 pages, the review package builds, and `main` is synchronized to GitHub.
@@ -120,4 +122,5 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Started the worksheet with a Codex-only PDF text preflight: `paper/main.pdf` is `13` pages, pages 1-2 expose the first-story anchors, and pages 5-7 expose the main-result anchors.
 - Started the first paper-facing final-push edit by tightening the abstract around the line that answer quality is incomplete without choosing the right first move.
 - Synchronized the reviewer-response seed memo with the tightened abstract wording so rebuttal prep preserves the answer-quality-incomplete and right-first-move frame.
+- Launched `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` to make the hard distance answer actionable: submission-close, oral medium-far, best-paper far.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.

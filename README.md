@@ -15,6 +15,7 @@ The current EMNLP 2026 sprint package lives in:
 - [paper/main.pdf](/data/sony/emnlp2026_critique_or_clarify/paper/main.pdf)
 - [docs/emnlp2026_oral_best_paper_sprint_plan.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_oral_best_paper_sprint_plan.md)
 - [docs/emnlp2026_final_push_todo.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_final_push_todo.md)
+- [docs/emnlp2026_oral_best_paper_gap_closure_plan.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_oral_best_paper_gap_closure_plan.md)
 - [docs/emnlp2026_final_pdf_human_review_worksheet.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_final_pdf_human_review_worksheet.md)
 - [docs/emnlp2026_claim_ledger.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_claim_ledger.md)
 - [docs/emnlp2026_paper_skeleton.md](/data/sony/emnlp2026_critique_or_clarify/docs/emnlp2026_paper_skeleton.md)

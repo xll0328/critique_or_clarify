@@ -23,11 +23,13 @@ def test_final_push_todo_tracks_deadline_scope_and_stop_conditions() -> None:
         "Do not start broad new model runs",
         "Stop Conditions",
         "a proposed paper claim would make the `600` split the de facto headline benchmark",
+        "docs/emnlp2026_oral_best_paper_gap_closure_plan.md",
         "./scripts/run_submission_lock_checks.sh",
         "Opened `docs/emnlp2026_final_pdf_human_review_worksheet.md`",
         "Started the worksheet with a Codex-only PDF text preflight",
         "tightening the abstract around the line that answer quality is incomplete",
         "Synchronized the reviewer-response seed memo with the tightened abstract wording",
+        "submission-close, oral medium-far, best-paper far",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]
