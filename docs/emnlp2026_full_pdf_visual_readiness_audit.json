@@ -3,7 +3,7 @@
   "pdf": "paper/main.pdf",
   "page_count": 13,
   "render_dir": "tmp/pdf_review/full_visual",
-  "average_text_chars_per_page": 4502,
+  "average_text_chars_per_page": 4505.2,
   "minimum_text_chars_on_page": 3443,
   "minimum_nonwhite_share": 0.1097,
   "anchors_checked": [
@@ -108,11 +108,11 @@
     },
     {
       "page": 10,
-      "text_chars": 4777,
+      "text_chars": 4819,
       "render_path": "tmp/pdf_review/full_visual/page_10.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1256
+      "nonwhite_share": 0.1269
     },
     {
       "page": 11,

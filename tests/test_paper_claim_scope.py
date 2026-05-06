@@ -39,9 +39,11 @@ def test_reasoning_model_claim_is_scoped_to_completed_protocol() -> None:
 def test_slice_balanced_stress_split_is_not_canonicalized() -> None:
     results = _section("05_results.tex")
     limitations = _section("08_limitations.tex")
+    table = (PAPER_DIR / "tables" / "day1_full_split_sensitivity.tex").read_text(encoding="utf-8")
 
     assert "600-example split as sensitivity evidence rather than as a replacement benchmark" in results
     assert "the headline remains the canonical 560-example split" in results
+    assert "not a replacement headline benchmark" in table
     assert "The slice-balanced 600-example variant is a stress split, not the canonical benchmark" in limitations
     assert "Headline benchmark claims remain tied to the canonical 560-example split" in limitations
 

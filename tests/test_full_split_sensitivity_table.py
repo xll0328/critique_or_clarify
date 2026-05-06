@@ -27,4 +27,5 @@ def test_full_split_sensitivity_table_includes_ci_and_frontier_row(tmp_path: Pat
     assert r"$\Delta$ Action Acc. (95\% CI)" in text
     assert r"$\Delta$ Utility (95\% CI)" in text
     assert "gpt-5-chat-latest / decision-first" in text
+    assert "not a replacement headline benchmark" in text
     assert "[-" in text or "[0" in text

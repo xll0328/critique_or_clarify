@@ -213,7 +213,7 @@ def render_table(rows: list[tuple[str, dict, dict]], *, samples: int, seed: int)
         r"\bottomrule",
         r"\end{tabular}",
         r"}",
-        r"\caption{Stress sensitivity from canonical 560 to slice-balanced 600 under fixed decoding settings (\texttt{max\_tokens}=64, temperature=0). Values are $\Delta$ (full minus canonical); action-accuracy and utility columns include bootstrap 95\% percentile intervals.}",
+        r"\caption{Stress sensitivity from canonical 560 to slice-balanced 600, not a replacement headline benchmark, under fixed decoding settings (\texttt{max\_tokens}=64, temperature=0). Values are $\Delta$ (full minus canonical); action-accuracy and utility columns include bootstrap 95\% percentile intervals.}",
         r"\label{tab:day1-full-split-sensitivity}",
         r"\end{table}",
         "",

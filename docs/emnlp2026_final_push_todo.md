@@ -57,7 +57,7 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 | closed | Treat `600` rows as sensitivity or stress evidence only. | `paper/sections/05_results.tex`, `paper/sections/08_limitations.tex` |
 | closed | Add response seed for statistics/CI overclaim. | `docs/emnlp2026_reviewer_response_seed_memo.md` |
 | closed-current | Re-check that every new result sentence added after 2026-05-06 is macro-, metric-, audit-, or lock-backed. Re-run after the next Results, Limitations, table, figure, abstract, or reviewer-response edit that introduces or reframes a number. | `docs/emnlp2026_numeric_claim_audit.md` |
-| pending | Keep delta intervals scoped when discussing full-minus-canonical comparisons. | `experiments/day1/tables/day1_full_split_sensitivity.tex` |
+| closed-current | Keep delta intervals scoped when discussing full-minus-canonical comparisons. Re-run after any Results, Limitations, table, figure, abstract, or reviewer-response edit that quotes `560`, `600`, CI, bootstrap, ranking, or full-minus-canonical deltas. | `docs/emnlp2026_560_600_ci_scope_audit.md`, `experiments/day1/tables/day1_full_split_sensitivity.tex` |
 
 ### C. Benchmark Validity
 
@@ -124,4 +124,5 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Synchronized the reviewer-response seed memo with the tightened abstract wording so rebuttal prep preserves the answer-quality-incomplete and right-first-move frame.
 - Launched `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` to make the hard distance answer actionable: submission-close, oral medium-far, best-paper far.
 - Completed a final-push result-claim sync in `docs/emnlp2026_numeric_claim_audit.md`: post-2026-05-06 framing, response-seed, and gap-plan edits introduce no unsupported new numeric result.
+- Completed a 560/600 and CI scope audit in `docs/emnlp2026_560_600_ci_scope_audit.md`; the full-minus-canonical table caption now says the 600 split is not a replacement headline benchmark.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.

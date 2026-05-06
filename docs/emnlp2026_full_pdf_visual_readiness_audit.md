@@ -8,7 +8,7 @@ Audit input:
 
 - Rendered `paper/main.pdf` to PNG pages under `tmp/pdf_review/full_visual` with PyMuPDF.
 - Page count: `13`.
-- Average extracted text per page: `4502` characters.
+- Average extracted text per page: `4505.2` characters.
 - Minimum extracted text on any page: `3443` characters.
 - Minimum sampled non-white rendered area: `0.1097`.
 - Checked story anchors across title/task/results/stress/limitations text.
@@ -46,7 +46,7 @@ This audit can catch missing pages, blank renders, and lost story anchors, but i
 | 7 | 4700 | 0.1275 | `tmp/pdf_review/full_visual/page_07.png` |
 | 8 | 4061 | 0.1163 | `tmp/pdf_review/full_visual/page_08.png` |
 | 9 | 3443 | 0.1423 | `tmp/pdf_review/full_visual/page_09.png` |
-| 10 | 4777 | 0.1256 | `tmp/pdf_review/full_visual/page_10.png` |
+| 10 | 4819 | 0.1269 | `tmp/pdf_review/full_visual/page_10.png` |
 | 11 | 4876 | 0.1302 | `tmp/pdf_review/full_visual/page_11.png` |
 | 12 | 4825 | 0.1220 | `tmp/pdf_review/full_visual/page_12.png` |
 | 13 | 4274 | 0.1097 | `tmp/pdf_review/full_visual/page_13.png` |
