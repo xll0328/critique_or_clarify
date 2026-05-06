@@ -37,9 +37,11 @@ def test_reviewer_triage_revision_memo_enforces_claim_scope() -> None:
         "canonical 560-example claims separate from 600-example stress evidence",
         "The canonical split remains `560`",
         "slice-balanced `600` split is sensitivity or stress evidence only",
+        "Synthetic candidates must be described as candidate rows promoted only after validation and manifest checks",
+        "JSON adherence remains visible",
         "Utility must be described as an asymmetric harm-ordering diagnostic",
         "`decision_first` stays an exploratory calibration lever",
-        "Scope DeepSeek reasoning results to completed Day-1 local checkpoints",
+        "Scope DeepSeek reasoning results to completed local checkpoints",
         "Automated audits do not replace final human PDF read",
     ]
 

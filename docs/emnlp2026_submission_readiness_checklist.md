@@ -28,6 +28,8 @@ Status: first submission-facing checklist for Critique-or-Clarify.
 | Reviewer triage revision memo | Sprint-2 triage closed | `docs/emnlp2026_reviewer_triage_revision_memo.md` |
 | Final-push TODO dashboard | opened for final sprint | `docs/emnlp2026_final_push_todo.md` |
 | Oral/best-paper gap closure plan | active for final sprint | `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` |
+| Virtual prereview major-revision board | active for final sprint | `docs/emnlp2026_virtual_prereview_revision_plan.md` |
+| Virtual prereview literature triage | first pass closed | `docs/emnlp2026_virtual_prereview_literature_triage.md` |
 | 560/600 and CI scope audit | active for final sprint | `docs/emnlp2026_560_600_ci_scope_audit.md` |
 | Venue-form transfer packet | form-ready internal draft closed | `docs/emnlp2026_venue_form_transfer_packet.md` |
 | Final submission lock gate | closed for current freeze | `./scripts/run_submission_lock_checks.sh` |
@@ -38,6 +40,7 @@ Status: first submission-facing checklist for Critique-or-Clarify.
 | Item | Priority | Current State | Next Action |
 | --- | --- | --- | --- |
 | Related Work coverage review | high | Selective QA / abstention coverage added with verified ACL citation; first freeze-pass coverage audit is closed at `docs/emnlp2026_citation_coverage_audit.md`. | Re-run citation coverage after any new claims are added. |
+| Virtual-prereview citation leads | high | First-pass triage exists at `docs/emnlp2026_virtual_prereview_literature_triage.md`; several suggested titles are not yet verified and should not enter the bibliography. | Add only verified, read, locally relevant papers in a separate citation pass. |
 | Final numeric audit | high | Current submission-freeze audit exists at `docs/emnlp2026_numeric_claim_audit.md`; core main-text result prose, quick+stale claims, intervention claims, and final lock output are macro- or gate-backed. 560-vs-600 and CI/ranking scope is tracked at `docs/emnlp2026_560_600_ci_scope_audit.md`. | Re-run after any experiment freeze or prose expansion. |
 | Oral readability lock | high | Current internal freeze is closed at `docs/emnlp2026_oral_readability_lock.md`; it verifies the 90-second reviewer story across pages 1-2 and the main result/figure/intervention pages. | Re-run after any abstract, Figure 1, results, Figure 2, or intervention edit. |
 | Full PDF visual readiness | high | Current automated full-manuscript render/readability preflight is closed at `docs/emnlp2026_full_pdf_visual_readiness_audit.md`; it renders all 13 pages and checks story anchors, blank pages, and text extraction. Final human PDF review is now staged at `docs/emnlp2026_final_pdf_human_review_worksheet.md`. | Re-run after any PDF build or layout-affecting edit; this does not replace final human PDF sign-off. |

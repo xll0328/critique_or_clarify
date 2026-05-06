@@ -8,9 +8,9 @@ Audit input:
 
 - Rendered `paper/main.pdf` to PNG pages under `tmp/pdf_review/full_visual` with PyMuPDF.
 - Page count: `13`.
-- Average extracted text per page: `4505.2` characters.
-- Minimum extracted text on any page: `3443` characters.
-- Minimum sampled non-white rendered area: `0.1097`.
+- Average extracted text per page: `4582.7` characters.
+- Minimum extracted text on any page: `3423` characters.
+- Minimum sampled non-white rendered area: `0.1165`.
 - Checked story anchors across title/task/results/stress/limitations text.
 
 ## Severity Summary
@@ -37,19 +37,19 @@ This audit can catch missing pages, blank renders, and lost story anchors, but i
 
 | Page | Text chars | Non-white share | Render |
 | --- | ---: | ---: | --- |
-| 1 | 4356 | 0.1158 | `tmp/pdf_review/full_visual/page_01.png` |
-| 2 | 4036 | 0.1212 | `tmp/pdf_review/full_visual/page_02.png` |
-| 3 | 4988 | 0.1360 | `tmp/pdf_review/full_visual/page_03.png` |
-| 4 | 5171 | 0.1414 | `tmp/pdf_review/full_visual/page_04.png` |
-| 5 | 4028 | 0.1457 | `tmp/pdf_review/full_visual/page_05.png` |
-| 6 | 4991 | 0.1319 | `tmp/pdf_review/full_visual/page_06.png` |
-| 7 | 4700 | 0.1275 | `tmp/pdf_review/full_visual/page_07.png` |
-| 8 | 4061 | 0.1163 | `tmp/pdf_review/full_visual/page_08.png` |
-| 9 | 3443 | 0.1423 | `tmp/pdf_review/full_visual/page_09.png` |
-| 10 | 4819 | 0.1269 | `tmp/pdf_review/full_visual/page_10.png` |
-| 11 | 4876 | 0.1302 | `tmp/pdf_review/full_visual/page_11.png` |
-| 12 | 4825 | 0.1220 | `tmp/pdf_review/full_visual/page_12.png` |
-| 13 | 4274 | 0.1097 | `tmp/pdf_review/full_visual/page_13.png` |
+| 1 | 4361 | 0.1165 | `tmp/pdf_review/full_visual/page_01.png` |
+| 2 | 3966 | 0.1181 | `tmp/pdf_review/full_visual/page_02.png` |
+| 3 | 4987 | 0.1368 | `tmp/pdf_review/full_visual/page_03.png` |
+| 4 | 5245 | 0.1418 | `tmp/pdf_review/full_visual/page_04.png` |
+| 5 | 4040 | 0.1471 | `tmp/pdf_review/full_visual/page_05.png` |
+| 6 | 4770 | 0.1299 | `tmp/pdf_review/full_visual/page_06.png` |
+| 7 | 4726 | 0.1276 | `tmp/pdf_review/full_visual/page_07.png` |
+| 8 | 4173 | 0.1202 | `tmp/pdf_review/full_visual/page_08.png` |
+| 9 | 3423 | 0.1422 | `tmp/pdf_review/full_visual/page_09.png` |
+| 10 | 4946 | 0.1320 | `tmp/pdf_review/full_visual/page_10.png` |
+| 11 | 4703 | 0.1268 | `tmp/pdf_review/full_visual/page_11.png` |
+| 12 | 4847 | 0.1222 | `tmp/pdf_review/full_visual/page_12.png` |
+| 13 | 5388 | 0.1408 | `tmp/pdf_review/full_visual/page_13.png` |
 
 ## Findings
 

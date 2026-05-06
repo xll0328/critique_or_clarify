@@ -1,0 +1,210 @@
+{
+  "audit": "utility_weight_sensitivity",
+  "interpretation": "This audit probes whether ranking and reasoning-vs-instruct conclusions depend on the default asymmetric utility weights. It is a sensitivity check, not a replacement metric.",
+  "schemes": [
+    {
+      "scheme": "paper_default",
+      "weights": {
+        "answer_correct": 1.0,
+        "answer_wrong": -0.5,
+        "ask_on_answer": -0.25,
+        "abstain_on_answer": -0.5,
+        "challenge_on_answer": -0.75,
+        "nonanswer_correct": 0.5,
+        "overanswer": -1.0,
+        "other_nonanswer": -0.25
+      },
+      "ranking": [
+        {
+          "label": "Qwen2.5-1.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.2229,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-Coder-7B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.2792,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-7B",
+          "family": "reasoning",
+          "avg_utility": -0.4313,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-0.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.4354,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+          "family": "reasoning",
+          "avg_utility": -0.5125,
+          "num_examples": 120
+        }
+      ],
+      "best_overall": "Qwen2.5-1.5B-Instruct",
+      "best_instruct": "Qwen2.5-1.5B-Instruct",
+      "best_reasoning": "DeepSeek-R1-Distill-Qwen-7B",
+      "best_instruct_utility": -0.2229,
+      "best_reasoning_utility": -0.4313,
+      "best_reasoning_minus_best_instruct": -0.2084
+    },
+    {
+      "scheme": "overanswer_heavy",
+      "weights": {
+        "answer_correct": 1.0,
+        "answer_wrong": -0.5,
+        "ask_on_answer": -0.2,
+        "abstain_on_answer": -0.5,
+        "challenge_on_answer": -0.75,
+        "nonanswer_correct": 0.5,
+        "overanswer": -1.5,
+        "other_nonanswer": -0.1
+      },
+      "ranking": [
+        {
+          "label": "Qwen2.5-1.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.2271,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-Coder-7B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.2554,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-7B",
+          "family": "reasoning",
+          "avg_utility": -0.4188,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-0.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.4267,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+          "family": "reasoning",
+          "avg_utility": -0.5583,
+          "num_examples": 120
+        }
+      ],
+      "best_overall": "Qwen2.5-1.5B-Instruct",
+      "best_instruct": "Qwen2.5-1.5B-Instruct",
+      "best_reasoning": "DeepSeek-R1-Distill-Qwen-7B",
+      "best_instruct_utility": -0.2271,
+      "best_reasoning_utility": -0.4188,
+      "best_reasoning_minus_best_instruct": -0.1917
+    },
+    {
+      "scheme": "caution_heavy",
+      "weights": {
+        "answer_correct": 1.0,
+        "answer_wrong": -0.5,
+        "ask_on_answer": -0.5,
+        "abstain_on_answer": -0.75,
+        "challenge_on_answer": -1.0,
+        "nonanswer_correct": 0.5,
+        "overanswer": -1.0,
+        "other_nonanswer": -0.25
+      },
+      "ranking": [
+        {
+          "label": "Qwen2.5-1.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.2792,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-Coder-7B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.3333,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-0.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.5146,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-7B",
+          "family": "reasoning",
+          "avg_utility": -0.5146,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+          "family": "reasoning",
+          "avg_utility": -0.5833,
+          "num_examples": 120
+        }
+      ],
+      "best_overall": "Qwen2.5-1.5B-Instruct",
+      "best_instruct": "Qwen2.5-1.5B-Instruct",
+      "best_reasoning": "DeepSeek-R1-Distill-Qwen-7B",
+      "best_instruct_utility": -0.2792,
+      "best_reasoning_utility": -0.5146,
+      "best_reasoning_minus_best_instruct": -0.2354
+    },
+    {
+      "scheme": "flat_action",
+      "weights": {
+        "answer_correct": 1.0,
+        "answer_wrong": -1.0,
+        "ask_on_answer": -1.0,
+        "abstain_on_answer": -1.0,
+        "challenge_on_answer": -1.0,
+        "nonanswer_correct": 1.0,
+        "overanswer": -1.0,
+        "other_nonanswer": -1.0
+      },
+      "ranking": [
+        {
+          "label": "Qwen2.5-1.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.3333,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-Coder-7B-Instruct",
+          "family": "instruct",
+          "avg_utility": -0.6667,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-7B",
+          "family": "reasoning",
+          "avg_utility": -0.9333,
+          "num_examples": 120
+        },
+        {
+          "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+          "family": "reasoning",
+          "avg_utility": -0.9833,
+          "num_examples": 120
+        },
+        {
+          "label": "Qwen2.5-0.5B-Instruct",
+          "family": "instruct",
+          "avg_utility": -1.0,
+          "num_examples": 120
+        }
+      ],
+      "best_overall": "Qwen2.5-1.5B-Instruct",
+      "best_instruct": "Qwen2.5-1.5B-Instruct",
+      "best_reasoning": "DeepSeek-R1-Distill-Qwen-7B",
+      "best_instruct_utility": -0.3333,
+      "best_reasoning_utility": -0.9333,
+      "best_reasoning_minus_best_instruct": -0.6
+    }
+  ]
+}

@@ -16,7 +16,7 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 - The paper is not yet oral-ready or best-paper-ready: `docs/emnlp2026_oral_best_paper_quality_audit.md` marks the artifact as a credible submission-freeze candidate, not an oral/best-paper-grade evidence package.
 - The canonical paper-facing split is `560` examples with `answer=200`, `ask=80`, `challenge=200`, and `abstain=80`.
 - The slice-balanced `600` split is stress evidence only. It must not replace the canonical `560` split in headline claims.
-- Current major residual risks: statistical depth, final human PDF sign-off, slice-balance interpretation, and preserving the first-two-page action-selection story.
+- Current major residual risks: benchmark-construction transparency, parsing/protocol confounds, utility-weight sensitivity, statistical depth, final human PDF sign-off, slice-balance interpretation, and preserving the first-two-page action-selection story.
 
 ## Operating Principles
 
@@ -26,6 +26,7 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 4. Keep confidence intervals as local uncertainty checks, not stable model-ranking proof.
 5. Keep human-only work human-only: automated audits prepare sign-off but never become sign-off.
 6. Do not start broad new model runs, large downloads, or GPU sweeps unless they directly address a fatal reviewer objection.
+7. Use `docs/emnlp2026_virtual_prereview_revision_plan.md` as the major-revision board for virtual-prereview risks.
 
 ## Calendar Plan
 
@@ -95,6 +96,17 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 | pending | Human author visually inspects final PDF and records decision. | `docs/emnlp2026_final_pdf_human_review_worksheet.md` |
 | pending | Human author submits before 2026-05-25 AOE. | official submission system |
 
+### G. Virtual Prereview Major Revision
+
+| Status | Task | Artifact |
+| --- | --- | --- |
+| active | Track virtual-prereview objections as an explicit major-revision plan. | `docs/emnlp2026_virtual_prereview_revision_plan.md` |
+| active | Downgrade benchmark maturity and deployment claims to initial benchmark / controlled offline proxy wording. | `paper/sections/00_abstract.tex`, `paper/sections/01_introduction.tex`, `paper/sections/08_limitations.tex` |
+| active | Add construction transparency for synthetic candidate generation, validation, promotion, and manifest checks. | `paper/sections/03_benchmark.tex`, `scripts/promote_validated_expansion_candidates.py` |
+| closed-current | Run parse-sensitivity audit from saved raw outputs. | `experiments/day1/day1_parse_sensitivity_audit.md`, `scripts/audit_parse_sensitivity.py` |
+| closed-current | Run utility-weight sensitivity audit from saved predictions. | `experiments/day1/day1_utility_weight_sensitivity_audit.md`, `scripts/audit_utility_weight_sensitivity.py` |
+| closed-current | Verify missing-related-work suggestions before adding citations. | `docs/emnlp2026_virtual_prereview_literature_triage.md` |
+
 ## Stop Conditions
 
 Stop and ask for a human decision if:
@@ -125,4 +137,7 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Launched `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` to make the hard distance answer actionable: submission-close, oral medium-far, best-paper far.
 - Completed a final-push result-claim sync in `docs/emnlp2026_numeric_claim_audit.md`: post-2026-05-06 framing, response-seed, and gap-plan edits introduce no unsupported new numeric result.
 - Completed a 560/600 and CI scope audit in `docs/emnlp2026_560_600_ci_scope_audit.md`; the full-minus-canonical table caption now says the 600 split is not a replacement headline benchmark.
+- Started the virtual-prereview major-revision board in `docs/emnlp2026_virtual_prereview_revision_plan.md` and began the first paper-facing edits for benchmark maturity, construction transparency, and parsing/utility audit planning.
+- Generated parse-sensitivity and utility-weight sensitivity audits from saved prediction artifacts: `experiments/day1/day1_parse_sensitivity_audit.md` and `experiments/day1/day1_utility_weight_sensitivity_audit.md`.
+- Started virtual-prereview related-work triage in `docs/emnlp2026_virtual_prereview_literature_triage.md`; unverified suggested citations stay out of `paper/references.bib`.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.

@@ -14,11 +14,15 @@ def test_reviewer_response_seed_memo_covers_major_attack_paths() -> None:
     required_fragments = [
         "Benchmark Soup / Dataset Mixture",
         "Utility Weights Are Arbitrary",
+        "Dataset Construction Transparency",
+        "Parsing And Format Confound",
         "Reasoning-Model Overclaim",
         "Intervention Overclaim",
         "Ask And Hard Abstain Coverage",
         "Statistical Confidence And CI Overclaim",
         "benchmark-soup",
+        "construction-transparency",
+        "parse-confound",
         "utility-weight",
         "reasoning-overclaim",
         "intervention-overclaim",
@@ -36,7 +40,11 @@ def test_reviewer_response_seed_memo_enforces_scope_constraints() -> None:
 
     required_fragments = [
         "not a universal user-cost model",
-        "completed Day-1 local checkpoints",
+        "completed local checkpoints",
+        "Synthetic candidates are not directly benchmark examples",
+        "Candidate rows are promoted only after a validation-queue decision",
+        "parse audit confirms that low-adherence runs are protocol-sensitive",
+        "utility-weight sensitivity audit",
         "exploratory calibration probe",
         "do not claim broad assistant helpfulness",
         "not yet balanced evidence for all possible clarification or abstention settings",

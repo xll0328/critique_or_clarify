@@ -25,9 +25,9 @@ SLICE_ORDER = [
 ]
 ACTION_ORDER = ["answer", "ask", "challenge", "abstain"]
 SPLIT_DISPLAY = {
-    "emnlp2026_expanded_dev_with_answer_topup": "expanded_canonical_560",
-    "day1_dev": "day1_dev_120",
-    "day1_quick_plus_stale_pool": "quick_stale_pool_51",
+    "emnlp2026_expanded_dev_with_answer_topup": "canonical_560",
+    "day1_dev": "compact_120",
+    "day1_quick_plus_stale_pool": "quick_stale_51",
 }
 
 
@@ -153,7 +153,7 @@ def render_latex(summaries: list[dict[str, Any]]) -> str:
             r"\bottomrule",
             r"\end{tabular}",
             r"}",
-            r"\caption{Benchmark split composition by slice, gold action, and source. The canonical paper-facing split is \texttt{emnlp2026\_expanded\_dev\_with\_answer\_topup}; compact splits are retained for diagnostic ablations.}",
+            r"\caption{Benchmark split composition by slice, gold action, and source. The canonical submission split is the 560-example split; compact splits are retained for diagnostic ablations.}",
             r"\label{tab:day1-dataset-slice-summary}",
             r"\end{table*}",
         ]

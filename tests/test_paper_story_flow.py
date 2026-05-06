@@ -20,7 +20,7 @@ def test_abstract_presents_unified_action_decision_benchmark() -> None:
         "share one action-decision record",
         "action ontology",
         "completed human-validation queue",
-        "completed Day-1 local model-and-prompt matrix",
+        "completed local model-and-prompt matrix",
         "The scoped claim is that next-action calibration is a distinct capability",
         "do not guarantee the right first move",
     ]
@@ -44,6 +44,8 @@ def test_introduction_defuses_dataset_mixture_objection() -> None:
     assert "not another defect category, but the action decision that precedes generation" in introduction
     assert "shared action-decision record and action ontology" in introduction
     assert "the slice source is secondary to the first-move label being evaluated" in introduction
+    assert "initial multi-slice benchmark" in introduction
+    assert "controlled offline proxy for one action-policy layer" in introduction
 
 
 def test_related_work_handoff_names_one_policy_problem() -> None:

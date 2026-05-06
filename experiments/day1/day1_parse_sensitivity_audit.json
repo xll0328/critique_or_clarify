@@ -1,0 +1,293 @@
+{
+  "audit": "parse_sensitivity",
+  "interpretation": "This audit quantifies protocol sensitivity. It does not turn low-format-adherence runs into model-intrinsic action-selection claims.",
+  "runs": [
+    {
+      "label": "Qwen2.5-0.5B-Instruct",
+      "predictions": "outputs/day1/qwen25_05b_day1_dev.jsonl",
+      "data": "data/processed/day1_dev.jsonl",
+      "num_examples": 120,
+      "json_parse_rate": 0.0667,
+      "current_action_accuracy": 0.35,
+      "strict_json_or_abstain_action_accuracy": 0.0167,
+      "delta_current_minus_strict_action_accuracy": 0.3333,
+      "current_avg_utility": -0.4354,
+      "strict_json_or_abstain_avg_utility": -0.4146,
+      "delta_current_minus_strict_avg_utility": -0.0208,
+      "current_over_answer_rate": 0.075,
+      "strict_json_or_abstain_over_answer_rate": 0.0,
+      "fallback_rows": 112,
+      "fallback_action_accuracy_current_parser": 0.3571,
+      "json_rows": 8,
+      "json_action_accuracy_current_parser": 0.25,
+      "action_changes_from_strict_to_current": 85,
+      "strict_pred_action_counts": {
+        "abstain": 114,
+        "ask": 4,
+        "answer": 2
+      },
+      "current_pred_action_counts": {
+        "abstain": 29,
+        "ask": 40,
+        "answer": 51
+      },
+      "strict_confusion": {
+        "answer": {
+          "abstain": 77,
+          "answer": 2,
+          "ask": 1
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 37,
+          "ask": 3
+        },
+        "abstain": {}
+      },
+      "current_confusion": {
+        "answer": {
+          "abstain": 20,
+          "answer": 42,
+          "ask": 18
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 9,
+          "ask": 22,
+          "answer": 9
+        },
+        "abstain": {}
+      }
+    },
+    {
+      "label": "Qwen2.5-1.5B-Instruct",
+      "predictions": "outputs/day1/qwen25_15b_day1_dev.jsonl",
+      "data": "data/processed/day1_dev.jsonl",
+      "num_examples": 120,
+      "json_parse_rate": 0.8083,
+      "current_action_accuracy": 0.7667,
+      "strict_json_or_abstain_action_accuracy": 0.6333,
+      "delta_current_minus_strict_action_accuracy": 0.1334,
+      "current_avg_utility": -0.2229,
+      "strict_json_or_abstain_avg_utility": -0.2646,
+      "delta_current_minus_strict_avg_utility": 0.0417,
+      "current_over_answer_rate": 0.0083,
+      "strict_json_or_abstain_over_answer_rate": 0.0083,
+      "fallback_rows": 23,
+      "fallback_action_accuracy_current_parser": 0.6957,
+      "json_rows": 97,
+      "json_action_accuracy_current_parser": 0.7835,
+      "action_changes_from_strict_to_current": 23,
+      "strict_pred_action_counts": {
+        "challenge": 50,
+        "answer": 47,
+        "abstain": 23
+      },
+      "current_pred_action_counts": {
+        "challenge": 66,
+        "answer": 54
+      },
+      "strict_confusion": {
+        "answer": {
+          "answer": 46,
+          "challenge": 20,
+          "abstain": 14
+        },
+        "ask": {},
+        "challenge": {
+          "challenge": 30,
+          "answer": 1,
+          "abstain": 9
+        },
+        "abstain": {}
+      },
+      "current_confusion": {
+        "answer": {
+          "answer": 53,
+          "challenge": 27
+        },
+        "ask": {},
+        "challenge": {
+          "challenge": 39,
+          "answer": 1
+        },
+        "abstain": {}
+      }
+    },
+    {
+      "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "predictions": "outputs/day1/deepseek_r1_qwen15b_day1_dev_useronlyfixed_reparsed.jsonl",
+      "data": "data/processed/day1_dev.jsonl",
+      "num_examples": 120,
+      "json_parse_rate": 0.0083,
+      "current_action_accuracy": 0.3833,
+      "strict_json_or_abstain_action_accuracy": 0.0,
+      "delta_current_minus_strict_action_accuracy": 0.3833,
+      "current_avg_utility": -0.5125,
+      "strict_json_or_abstain_avg_utility": -0.4229,
+      "delta_current_minus_strict_avg_utility": -0.0896,
+      "current_over_answer_rate": 0.15,
+      "strict_json_or_abstain_over_answer_rate": 0.0083,
+      "fallback_rows": 119,
+      "fallback_action_accuracy_current_parser": 0.3866,
+      "json_rows": 1,
+      "json_action_accuracy_current_parser": 0.0,
+      "action_changes_from_strict_to_current": 70,
+      "strict_pred_action_counts": {
+        "abstain": 119,
+        "answer": 1
+      },
+      "current_pred_action_counts": {
+        "answer": 64,
+        "abstain": 49,
+        "ask": 5,
+        "challenge": 2
+      },
+      "strict_confusion": {
+        "answer": {
+          "abstain": 80
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 39,
+          "answer": 1
+        },
+        "abstain": {}
+      },
+      "current_confusion": {
+        "answer": {
+          "answer": 46,
+          "abstain": 28,
+          "ask": 4,
+          "challenge": 2
+        },
+        "ask": {},
+        "challenge": {
+          "answer": 18,
+          "abstain": 21,
+          "ask": 1
+        },
+        "abstain": {}
+      }
+    },
+    {
+      "label": "Qwen2.5-Coder-7B-Instruct",
+      "predictions": "outputs/day1/qwen25_coder_7b_day1_dev.jsonl",
+      "data": "data/processed/day1_dev.jsonl",
+      "num_examples": 120,
+      "json_parse_rate": 0.9417,
+      "current_action_accuracy": 0.6,
+      "strict_json_or_abstain_action_accuracy": 0.5667,
+      "delta_current_minus_strict_action_accuracy": 0.0333,
+      "current_avg_utility": -0.2792,
+      "strict_json_or_abstain_avg_utility": -0.2875,
+      "delta_current_minus_strict_avg_utility": 0.0083,
+      "current_over_answer_rate": 0.0083,
+      "strict_json_or_abstain_over_answer_rate": 0.0083,
+      "fallback_rows": 7,
+      "fallback_action_accuracy_current_parser": 0.5714,
+      "json_rows": 113,
+      "json_action_accuracy_current_parser": 0.6018,
+      "action_changes_from_strict_to_current": 6,
+      "strict_pred_action_counts": {
+        "abstain": 38,
+        "answer": 52,
+        "challenge": 18,
+        "ask": 12
+      },
+      "current_pred_action_counts": {
+        "abstain": 32,
+        "answer": 55,
+        "challenge": 19,
+        "ask": 14
+      },
+      "strict_confusion": {
+        "answer": {
+          "answer": 51,
+          "abstain": 25,
+          "ask": 3,
+          "challenge": 1
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 13,
+          "challenge": 17,
+          "ask": 9,
+          "answer": 1
+        },
+        "abstain": {}
+      },
+      "current_confusion": {
+        "answer": {
+          "answer": 54,
+          "abstain": 21,
+          "ask": 4,
+          "challenge": 1
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 11,
+          "challenge": 18,
+          "ask": 10,
+          "answer": 1
+        },
+        "abstain": {}
+      }
+    },
+    {
+      "label": "DeepSeek-R1-Distill-Qwen-7B",
+      "predictions": "outputs/day1/deepseek_r1_qwen7b_day1_dev_useronlyfixed_reparsed.jsonl",
+      "data": "data/processed/day1_dev.jsonl",
+      "num_examples": 120,
+      "json_parse_rate": 0.0583,
+      "current_action_accuracy": 0.3667,
+      "strict_json_or_abstain_action_accuracy": 0.05,
+      "delta_current_minus_strict_action_accuracy": 0.3167,
+      "current_avg_utility": -0.4313,
+      "strict_json_or_abstain_avg_utility": -0.4229,
+      "delta_current_minus_strict_avg_utility": -0.0084,
+      "current_over_answer_rate": 0.05,
+      "strict_json_or_abstain_over_answer_rate": 0.0083,
+      "fallback_rows": 113,
+      "fallback_action_accuracy_current_parser": 0.3363,
+      "json_rows": 7,
+      "json_action_accuracy_current_parser": 0.8571,
+      "action_changes_from_strict_to_current": 44,
+      "strict_pred_action_counts": {
+        "abstain": 113,
+        "answer": 7
+      },
+      "current_pred_action_counts": {
+        "abstain": 69,
+        "answer": 46,
+        "challenge": 5
+      },
+      "strict_confusion": {
+        "answer": {
+          "abstain": 74,
+          "answer": 6
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 39,
+          "answer": 1
+        },
+        "abstain": {}
+      },
+      "current_confusion": {
+        "answer": {
+          "answer": 40,
+          "abstain": 39,
+          "challenge": 1
+        },
+        "ask": {},
+        "challenge": {
+          "abstain": 30,
+          "challenge": 4,
+          "answer": 6
+        },
+        "abstain": {}
+      }
+    }
+  ]
+}

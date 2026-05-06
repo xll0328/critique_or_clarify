@@ -150,7 +150,7 @@ def main() -> None:
             r"}",
             (
                 r"\caption{External API baselines on the 560-example canonical split "
-                r"(\texttt{emnlp2026\_expanded\_dev\_with\_answer\_topup}, decision-first, max\_tokens=64, "
+                r"(decision-first, max\_tokens=64, "
                 r"temperature=0.0). Metrics are measured on \texttt{avg\_utility}, \texttt{action\_accuracy}, "
                 r"\texttt{json\_parse\_rate}, \texttt{over\_answer\_rate}, and \texttt{answer\_contains\_rate}.}"
             ),
