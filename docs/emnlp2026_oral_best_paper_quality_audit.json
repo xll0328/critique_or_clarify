@@ -1,0 +1,251 @@
+{
+  "date": "2026-04-29",
+  "status": "not_oral_ready",
+  "recommendation": "major_revision_before_oral_or_best_paper_claim",
+  "metrics": {
+    "paper_facing_unique_examples": 560,
+    "paper_facing_action_counts": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "full_split_unique_examples": 600,
+    "full_split_action_counts": {
+      "answer": 240,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "candidate_augmented_unique_examples": 560,
+    "candidate_augmented_action_counts": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "oral_target_unique_examples": 500,
+    "paper_facing_unique_gap": 0,
+    "candidate_paper_facing": true,
+    "candidate_status": "accepted",
+    "slice_gaps": {
+      "answerable_control": {
+        "current": 106,
+        "target": 120,
+        "gap": 14
+      },
+      "false_premise": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "stale_premise": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "conflicting_evidence": {
+        "current": 94,
+        "target": 120,
+        "gap": 26
+      },
+      "ambiguous_intent": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "insufficient_evidence": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    },
+    "full_split_slice_gaps": {
+      "answerable_control": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "false_premise": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "stale_premise": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "conflicting_evidence": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "ambiguous_intent": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "insufficient_evidence": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    },
+    "model_rows": 10,
+    "model_rows_local": 5,
+    "model_rows_api": 5,
+    "model_names": [
+      "Qwen2.5-0.5B-Instruct",
+      "Qwen2.5-1.5B-Instruct",
+      "DeepSeek-R1-Distill-Qwen-1.5B",
+      "Qwen2.5-Coder-7B-Instruct",
+      "DeepSeek-R1-Distill-Qwen-7B",
+      "qwen-turbo",
+      "gpt-4o-mini",
+      "gpt-4.1-mini",
+      "qwen-plus-latest",
+      "gpt-5-chat-latest"
+    ],
+    "model_names_local": [
+      "Qwen2.5-0.5B-Instruct",
+      "Qwen2.5-1.5B-Instruct",
+      "DeepSeek-R1-Distill-Qwen-1.5B",
+      "Qwen2.5-Coder-7B-Instruct",
+      "DeepSeek-R1-Distill-Qwen-7B"
+    ],
+    "model_names_api": [
+      "qwen-turbo",
+      "gpt-4o-mini",
+      "gpt-4.1-mini",
+      "qwen-plus-latest",
+      "gpt-5-chat-latest"
+    ],
+    "figure_count": 6,
+    "figure_files": [
+      "paper/figures/figure1_task_schematic.pdf",
+      "paper/figures/figure2_action_calibration.pdf",
+      "paper/figures/figure3_scale_reasoning.pdf",
+      "paper/figures/figure4_coverage_overview.pdf",
+      "paper/figures/figure5_boundary_failures.pdf",
+      "paper/figures/figure6_api_baseline_comparison.pdf"
+    ],
+    "bib_entries": 35,
+    "citation_commands": 33,
+    "citation_commands_by_section": {
+      "00_abstract.tex": 0,
+      "01_introduction.tex": 5,
+      "02_related_work.tex": 14,
+      "02_task.tex": 2,
+      "03_benchmark.tex": 3,
+      "04_protocol.tex": 2,
+      "05_results.tex": 2,
+      "06_intervention.tex": 1,
+      "07_qualitative.tex": 3,
+      "08_limitations.tex": 1
+    },
+    "qwenplus_stress": {
+      "main": {
+        "available": true,
+        "canonical_examples": 560,
+        "full_examples": 600,
+        "canonical_action_accuracy": 0.8571,
+        "full_action_accuracy": 0.8667,
+        "delta_action_accuracy": 0.009600000000000053,
+        "canonical_avg_utility": 0.1571,
+        "full_avg_utility": 0.1783,
+        "delta_avg_utility": 0.021199999999999997,
+        "canonical_over_answer_rate": 0.0304,
+        "full_over_answer_rate": 0.0283,
+        "delta_over_answer_rate": -0.002100000000000001,
+        "canonical_json_parse_rate": 0.8054,
+        "full_json_parse_rate": 0.8183,
+        "delta_json_parse_rate": 0.012900000000000023
+      },
+      "decision_first_guarded": {
+        "available": true,
+        "canonical_examples": 560,
+        "full_examples": 600,
+        "canonical_action_accuracy": 0.8804,
+        "full_action_accuracy": 0.8883,
+        "delta_action_accuracy": 0.007900000000000018,
+        "canonical_avg_utility": 0.0576,
+        "full_avg_utility": 0.0204,
+        "delta_avg_utility": -0.0372,
+        "canonical_over_answer_rate": 0.0357,
+        "full_over_answer_rate": 0.0333,
+        "delta_over_answer_rate": -0.0023999999999999994,
+        "canonical_json_parse_rate": 0.4036,
+        "full_json_parse_rate": 0.4,
+        "delta_json_parse_rate": -0.003599999999999992
+      }
+    },
+    "gpt41_stress_main": {
+      "available": true,
+      "canonical_examples": 560,
+      "full_examples": 600,
+      "canonical_action_accuracy": 0.8857,
+      "full_action_accuracy": 0.8933,
+      "delta_action_accuracy": 0.00759999999999994,
+      "canonical_avg_utility": 0.0558,
+      "full_avg_utility": 0.0187,
+      "delta_avg_utility": -0.0371,
+      "canonical_over_answer_rate": 0.0411,
+      "full_over_answer_rate": 0.0383,
+      "delta_over_answer_rate": -0.002799999999999997,
+      "canonical_json_parse_rate": 0.85,
+      "full_json_parse_rate": 0.86,
+      "delta_json_parse_rate": 0.010000000000000009
+    },
+    "qwenturbo_stress_main": {
+      "available": true,
+      "canonical_examples": 560,
+      "full_examples": 600,
+      "canonical_action_accuracy": 0.8393,
+      "full_action_accuracy": 0.85,
+      "delta_action_accuracy": 0.010699999999999932,
+      "canonical_avg_utility": 0.0353,
+      "full_avg_utility": -0.0004,
+      "delta_avg_utility": -0.035699999999999996,
+      "canonical_over_answer_rate": 0.05,
+      "full_over_answer_rate": 0.0467,
+      "delta_over_answer_rate": -0.0033000000000000043,
+      "canonical_json_parse_rate": 0.7625,
+      "full_json_parse_rate": 0.7783,
+      "delta_json_parse_rate": 0.015800000000000036
+    },
+    "gpt5chat_stress_main": {
+      "available": true,
+      "canonical_examples": 560,
+      "full_examples": 600,
+      "canonical_action_accuracy": 0.9286,
+      "full_action_accuracy": 0.9333,
+      "delta_action_accuracy": 0.0047000000000000375,
+      "canonical_avg_utility": 0.0442,
+      "full_avg_utility": 0.0079,
+      "delta_avg_utility": -0.0363,
+      "canonical_over_answer_rate": 0.0625,
+      "full_over_answer_rate": 0.0583,
+      "delta_over_answer_rate": -0.004200000000000002,
+      "canonical_json_parse_rate": 0.8554,
+      "full_json_parse_rate": 0.865,
+      "delta_json_parse_rate": 0.009599999999999942
+    },
+    "full_split_stress_model_count": 4,
+    "sensitivity_table_present": true
+  },
+  "findings": [
+    {
+      "severity": "MINOR",
+      "key": "slice_balance_scope_canonical_only",
+      "evidence": "Canonical split still has unresolved slice gaps (answerable_control gap=14, conflicting_evidence gap=26), but a slice-balanced 600-example stress split is available and evaluated (qwen-plus-latest main Δaction=+0.0096, guarded Δaction=+0.0079). Additional stress rows: gpt-4.1-mini decision-first Δaction=+0.0076, qwen-turbo decision-first Δaction=+0.0107, gpt-5-chat-latest decision-first Δaction=+0.0047.",
+      "action": "Keep headline claims scoped to the canonical split and report full-split sensitivity as stress evidence, not as a replacement benchmark."
+    }
+  ],
+  "next_actions": [
+    "Use the completed GPT-5-chat-latest row as the strong API/frontier control; do not broaden the model matrix further unless it answers a specific reviewer objection.",
+    "Keep the 600-example split framed as stress evidence: frontier/high/medium/low API rows now triangulate slice-balance sensitivity, but the canonical 560 remains the headline benchmark.",
+    "Bibliography breadth now meets the 35-entry oral threshold; only add more citations if they support a concrete claim not already covered.",
+    "Keep the full-split sensitivity claims CI-aware: the delta intervals overlap zero, so report the 600-example split as stress evidence rather than a stronger replacement benchmark."
+  ]
+}

@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+\usepackage[review]{styles/acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{dblfloatfix}
+
+\input{tables/day1_scale_reasoning_macros}
+\input{tables/day1_quick_stale_macros}
+\input{tables/qwen25_15b_quick_plus_stale_intervention_macros}
+
+\title{Critique or Clarify? Evaluating Next-Action Selection Under Defective User Inputs}
+
+\author{Anonymous EMNLP Submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/00_abstract}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/01_introduction}
+
+\section{Related Work}
+\label{sec:related-work}
+\input{sections/02_related_work}
+
+\section{Task Definition}
+\label{sec:task}
+\input{sections/02_task}
+
+\section{Benchmark Construction}
+\label{sec:benchmark}
+\input{sections/03_benchmark}
+
+\section{Models and Protocol}
+\label{sec:protocol}
+\input{sections/04_protocol}
+
+\section{Main Results}
+\label{sec:results}
+\input{sections/05_results}
+
+\section{Decision-First Intervention}
+\label{sec:intervention}
+\input{sections/06_intervention}
+
+\section{Qualitative Analysis}
+\label{sec:analysis}
+\input{sections/07_qualitative}
+
+\section{Limitations}
+\label{sec:limitations}
+\input{sections/08_limitations}
+
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,8 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "data": "data/processed/day1_quick.jsonl",
+  "output": "outputs/day1/qwen25_05b_day1_quick.jsonl",
+  "eval_json": "outputs/day1/qwen25_05b_day1_quick_metrics.json",
+  "command": "CUDA_VISIBLE_DEVICES=2 python scripts/run_baseline.py --backend transformers --model /data/sony/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775 --local-files-only --data data/processed/day1_quick.jsonl --output outputs/day1/qwen25_05b_day1_quick.jsonl --eval-json outputs/day1/qwen25_05b_day1_quick_metrics.json --max-new-tokens 140 --temperature 0.0",
+  "notes": "Fast balanced diagnostic run for Qwen2.5-0.5B-Instruct before the full day1_dev evaluation."
+}

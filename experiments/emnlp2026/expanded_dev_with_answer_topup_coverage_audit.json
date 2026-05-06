@@ -1,0 +1,148 @@
+{
+  "splits": [
+    {
+      "path": "data/processed/emnlp2026_expanded_dev_with_answer_topup.jsonl",
+      "rows": 560,
+      "unique_ids": 560,
+      "by_slice": {
+        "answerable_control": 106,
+        "false_premise": 120,
+        "stale_premise": 80,
+        "conflicting_evidence": 94,
+        "ambiguous_intent": 80,
+        "insufficient_evidence": 80
+      },
+      "by_action": {
+        "answer": 200,
+        "ask": 80,
+        "challenge": 200,
+        "abstain": 80
+      },
+      "by_source": {
+        "PCBench": 104,
+        "QACC": 40,
+        "stale-fact-seed": 15,
+        "synthetic-expansion-candidate": 401
+      }
+    }
+  ],
+  "combined_unique": {
+    "input_rows": 560,
+    "unique_examples": 560,
+    "duplicate_ids": 0,
+    "by_slice": {
+      "answerable_control": 106,
+      "false_premise": 120,
+      "stale_premise": 80,
+      "conflicting_evidence": 94,
+      "ambiguous_intent": 80,
+      "insufficient_evidence": 80
+    },
+    "by_action": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "by_source": {
+      "PCBench": 104,
+      "QACC": 40,
+      "stale-fact-seed": 15,
+      "synthetic-expansion-candidate": 401
+    }
+  },
+  "targets": {
+    "total_unique": 500,
+    "by_slice": {
+      "answerable_control": 120,
+      "false_premise": 120,
+      "stale_premise": 80,
+      "conflicting_evidence": 120,
+      "ambiguous_intent": 80,
+      "insufficient_evidence": 80
+    },
+    "by_action": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    }
+  },
+  "gaps": {
+    "total_unique": {
+      "current": 560,
+      "target": 500,
+      "gap": 0
+    },
+    "by_slice": {
+      "answerable_control": {
+        "current": 106,
+        "target": 120,
+        "gap": 14
+      },
+      "false_premise": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "stale_premise": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "conflicting_evidence": {
+        "current": 94,
+        "target": 120,
+        "gap": 26
+      },
+      "ambiguous_intent": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "insufficient_evidence": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    },
+    "by_action": {
+      "answer": {
+        "current": 200,
+        "target": 200,
+        "gap": 0
+      },
+      "ask": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "challenge": {
+        "current": 200,
+        "target": 200,
+        "gap": 0
+      },
+      "abstain": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    }
+  },
+  "priority_build_queue": [
+    {
+      "dimension": "slice",
+      "name": "conflicting_evidence",
+      "current": 94,
+      "target": 120,
+      "gap": 26
+    },
+    {
+      "dimension": "slice",
+      "name": "answerable_control",
+      "current": 106,
+      "target": 120,
+      "gap": 14
+    }
+  ]
+}

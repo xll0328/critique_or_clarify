@@ -1,0 +1,13 @@
+% Auto-generated from the current day-1 snapshot.
+% Requires: \input{experiments/day1/tables/day1_scale_reasoning_macros.tex}
+\paragraph{Snapshot Results.}
+On the current day-1 development snapshot, \texttt{\DayOneScaleReasoningFrontierModel} is the strongest open baseline, reaching action accuracy \DayOneScaleReasoningFrontierActionAcc{} and average utility \DayOneScaleReasoningFrontierUtility{}. The hardest slice remains \DayOneScaleReasoningHardestSlice{} (\DayOneScaleReasoningHardestSliceMeanAcc{} mean action accuracy), whereas \DayOneScaleReasoningEasiestSlice{} is currently the easiest (\DayOneScaleReasoningEasiestSliceMeanAcc{}).
+
+\paragraph{Scale Effects.}
+The strongest currently available instruct scale step, \texttt{\DayOneScaleReasoningStrongestInstructStepFrom} to \texttt{\DayOneScaleReasoningStrongestInstructStepTo}, changes action accuracy by \DayOneScaleReasoningStrongestInstructStepDeltaActionAcc{}, utility by \DayOneScaleReasoningStrongestInstructStepDeltaUtility{}, and JSON parse rate by \DayOneScaleReasoningStrongestInstructStepDeltaJsonParse{}. The largest slice gain is \DayOneScaleReasoningStrongestInstructStepBiggestGain{}, while the largest slice drop is \DayOneScaleReasoningStrongestInstructStepBiggestDrop{}.
+
+\paragraph{Reasoning Contrast.}
+At the largest currently available size-matched contrast, \texttt{\DayOneScaleReasoningLargestMatchedInstructModel} versus \texttt{\DayOneScaleReasoningLargestMatchedReasoningModel} at \DayOneScaleReasoningLargestMatchedSize{}, the reasoning model changes action accuracy by \DayOneScaleReasoningLargestMatchedDeltaActionAcc{}, utility by \DayOneScaleReasoningLargestMatchedDeltaUtility{}, over-answer rate by \DayOneScaleReasoningLargestMatchedDeltaOverAnswer{}, and JSON parse rate by \DayOneScaleReasoningLargestMatchedDeltaJsonParse{} relative to the instruct baseline.
+
+\paragraph{Intro Preview.}
+Across completed open baselines, scale clearly improves action calibration, but \DayOneScaleReasoningHardestSlice{} remains the key bottleneck and the final instruct-versus-reasoning claim should wait for the missing size-matched checkpoints.

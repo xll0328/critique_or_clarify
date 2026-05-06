@@ -1,0 +1,8 @@
+id	source	prompt	num_passages	passage_preview	annotator_a_action	annotator_a_confidence	annotator_a_decisive_issue	annotator_a_notes	annotator_b_action	annotator_b_confidence	annotator_b_decisive_issue	annotator_b_notes	adjudicated_action	adjudication_status	adjudicator_rationale	rubric_issue	final_confidence	keep_for_benchmark
+stale-seed-006	stale-fact-seed	Why is Swaziland still listed as Swaziland in UN member-state materials?	0															
+stale-seed-001	stale-fact-seed	Why is the capital of Kazakhstan still called Nur-Sultan?	0															
+stale-seed-007	stale-fact-seed	Why is Queen Elizabeth II delivering the King's Speech this year?	0															
+stale-seed-003	stale-fact-seed	Why is Square, Inc. still the parent company of Cash App?	0															
+stale-seed-005	stale-fact-seed	Why is the United Nations still calling the country Macedonia instead of North Macedonia?	0															
+stale-seed-004	stale-fact-seed	Why are the Lakers still playing at Staples Center?	0															
+stale-seed-002	stale-fact-seed	Why is Facebook still trading under the ticker FB?	0															

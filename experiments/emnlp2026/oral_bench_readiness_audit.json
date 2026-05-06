@@ -1,0 +1,91 @@
+{
+  "status": "not_oral_ready",
+  "recommendation": "major_revision_before_oral_or_best_paper_claim",
+  "metrics": {
+    "paper_facing_unique_examples": 560,
+    "paper_facing_action_counts": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "candidate_augmented_unique_examples": 560,
+    "candidate_augmented_action_counts": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "oral_target_unique_examples": 500,
+    "paper_facing_unique_gap": 0,
+    "candidate_paper_facing": true,
+    "candidate_status": "accepted",
+    "model_rows": 8,
+    "model_names": [
+      "Qwen2.5-0.5B-Instruct",
+      "Qwen2.5-1.5B-Instruct",
+      "Qwen2.5-Coder-7B-Instruct",
+      "Qwen2.5-Coder-7B-Instruct (self-contained prompt)",
+      "DeepSeek-R1-Distill-Qwen-1.5B",
+      "DeepSeek-R1-Distill-Qwen-1.5B (compact prompt)",
+      "DeepSeek-R1-Distill-Qwen-7B",
+      "SmolLM2-135M-Instruct"
+    ],
+    "figure_count": 6,
+    "figure_files": [
+      "paper/figures/figure1_task_schematic.pdf",
+      "paper/figures/figure2_action_calibration.pdf",
+      "paper/figures/figure3_scale_reasoning.pdf",
+      "paper/figures/figure4_coverage_overview.pdf",
+      "paper/figures/figure5_boundary_failures.pdf",
+      "paper/figures/figure6_api_baseline_comparison.pdf"
+    ],
+    "bib_entries": 26,
+    "citation_commands": 21,
+    "citation_commands_by_section": {
+      "00_abstract.tex": 0,
+      "01_introduction.tex": 0,
+      "02_related_work.tex": 12,
+      "02_task.tex": 1,
+      "03_benchmark.tex": 3,
+      "04_protocol.tex": 2,
+      "05_results.tex": 2,
+      "06_intervention.tex": 0,
+      "07_qualitative.tex": 0,
+      "08_limitations.tex": 1
+    },
+    "canonical_api_rows": 4,
+    "canonical_api_models": [
+      "qwen-turbo",
+      "qwen-plus-latest",
+      "gpt-4o-mini",
+      "gpt-4.1-mini"
+    ]
+  },
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "key": "frontier_evidence_partial_closure",
+      "evidence": "Canonical-split API evidence is now present (`qwen-turbo`, `qwen-plus-latest`, `gpt-4o-mini`, `gpt-4.1-mini`), but robustness evidence is still concentrated in one prompt policy.",
+      "action": "Add one additional robustness control (prompt-constrained or policy-constrained) and one more strong frontier-style control before oral-level framing."
+    },
+    {
+      "severity": "MINOR",
+      "key": "statistical_depth_partial_closure",
+      "evidence": "Bootstrap CI tables now exist for local and API headline comparisons, but uncertainty is not yet propagated to all figure-level delta narratives.",
+      "action": "Add CI/error bars to remaining delta figures and reference uncertainty directly in prose."
+    },
+    {
+      "severity": "MAJOR",
+      "key": "slice_balance_risk",
+      "evidence": "The canonical split has full action coverage but slice imbalance remains (`answerable_control=106`, `conflicting_evidence=94`), which can weaken per-slice generalization claims.",
+      "action": "Close these slice gaps with human-validated additions before making balanced per-slice claims."
+    }
+  ],
+  "next_actions": [
+    "Complete one additional robustness control on `data/processed/emnlp2026_expanded_dev_with_answer_topup.jsonl` (prompt-constrained and/or policy-constrained) and report with the same table/figure protocol.",
+    "Extend CI-aware reporting to all headline delta figures, not only table-level summaries.",
+    "Close remaining slice imbalances in `answerable_control` and `conflicting_evidence` with signed validation before expanding any new slice-level claims.",
+    "Expand references from 26 toward 35-40 with targeted citations in benchmark/protocol/results sections."
+  ]
+}

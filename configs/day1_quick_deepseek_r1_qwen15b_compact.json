@@ -1,0 +1,7 @@
+{
+  "name": "day1_quick_deepseek_r1_qwen15b_compact",
+  "dataset": "data/processed/day1_quick.jsonl",
+  "model": "DeepSeek-R1-Distill-Qwen-1.5B",
+  "notes": "Corrected user-only protocol with compact prompt for formatting ablation.",
+  "command": "CUDA_VISIBLE_DEVICES=2 python scripts/run_baseline.py --backend transformers --model /data/sony/model_cache_reasoning/DeepSeek-R1-Distill-Qwen-1.5B --local-files-only --prompt-style compact --omit-system-prompt --assistant-prefix '<think>\\n' --data data/processed/day1_quick.jsonl --output outputs/day1/deepseek_r1_qwen15b_day1_quick_useronlyfixed_compact.jsonl --eval-json outputs/day1/deepseek_r1_qwen15b_day1_quick_useronlyfixed_compact_metrics.json --max-new-tokens 180 --temperature 0.6 --top-p 0.95 --seed 42"
+}

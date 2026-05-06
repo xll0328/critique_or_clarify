@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{llcccc}
+\toprule
+Model & Style & Utility (95\% CI) & Action Acc. (95\% CI) & Stale Acc. (95\% CI) & Stale Over-Answer (95\% CI) \\
+\midrule
+Qwen2.5-0.5B-Instruct & instruct & -0.6324 [-0.7157, -0.5539] & 0.3137 [0.1961, 0.451] & 0 [0, 0] & 0.8 [0.6, 1] \\
+Qwen2.5-1.5B-Instruct & instruct & -0.1863 [-0.348, -0.0294] & 0.7255 [0.5882, 0.8431] & 0.7333 [0.5333, 0.9333] & 0.2667 [0.0667, 0.5333] \\
+DeepSeek-R1-Distill-Qwen-1.5B & reasoning & -0.402 [-0.4951, -0.3088] & 0.2157 [0.1176, 0.3333] & 0.2667 [0.0667, 0.4667] & 0.3333 [0.1333, 0.6] \\
+\bottomrule
+\end{tabular}
+\caption{Expanded stale-premise pool pilot. This table is separate from the main day-1 comparison until all reported models are rerun on the same expanded split.}
+\label{tab:day1-expanded-stale-pool-pilot}
+\end{table*}

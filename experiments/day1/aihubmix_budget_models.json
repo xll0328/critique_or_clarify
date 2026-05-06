@@ -1,0 +1,152 @@
+[
+  {
+    "model_id": "coding-glm-4.6-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "coding-glm-4.7-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5-turbo-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-minimax-m2-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.5-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.7-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "crush-glm-5-turbo",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "crush-glm-5-turbo-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "crush-glm-5.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-3-flash-preview-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "glm-4.6",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 131072
+  },
+  {
+    "model_id": "glm-4.7-flash-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,structured_outputs,function_calling",
+    "context_length": 0,
+    "max_output": 0
+  }
+]

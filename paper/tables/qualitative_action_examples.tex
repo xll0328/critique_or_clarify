@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.17\linewidth}p{0.25\linewidth}p{0.12\linewidth}p{0.12\linewidth}p{0.26\linewidth}}
+\toprule
+Case & Prompt signal & Gold action & Model action & Action-selection lesson \\
+\midrule
+Stale premise & User asks why Facebook is still trading under \texttt{FB}; evidence says Meta changed the ticker to \texttt{META} on June 9, 2022. & \texttt{challenge} & \texttt{answer} & The model mentions the correction but still answers through the stale premise. Factual knowledge is present, but the next action is wrong. \\
+False premise & A math-solution step uses $1 + 2/(3n+1)$ where the supported step is $1 + 1/(3n+1)$. & \texttt{challenge} & \texttt{answer} & The model explains why logarithms are useful instead of interrupting the defective step. Fluent explanation can rationalize a bad premise. \\
+Answerable control & Jenny has 36 cookies; her son eats 20 and her husband eats 7. & \texttt{answer} & \texttt{challenge} & The supported answer is 9, but the model claims the prompt is incomplete. The task does not reward caution when the input is already answerable. \\
+Conflict but answerable & Noisy passages ask who was told to beware the Ides of March. Several passages still support Caesar. & \texttt{answer} & \texttt{answer} & Retrieval noise alone is not an abstention condition. The action depends on whether enough support remains. \\
+\bottomrule
+\end{tabular}
+}
+\caption{Representative action-boundary examples from the Day-1 evidence bundle. The table reports the next-action label rather than grading only the final answer text.}
+\label{tab:qualitative-examples}
+\end{table*}

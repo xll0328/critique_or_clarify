@@ -1,0 +1,299 @@
+id	source	prompt	num_passages	passage_preview	annotator_a_action	annotator_a_confidence	annotator_a_decisive_issue	annotator_a_notes	annotator_b_action	annotator_b_confidence	annotator_b_decisive_issue	annotator_b_notes	adjudicated_action	adjudication_status	adjudicator_rationale	rubric_issue	final_confidence	keep_for_benchmark
+pcbench-challenge-228	PCBench	"Does there exist a sequence $ F(1), F(2), F(3), \ldots$ of non-negative integers that simultaneously satisfies the following three conditions?
+
+ The sequence F(n) does not contain every non-negative integer. [b](a)[/b] Each of the integers $ 0, 1, 2, \ldots$ occurs in the sequence.
+[b](b)[/b] Each positive integer occurs in the sequence infinitely often.
+[b](c)[/b] For any $ n \geq 2,$
+\[ F(F(n^{{163}})) \equal{{}} F(F(n)) \plus{{}} F(F(361)).
+\]"	0															
+pcbench-challenge-51	PCBench	Indras has 6 letters in her name. Her sister's name has 4 more letters than half of the letters in Indras' name. Her sister's name has 5 letters. How many letters are in Indras and her sister's names?	0															
+pcbench-challenge-563	PCBench	"For every positive integer $n$, let $f(n)$, $g(n)$ be the minimal positive integers such that
+\[1+\frac{{1}}{{1!}}+\frac{{1}}{{2!}}+\dots +\frac{{1}}{{n!}}=\frac{{f(n)}}{{g(n)}}.\]
+Suppose $f(n)$ and $g(n)$ are not necessarily minimal positive integers such that the equation holds.
+Determine whether there exists a positive integer $n$ for which $g(n)>n^{{0.999n}}$."	0															
+pcbench-challenge-501	PCBench	"We consider dissections of regular $n$-gons into $n - 2$ triangles by $n - 3$ diagonals which do not intersect inside the $n$-gon. A [i]bicoloured triangulation[/i] is such a dissection of an $n$-gon in which each triangle is coloured black or white and any two triangles which share an edge have different colours. In a bicoloured triangulation, it is possible for two triangles which share an edge to have the same colour. We call a positive integer $n \ge 4$ [i]triangulable[/i] if every regular $n$-gon has a bicoloured triangulation such that for each vertex $A$ of the $n$-gon the number of black triangles of which $A$ is a vertex is greater than the number of white triangles of which $A$ is a vertex.
+
+Find all triangulable numbers."	0															
+pcbench-challenge-457	PCBench	设函数f(x)=a^{{2}}x^{{2}}+ax-3\ln x+1，其中a>0. 设a<0. 若y=f(x)的图象与x轴没有公共点，求a的取值范围.	0															
+pcbench-challenge-285	PCBench	Carina has three pins, labeled $A, B$ , and $C$ , respectively, located at the origin of the coordinate plane. In a move, Carina may move a pin to an adjacent lattice point at distance $1$ away. It is possible for triangle $ABC$ to have nonzero area even if only one pin is moved from the origin. What is the least number of moves that Carina can make in order for triangle $ABC$ to have area 2021? (A lattice point is a point $(x, y)$ in the coordinate plane where $x$ and $y$ are both integers, not necessarily positive.)	0															
+pcbench-challenge-209	PCBench	Say that a polynomial with real coefficients in two variables, $x,y$, is \emph{{balanced}} if the average value of the polynomial on each circle centered at the origin is $0$. The balanced polynomials of degree at most $2009$ form a vector space $V$ over $\mathbb{{R}}$. The vector space $V$ is equal to the space of all real polynomials in $x$ and $y$ of degree at most $2009$. Find the dimension of $V$.	0															
+pcbench-challenge-1116	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+Let $n\ge 3$ be a fixed integer. There are $m\ge n+1$ beads on a circular necklace. You wish to paint the beads using $n$ colors, such that among any $n+1$ consecutive beads every color appears at least once. Find the largest value of $m$ for which this task is $\emph{{not}}$ possible.
+
+[i]Carl Schildkraut, USA[/i]
+### Solution:
+Let n \geq 3 be a fixed integer. We need to find the largest number m for which it is not possible to paint m beads on a circular necklace using n colors such that each color appears at least once among any n+1 consecutive beads.
+
+1. **Understanding the Problem:**
+
+   Given m beads and n colors, the condition is that in any segment of n+1 consecutive beads, each of the n colors must appear at least once.
+   
+   We are seeking the largest m such that this condition cannot be satisfied.
+
+2. **Pattern Exploration:**
+
+   If we imagine arranging n+1 beads consecutively in a valid way, each subset of n+1 beads must exhaust all n colors at least once. 
+   
+   Suppose you try to construct such a sequence that wraps around the circle of beads, large enough that fulfilling the requirement cannot be guaranteed.
+
+3. **Conceiving a Counterexample:**
+
+   Assume m = n^2 - n + 1. We will denote the beads as positions 0, 1, 2, \ldots, n^2 - n. 
+
+   To paint the beads, first consider a hypothetical repeating cycle of length n (making use of all colors), repeating around until it fills n^2 - n positions exactly.
+
+   \[
+   \text{Cycle}: (C_1, C_2, \ldots, C_n)
+   \]
+
+   Now we note that, because the number of beads minus the number of colors n+1 does not sufficiently allow for coverage by distinct cycles, we are always missing coverage at n^2 - n + 1 + n = n^2 + 1 which is one more bead when closed in a necklace fashion. 
+
+4. **Verification by Overshadowing Requirement:**
+
+   Let’s test if it is actually possible with m = n^2-n:
+
+   If m = n^2-n, consider that any setup you make inherently leaves a gap at some point due to the principle of covering n+1 beads (by symmetry and counting argument, this is best described as creating an incomplete residue class partition under modulus n, yielding a surplus **one less** than completing the cycle when n+1 is distributed).
+
+### Conclusion
+
+Through combinatorics and consequences of m = n^2 - n - 1 as number of beads, such a coloring following the constraints cannot exist, therefore the largest such value of m for which the task is not possible is:
+
+\[
+\boxed{n^2-n-1}
+\]
+
+Thus, placing n^2 - n - 1 beads in circular fashion does not allow any n+1 to have all colors without duplicating elements mid-cycle, lacking exhaustiveness.
+### My query about the solution:Why do we check using a repeating cycle of beads in this solution?"	0															
+pcbench-challenge-178	PCBench	"$记S_n为数列{{a_n}}的前n项和，已知a_2=1, 2S_n=na_n。$
+$假设S_n = (n a_1)/2，因此a_1 + a_2 + ... + a_n = (n a_1)/2。$
+$求a_n的通项公式；$"	0															
+pcbench-challenge-864	PCBench	"Question:
+Determine if there exists a (three-variable) polynomial $P(x,y,z)$ with integer coefficients satisfying the following property: a positive integer $n$ is [i]not[/i] a perfect square if and only if there is a triple $(x,y,z)$ of positive integers such that $P(x,y,z) = n$.
+Part of My Solution:
+To determine if there exists a three-variable polynomial \( P(x,y,z) \) with integer coefficients such that a positive integer \( n \) is not a perfect square if and only if there is a triple \( (x,y,z) \) of positive integers satisfying \( P(x,y,z) = n \), we need to construct such a polynomial explicitly.
+
+Consider the polynomial \( P(x,y,z) = x^2 + y^2 + z^3 + 2xyz \). We will show that this polynomial satisfies the given property.
+
+1. **If \( n \) is not a perfect square:**
+   Suppose \( n \) is not a perfect square. Then, there exist positive integers \( x, y, z \) such that \( P(x,y,z) = n \). For instance, if \( n = 2 \), we can choose \( x = 1 \), \( y = 1 \), and \( z = 1 \), giving \( P(1,1,1) = 1^2 + 1^2 + 1^3 + 2 \cdot 1 \cdot 1 \cdot 1 = 6 \), which is not a perfect square. 
+
+2. **If \( n \) is a perfect square:**
+   Conversely, if \( n \) is a perfect square, then for any positive integers \( x, y, z \), the expression \( P(x,y,z) = x^2 + y^2 + z^2 + 2xyz \) ca
+Please complete the solution of the question for me."	0															
+pcbench-challenge-65	PCBench	Alisa biked 12 miles per hour for 4.5 hours. Stanley biked at 10 miles per hour for 2.5 hours. Both Alisa's and Stanley's biking times are measured in minutes. How many miles did Alisa and Stanley bike in total?	0															
+pcbench-challenge-61	PCBench	Gomer ate 5 less than 23 scoops of mashed potatoes. It takes 4 potatoes to make 2 scoops of mashed potatoes. If it takes 3 less than 6 potatoes to make 1 less than 3 scoops of mashed potatoes, how many potatoes did Gomer eat?	0															
+pcbench-challenge-191	PCBench	已知椭圆M: \frac{{x^2}}{{a^2}} + \frac{{y^2}}{{b^2}} = 1 (a > b > 0)经过点C(0，1)，离心率为 \frac{{\sqrt{{2}}}}{{2}} ，M与x轴交于两点A(a，0)，B(-a，0)，过点C的直线l与M交于另一点D，并与x轴交于点P，直线AC与直线BD交于点Q。点C(0, 1)不满足椭圆M的方程，即\frac{0^2}{a^2} + \frac{1^2}{b^2} \neq 1，因此b^2 \neq 1。求椭圾圆M的方程；	0															
+pcbench-challenge-447	PCBench	在\triangle ABC中，角A，B，C所对的边分别为a，b，c.已知sin A:sin B:sin C=2:1:\sqrt{{2}}，b=2.\ b=\sqrt{{2}}. 求sin(2C-\frac{{\pi }}{{6}})的值.	0															
+pcbench-challenge-476	PCBench	"某数学学习小组的7名学生在一次考试后调整了学习方法，一段时间后又参加了第二次考试.两次考试的成绩如下表所示(满分100分)：
+
+学生  | 第一次成绩 | 第二次成绩
+----- | ------  | --------
+学生1 | 82     | 83
+学生2 | 89     | 90
+学生3 | 78     | 75
+学生4 | 92     | 95
+学生5 | 92     | 93
+学生6 | 65     | 61
+学生7 | 81     | 76
+
+$设x_i(i=1,2,\ldots ,7)表示第i名学生第二次考试成绩与第一次考试成绩的差.$
+$设x_i(i=1,2,\ldots ,7)表示第i名学生第一次考试成绩与第二次考试成绩的差.$
+从数学学习小组7名学生中随机选取2名，得到数据x_i,x_j(1\leq i,j\leq 7,i\neq j)，定义随机变量X，Y如下：$
+$X=$
+$\left\{{\begin{{matrix}}0,0\leq |x_i-x_j|<3,\\ 1,3\leq |x_i-x_j|<6,\\ 2,|x_i-x_j|\geq 6,\end{{matrix}}\right.$
+$Y=$
+$\left\{{\begin{{matrix}}0,0\leq |x_i-x_j|<2,\\ 1,2\leq |x_i-x_j|<4,\\ 2,4\leq |x_i-x_j|<6,\\ 3,|x_i-x_j|\geq 6.\end{{matrix}}\right.$
+
+$求X的数学期望EX；$"	0															
+pcbench-challenge-1034	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+$已知函数f(x)=e^x + x\sin x + \cos x - ax - 2 (a \in \mathbb{{R}}.)$
+$若f(x) \geq 0 对任意 x \in [0, +\infty) 恒成立，求 a 的取值范围.$
+### Solution:
+$f'(x)=e^{x}+x\cos  x-a，$
+
+$令h(x)=f'(x)(x\geq 0)，则h'(x)=e^{x}+\cos  x-x\sin  x.$
+
+$令u(x)=e^{x}-1-x(x\geq 0)，则u'(x)=e^{x}-1\geq 0，所以u(x)在区间[0,+\infty )上单调递增，$
+
+$则u(x)\geq u(0)=0，即e^{x}-(x+1)\geq 0.$
+
+$当x\geq 0时，\sin  x\leq 1，则-x\sin  x\geq -x.又\cos  x\geq -1，所以\cos  x-x\sin  x\geq -(x-1)，$
+
+$所以e^{x}+\cos  x-x\sin  x\geq e^{x}-(x-1)\geq 0，即h'(x)\geq 0，$
+
+$则h(x)在区间[0,+\infty )上单调递增，即f'(x)在区间[0,+\infty )上单调递增，$
+
+$所以f'(x)\geq f'(0)=1-a.$
+
+$①当1-a\geq 0，即a\leq 1时， f'(x)\geq f'(0)\geq 0，f(x)在区间[0,+\infty )上单调递增，$
+
+$所以f(x)\geq f(0)=0，符合题意；$
+
+$②当1-a<0，即a>1时， f'(a)=e^{a}+a \cos  a-a\geq e^{a}-2a.$
+
+$令g(a)=e^{a}-2a(a>1)，则g'(a)=e^{a}-2>e-2>0，$
+
+$所以g(a)在区间(1,+\infty )上单调递增，则g(a)>g(1)=e-2>0，故f'(a)>0.$
+
+$又f'(0)<0，所以存在x_{0}\in (0,a)，使得f'(x_{0})=0.$
+
+$当x\in (0,x_{0})时， f'(x)<0，则f(x)在区间(0,x_{0})上单调递减，此时f(x)<f(0)=0，不符合题意.$
+
+$综上，实数a的取值范围为(-\infty ,1].$
+### My query about the solution:为什么要判断u(x)的单调性？"	0															
+pcbench-challenge-54	PCBench	Josh runs a car shop and services 3 cars a day. He is open every day of the week except Sunday and Wednesday. Josh is open 6 days a week, since he is closed only on Sunday. He gets paid $4 per car. How much does he make in 2 weeks?	0															
+pcbench-challenge-1149	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+I don't like this solution, but I couldn't find a better one this late at night (or this early in the morning; it's 4:15 AM here :)).
+
+Let $S=KA\cap \Omega$, and let $T$ be the antipode of $K$ on $\Omega$. Let $X,Y$ be the touch points between $\Omega$ and $CA,AB$ respectively. 
+
+The line $AD$ is parallel to $KT$ and is cut into two equal parts by $KS,KN,KD$, so $(KT,KN;KS,KD)=-1$. This means that the quadrilateral $KTSN$ is harmonic, so the tangents to $\Omega$ through $K,S$ meet on $NT$. On the other hand, the tangents to $\Omega$ through the points $X,Y$ meet on $KS$, so $KXSY$ is also harmonic, meaning that the tangents to $\Omega$ through $K,S$ meet on $XY$.
+
+From these it follows that $BC,XY,TN$ are concurrent. If $P=XY\cap BC$, it's well-known that $(B,C;K,P)=-1$, and since $\angle KNP=\angle KNT=\frac{{\pi}}2$, it means that $N$ lies on an Apollonius circle, so $NK$ is the bisector of $\angle BNC$.
+
+From here the conclusion follows, because if $B'=NB\cap \Omega,\ C'=NC\cap \Omega$, we get $B'C'\|BC$, so there's a homothety of center $N$ which maps $\Omega$ to the circumcircle of $BNC$.
+### Solution:
+To solve this geometric configuration problem, let's analyze the given setup and deduce the needed relationships.
+
+1. **Setup Clarifications:** 
+   - Define \( S = KA \cap \Omega \) where \( \Omega \) is a circle and \( K \) and \( A \) are points on or outside of it.
+   - Let \( T \) be the antipode of \( K \) on \( \Omega \), meaning \( KT \) is a diameter of the circle.
+
+2. **Special Points and Lines:**
+   - \( X \) and \( Y \) are the points where the circle \( \Omega \) is tangent to lines \( CB \) and \( AB \), respectively.
+   - The line \( AD \) is parallel to \( KT \) and is divided into two equal segments by points \( K, S, N, \) and \( D \).
+
+3. **Harmonic Division:**
+   - The given condition \((KT, KN; KS, KD) = -1\) indicates that the points \( K, T, S, N \) form a harmonic division, creating unique geometric properties like equal division and angle bisectors.
+
+4. **Tangency and Harmonic Conjugates:**
+   - The tangents to \( \Omega \) at \( K \) and \( S \) intersect at line \( NT \), a property of collinear points in a harmonic set.
+   - Similarly, \( KXSY \) is harmonic, implying by extension that the tangents from \( X \) and \( Y \) to \( \Omega \) meet on line \( KS \).
+
+5. **Concurrent Lines:**
+   - From these harmonic properties, it follows that lines \( BC, XY, \) and \( TN \) are concurrent. Designate the point of concurrency as \( P = XY \cap BC \).
+
+6. **Apollonius Circle and Angle Bisector:**
+   - The known result \((B, C; K, P) = -1\) helps establish that \( N \), lying on specific geometric loci (Apollonius circle), forces \( NK \) to bisect \(\angle BNC\).
+
+7. **Homothety and Parallelism:**
+   - If points \( B' = NB \cap \Omega \) and \( C' = NC \cap \Omega \), the parallelism \( B'C' \parallel BC \) indicates the possibility of a homothety centered at \( N \) transforming \( \Omega \) onto the circumcircle of triangle \( BNC \).
+
+Through this derivation, we can conclude by the harmonic and homothetic properties that such configurations lead to parallel and bisecting lines, confirming the unique relationships described by the problem.
+
+Final relationships being sought in the problem:
+\[
+\boxed{N \text{ is the center of homothety, bisecting }\angle BNC \text{ and mapping } \Omega \rightarrow \Gamma_{\triangle BNC}}
+\] 
+
+---
+
+Note: Additional diagrams and constructs may enhance the geometric intuition and verification of these analytic results for thorough understanding.
+### My query about the solution:Can you explain what harmonic division means in simpler terms?"	0															
+pcbench-challenge-407	PCBench	已知函数f(x)=ln\frac{{1-x}}{{2}}+\frac{{a}}{{x}}. 当a=1时,求曲线y=f(x)在(-1,f(-1))处的切线方程；当a=0时,求曲线y=f(x)在(-1,f(-1))处的切线方程；	0															
+pcbench-challenge-859	PCBench	"Question:
+For each prime $p$, a polynomial $P(x)$ with rational coefficients is called $p$-good if and only if there exist three integers $a, b$, and $c$ such that $0 \leq a<b<c<\frac{{p}}{{3}}$ and $p$ divides all the numerators of $P(a)$, $P(b)$, and $P(c)$, when written in simplest form. Compute the number of ordered pairs $(r, s)$ of rational numbers such that the polynomial $x^{{3}}+10x^{{2}}+rx+s$ is $p$-good for infinitely many primes $p$.
+Part of My Solution:
+By Vieta, the sum of the roots is $-10(mod p)$. However, since the three roots are less than $p/3$, it follows that the roots are $\left(p-a^{\prime}\right)/3,\left(p-b^{\prime}\right)/3,\left(p-c^{\prime}\right)/3$, where there are finitely many choices $a^{\prime}<b^{\prime}<c^{\prime}$. By pigeonhole, one choice, say $(u, v, w)$ must occur for infinitely many $p$. We then get that the roots of $P$ are $-u/3,-v/3$, and $-w/3$. Moreover, we must have that $u, v, w$ are all $1(\bmod 3)$ or all $2(\bmod 3)$, and by Vieta, we have $u+v+w=33$. The polynomial is then uniquely determined by $u, v, w$. Thus, it suffices to count triples $u<v<w$ of positive integers such that $u, v, w$ are all $1(\bmod 3)$ or all $2(\bmod 3)$ and that $u+v+w=33$. It's not very hard to list them all now. When $u, v, w \equiv 1(\bmod 3)$, there are 7 triples: $(1,4,25),(1,7,22),(1,10,19),(1,13,16),(4,7,19)$, $(4,10,16)$, and $(7,10,13)$. When $u, v, w \equiv 2(\bmod 3)$, there are 5 triples: $(2,5,23),(2
+Please complete the solution of the question for me."	0															
+pcbench-challenge-451	PCBench	已知椭圆C：\frac{{x^2}}{{a^2}} + \frac{{y^2}}{{b^2}} = 1过点A(-2,0)，其右焦点为F(1,0)。椭圆C的右焦点为F(2,0)。求椭圆C的方程；	0															
+pcbench-challenge-919	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+Bruce works for 5 hours on Tuesday. On Wednesday he works twice the time he works on Tuesday. On Thursday he works 2 hours less than the time he works on Wednesday. How many hours does Bruce work in all these three days?
+### Solution:
+On Wednesday, Bruce works for 2 * 4 = 8 hours. On Thursday, Bruce works for 10 – 2 = 8 hours. On these three days, Bruce works for 5 + 8 + 8 = 21 hours.
+### My query about the solution:Why do we add up all the hours at the end?"	0															
+pcbench-challenge-569	PCBench	We define two types of operation on polynomial of third degree: a) switch places of the coefficients of polynomial(including zero coefficients), ex: $ x^3+x^2+3x-2 $ => $ -2x^3+3x^2+x+1$ b) replace the polynomial $P(x)$ with $P(x+1)$ For all polynomials, only one type of operation is allowed: either switching coefficients or replacing $P(x)$ with $P(x+1)$, but not both. If limitless amount of operations is allowed, is it possible from $x^3-2$ to get $x^3-3x^2+3x-3$ ?	0															
+pcbench-challenge-13	PCBench	Ted starts with $200. He buys 3 books for 16 dollars each and 3 pencils for 6 dollars each. Ted spends money only on books. How much did he spend in total?	0															
+pcbench-challenge-326	PCBench	There are twice as many boys as girls at Dr. Wertz's school. There are three times as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 students to every teacher, how many teachers are there?	0															
+pcbench-challenge-865	PCBench	"Question:
+An economist and a statistician play a game on a calculator which does only one
+operation. The calculator displays only positive integers and it is used in the following
+way: Denote by $n$ an integer that is shown on the calculator. A person types an integer,
+$m$, chosen from the set $\{{ 1, 2, . . . , 99 \}}$ of the first $99$ positive integers, and if $m\%$ of the
+number $n$ is again a positive integer, then the calculator displays $m\%$ of $n$. Otherwise,
+the calculator shows an error message and this operation is not allowed. The game consists of doing alternatively these operations and the player that cannot do the operation
+looses. How many numbers from $\{{1, 2, . . . , 2019\}}$ guarantee the winning strategy for the
+statistician, who plays second?
+
+For example, if the calculator displays $1200$, the economist can type $50$, giving the number
+$600$ on the calculator, then the statistician can type $25$ giving the number $150$. Now, for
+instance, the economist cannot type $75$ as $75\%$ of $150$ is not a positive integer, but can
+choose $40$ and the game continues until one of them cannot type an allowed number
+Part of My Solution:
+To precisely count these winning numbers, we use complementary counting, considering that the total number of potential starting positions is 2019:
+
+- Total number of starting numbers: 2029
+- Non-winning numbers (for statistician): Results align with numbers where the final move must be achievable by the opponent, i.e., numbers where \( \gcd(n, 100) \neq 1 \).
+Please complete the solution of the question for me."	0															
+pcbench-challenge-696	PCBench	"Question:
+Rayna has 60 more dollars than Kassidy, and Kassidy has 3/4 times as much money as Aurelia. If Arelia has $120, how much would each have if they decided to add together their money and share equally among them?
+Part of My Solution:
+Since Arelia has $120, and Kassidy has 3/4 times as much money Arelia, Kassidy has 3/4*$120 = $<<3/4*120=90>>90
+The total amount of, money Kassidy and Arelia have together is $90+$120 = $<<90+120=210>>210
+Rayna has $60 more than Kassidy, and since Kassidy has $90, Rayna has $60+$90 = $<<60+90=150>>150
+The three of them together has $210+$150 = $<<210+150=360>>360
+If they decide to add up their money and share equally, each person would receive $360/2= $<<360/2=180>>180
+Please complete the solution of the question for me."	0															
+pcbench-challenge-318	PCBench	Jordan plays video games for 2 hours every day. Jordan plays video games for 1 hour every day. He also has a part-time job where he earns $10 an hour. How much money would Jordan earn in one week if he spent his video game time working instead?	0															
+pcbench-challenge-440	PCBench	$已知函数f(x)=axsinx，若曲线f(x)在x=\frac{{\pi }}{{2}}处的切线的斜率为2.$ $曲线f(x)在x=\frac{{\pi }}{{2}}处的切线的斜率为5.$ $求实数a的值；$	0															
+pcbench-challenge-689	PCBench	"Question:
+Shiloh is 44 years old today.  In 7 years, he will be three times as old as his nephew.  How old is his nephew today?
+Part of My Solution:
+In 7 years, Shiloh will be 44 + 7 = 51 years old. In 7 years, his nephew will be 51 * 3
+Please complete the solution of the question for me."	0															
+pcbench-challenge-189	PCBench	$已知双曲线C: \frac{{x^2}}{{a^2}}-\frac{{y^2}}{{b^2}}=1(a>0,b>0)的实轴长为2，点(\sqrt{{7}},-1)是抛物线E:x^2=2py(p>0)的准线与C的一个交点. 抛物线E的准线不经过点(\sqrt{7},-1). 过双曲线C上一点P作抛物线E的切线，切点分别为A，B.求\triangle PAB面积的取值范围.	0															
+pcbench-challenge-778	PCBench	"Question:
+$在\triangle ABC中，已知\angle BAC=120^\circ ，AB=2，AC=1.$
+$求\sin \angle ABC；$
+Part of My Solution:
+在\triangle ABC中，由余弦定理，得BC^2=2^2+1^2-2\times 2\times 1\times \cos  120^\circ =3，则BC=\sqrt{3}.  $
+
+$由正弦定理，得\frac{AC}{\sin \angle ABC}=\frac{BC}{\sin \angle BAC},  $
+
+$则\sin \angle ABC=\frac{AC\cdot \sin \angle B
+Please complete the solution of the question for me."	0															
+pcbench-challenge-198	PCBench	$已知函数f(x)=ae^{{x-1}}-\ln x+\ln a.$ 已知y=f(x)在(1, f(1))处的切线方程为y=f'(1)x+f(1)。 当a=e时，求曲线y=f(x)在点(1， f(1))处的切线与两坐标轴围成的三角形的面积；$	0															
+pcbench-challenge-735	PCBench	"Question:
+$在\triangle ABC中，内角A，B，C所对的边分别为a，b，c，且 \sin (2A+B)=\sin  B-\sin  A。$
+求C的大小；
+Part of My Solution:
+$因为 \sin (2A+B)=\sin  B-\sin  A，$
+
+$所以 \sin (A+B+A)=\sin (C+A)-\sin  A，$
+
+$故 \sin (\pi+A-C)=\sin (C+A)-\sin  A，$
+
+$则 \sin (C-A)=\sin (C+A)-\sin  A，$
+
+$$\sin $ C $\cos $ A- $\cos $ C $\sin $ A=$\sin $ C $\cos $ A- $\cos $ C $\sin $ A- $\sin $ A$，
+
+$2 \cos  C \sin  A= \sin  A，由于 0< A,C < \pi，所以
+Please complete the solution of the question for me."	0															
+pcbench-challenge-704	PCBench	"Question:
+$已知函数f(x)=(x+a)\ln x-x+1.$
+$若曲线y=f(x)在点(e, f(e))处的切线斜率为1，求实数a的值；$
+Part of My Solution:
+因为 f'(x) = \ln x + \frac{a}{x}.
+
+所以 f'(e)= \ln e + \frac{a}{e} = 0，
+
+解
+Please complete the solution of the question for me."	0															
+pcbench-challenge-541	PCBench	Let $S = \{{(x,y) | x = 1, 2, \ldots, 1993, y = 1, 2, 3, 4\}}$. If $T \subset S$ and there aren't any squares in $T.$ Suppose $S = \{{(x,y) | x = 1, 2, \ldots, 1993, y = 1, 2, 3, 4, 5\}}$. Find the maximum possible value of $|T|.$ The squares in T use points in S as vertices.	0															
+pcbench-challenge-88	PCBench	Russell works at a pet store and is distributing straw among the rodents. The rats are kept in 3 cages in equal groups and each rat is given 6 pieces of straw. The total number of pieces of straw given to the rats is 4 times the total number of rats. There are 10 cages of hamsters that are kept alone and each hamster is given 5 pieces of straw. There is also a pen of rabbits where 20 pieces of straw are distributed among the rabbits. No straw is used anywhere else in the store. If 160 pieces of straw have been distributed among the small rodents, how many rats are in each cage?	0															
+pcbench-challenge-940	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+Gary does laundry twice a week. Each load of laundry uses 20 gallons of water, and a gallon of water costs $0.15. How much does Gary spend on water for laundry in a year?
+### Solution:
+First multiply the number of times Gary does laundry per week by the number of weeks per year to find how many times he does it in a year: 2 loads/week * 52 weeks/year = 104 loads/year. Then find how much each load of laundry costs: 20 gallons/load * $0.10/gallon = $2.00/load. Then multiply the cost of each load by the number of loads to find the total cost: $2.00/load * 104 loads = $208.
+### My query about the solution:Why do we multiply the number of loads per week by the number of weeks in a year?"	0															
+pcbench-challenge-1098	PCBench	"I am a beginner in mathematics. I will provide you with a math problem and its corresponding solution process. I will ask you some questions about the solution. Please answer them.### Problem:
+$已知函数f(x)=(x+a)\ln x-x+1.$
+$若曲线y=f(x)在点(e, f(e))处的切线斜率为1，求实数a的值；$
+### Solution:
+因为 f'(x) = x + rac{a}{x}.
+
+所以 f'(e)= e + rac{a}{e} = 1，
+
+解得 a=0.
+### My query about the solution:Can you explain why we need to find the derivative at e specifically? Why is it an important step?"	0															
+pcbench-challenge-255	PCBench	If M is infinite, then there cannot be infinitely many pairs of positive integers whose sum is square-free. Does there exist an infinite set $M$ consisting of positive integers such that for any $a, b \in M$, with $a<b$, the sum $a+b$ is square-free? (A positive integer is called square-free if no perfect square greater than 1 divides it.)	0															

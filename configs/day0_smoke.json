@@ -1,0 +1,7 @@
+{
+  "backend": "heuristic",
+  "data": "data/samples/smoke.jsonl",
+  "output": "outputs/day0/heuristic_predictions.jsonl",
+  "eval_json": "outputs/day0/heuristic_metrics.json",
+  "notes": "Day-0 smoke run. Swap backend to transformers and add --model for local open models."
+}

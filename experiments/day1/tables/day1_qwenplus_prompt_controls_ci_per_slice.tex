@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\begin{tabular}{lcccccc}
+\toprule
+Model & Answerable & False Premise & Stale Premise & Conflicting Evidence & Ambiguous Intent & Insufficient Evidence \\
+\midrule
+qwen-plus-latest & 0.7642 [0.6792, 0.8396] & 0.7667 [0.6917, 0.8417] & 0.975 [0.9375, 1] & 0.7447 [0.6489, 0.8298] & 1 [1, 1] & 0.9875 [0.9625, 1] \\
+qwen-plus-latest & 0.8019 [0.7264, 0.8774] & 0.7167 [0.6333, 0.7917] & 0.95 [0.9, 0.9875] & 0.9894 [0.9681, 1] & 0.9125 [0.85, 0.9625] & 1 [1, 1] \\
+qwen-plus-latest & 0.7358 [0.6509, 0.8113] & 0.7583 [0.6833, 0.8333] & 1 [1, 1] & 0.9362 [0.883, 0.9787] & 1 [1, 1] & 0.9125 [0.8497, 0.9625] \\
+\bottomrule
+\end{tabular}
+\caption{Per-slice bootstrap 95\% percentile intervals for action accuracy on day-1 development.}
+\label{tab:day1-scale-reasoning-ci-slices}
+\end{table*}

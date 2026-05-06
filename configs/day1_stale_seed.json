@@ -1,0 +1,5 @@
+{
+  "prepare_command": "python scripts/prepare_stale_fact_seed.py",
+  "output": "data/processed/stale_fact_seed.jsonl",
+  "notes": "Small curated stale-premise challenge slice with explicit change dates and source URLs."
+}

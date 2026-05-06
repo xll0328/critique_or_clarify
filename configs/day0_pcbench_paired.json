@@ -1,0 +1,6 @@
+{
+  "prepare_command": "python scripts/prepare_pcbench.py --variant paired --output data/processed/pcbench_paired.jsonl",
+  "challenge_only_command": "python scripts/prepare_pcbench.py --variant challenge --output data/processed/pcbench_challenge.jsonl",
+  "audit_command": "python scripts/create_adjudication_sheet.py --data data/processed/pcbench_challenge.jsonl --output experiments/day0/pcbench_challenge_adjudication.tsv --sample-size 40 --seed 42",
+  "notes": "PCBench is exported as a matched pair: the normal question becomes an answerable control item, and the flawed question becomes a challenge item."
+}

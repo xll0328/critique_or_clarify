@@ -1,0 +1,20 @@
+\begin{table*}[!b]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Variant & Utility & $\Delta$ Utility & Action Acc. & $\Delta$ Acc. & Over-Answer & Answer-Supported Acc. & Defective-Premise Acc. \\
+\midrule
+baseline & -0.2188 & 0 & 0.775 & 0 & 0.05 & 0.7083 & 0.875 \\
+decision\_first & \textbf{-0.1375} & +0.0813 & \textbf{0.85} & +0.075 & \textbf{0} & 0.75 & \textbf{1} \\
+critique\_first & -0.2812 & -0.0624 & 0.4 & -0.375 & 0.025 & 0.0416 & 0.9375 \\
+decision\_first\_guarded & -0.1812 & +0.0376 & 0.625 & -0.15 & \textbf{0} & 0.5 & 0.8125 \\
+decision\_first\_balanced & -0.1313 & +0.0875 & 0.375 & -0.4 & \textbf{0} & 0 & 0.9375 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Prompt-intervention pilot on the Qwen2.5-1.5B quick+stale split. Deltas are relative to the baseline prompt. Answer-supported accuracy pools answerable controls and conflicting-evidence items; defective-premise accuracy pools false- and stale-premise items. Utility is highlighted only among variants that do not reduce overall or answer-supported action accuracy versus baseline.}
+\label{tab:qwen25-15b-intervention-pilot}
+\end{table*}

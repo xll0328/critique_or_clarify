@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular}{llcccl}
+\toprule
+Model & Style & Correct Challenge & Wrong+Update/Wrong & Answer+Update & Pred Actions \\
+\midrule
+Qwen2.5-0.5B-Instruct & instruct & 0/15 (0) & 4/15 (0.2667) & 3 & answer:12, ask:3 \\
+Qwen2.5-1.5B-Instruct & instruct & 11/15 (0.7333) & 4/4 (1) & 4 & answer:4, challenge:11 \\
+DeepSeek-R1-Distill-Qwen-1.5B & reasoning & 4/15 (0.2667) & 9/11 (0.8182) & 4 & abstain:1, answer:5, ask:5, challenge:4 \\
+\bottomrule
+\end{tabular}
+\caption{Expanded stale-premise action-label audit. Wrong+Update counts wrong-action stale predictions that still mention the corrected entity or update, separating action-selection failures from pure update retrieval misses.}
+\label{tab:day1-expanded-stale-action-label-audit}
+\end{table*}

@@ -1,0 +1,7 @@
+model,slice,accuracy,pred_answer_rate,pred_ask_rate,pred_challenge_rate,pred_abstain_rate
+Qwen2.5-1.5B-Instruct,answerable_control,0.35,0.35,0.0,0.65,0.0
+Qwen2.5-1.5B-Instruct,false_premise,0.975,0.025,0.0,0.975,0.0
+Qwen2.5-1.5B-Instruct,conflicting_evidence,0.975,0.975,0.0,0.025,0.0
+DeepSeek-R1-Distill-Qwen-7B,answerable_control,0.2,0.2,0.0,0.025,0.775
+DeepSeek-R1-Distill-Qwen-7B,false_premise,0.1,0.15,0.0,0.1,0.75
+DeepSeek-R1-Distill-Qwen-7B,conflicting_evidence,0.8,0.8,0.0,0.0,0.2

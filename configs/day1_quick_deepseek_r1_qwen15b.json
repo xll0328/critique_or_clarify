@@ -1,0 +1,8 @@
+{
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "data": "data/processed/day1_quick.jsonl",
+  "output": "outputs/day1/deepseek_r1_qwen15b_day1_quick.jsonl",
+  "eval_json": "outputs/day1/deepseek_r1_qwen15b_day1_quick_metrics.json",
+  "command": "CUDA_VISIBLE_DEVICES=2 python scripts/run_baseline.py --backend transformers --model /data/sony/model_cache_reasoning/DeepSeek-R1-Distill-Qwen-1.5B --local-files-only --omit-system-prompt --assistant-prefix '<think>\\n' --data data/processed/day1_quick.jsonl --output outputs/day1/deepseek_r1_qwen15b_day1_quick.jsonl --eval-json outputs/day1/deepseek_r1_qwen15b_day1_quick_metrics.json --max-new-tokens 180 --temperature 0.6 --top-p 0.95 --seed 42",
+  "notes": "Reasoning-style baseline using the local DeepSeek-R1-Distill-Qwen-1.5B directory with no system prompt, a <think> prefill, and DeepSeek's recommended sampling regime."
+}

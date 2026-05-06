@@ -1,0 +1,16 @@
+{
+  "num_examples": 40,
+  "candidate_status": "needs_human_validation",
+  "by_action": {
+    "answer": 40
+  },
+  "by_slice": {
+    "answerable_control": 14,
+    "conflicting_evidence": 26
+  },
+  "by_source": {
+    "synthetic-expansion-candidate": 40
+  },
+  "paper_facing": false,
+  "next_step": "Review candidates and promote accepted rows into an expanded validated split."
+}

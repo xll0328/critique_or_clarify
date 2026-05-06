@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrll}
+\toprule
+Split & Slice & Count & Gold actions & Source \\
+\midrule
+expanded\_canonical\_560 & Answerable control & 106 & answer=106 & PCBench=52, synthetic-expansion-candidate=54 \\
+expanded\_canonical\_560 & False premise & 120 & challenge=120 & PCBench=52, synthetic-expansion-candidate=68 \\
+expanded\_canonical\_560 & Stale premise & 80 & challenge=80 & stale-fact-seed=15, synthetic-expansion-candidate=65 \\
+expanded\_canonical\_560 & Conflicting evidence & 94 & answer=94 & QACC=40, synthetic-expansion-candidate=54 \\
+expanded\_canonical\_560 & Ambiguous intent & 80 & ask=80 & synthetic-expansion-candidate=80 \\
+expanded\_canonical\_560 & Insufficient evidence & 80 & abstain=80 & synthetic-expansion-candidate=80 \\
+day1\_dev\_120 & Answerable control & 40 & answer=40 & PCBench=40 \\
+day1\_dev\_120 & False premise & 40 & challenge=40 & PCBench=40 \\
+day1\_dev\_120 & Conflicting evidence & 40 & answer=40 & QACC=40 \\
+quick\_stale\_pool\_51 & Answerable control & 12 & answer=12 & PCBench=12 \\
+quick\_stale\_pool\_51 & False premise & 12 & challenge=12 & PCBench=12 \\
+quick\_stale\_pool\_51 & Stale premise & 15 & challenge=15 & stale-fact-seed=15 \\
+quick\_stale\_pool\_51 & Conflicting evidence & 12 & answer=12 & QACC=12 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Benchmark split composition by slice, gold action, and source. The canonical paper-facing split is \texttt{emnlp2026\_expanded\_dev\_with\_answer\_topup}; compact splits are retained for diagnostic ablations.}
+\label{tab:day1-dataset-slice-summary}
+\end{table*}

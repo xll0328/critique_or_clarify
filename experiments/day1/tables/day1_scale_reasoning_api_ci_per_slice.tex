@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.8pt}
+\begin{tabular}{lcccccc}
+\toprule
+Model & Answerable & False Premise & Stale Premise & Conflicting Evidence & Ambiguous Intent & Insufficient Evidence \\
+\midrule
+qwen-turbo & 0.8396 [0.7642, 0.9057] & 0.7 [0.6167, 0.775] & 0.9 [0.8375, 0.9625] & 0.7766 [0.6915, 0.8617] & 1 [1, 1] & 0.9 [0.8372, 0.9625] \\
+gpt-4o-mini & 0.6509 [0.566, 0.7358] & 0.725 [0.6417, 0.8] & 1 [1, 1] & 0.3617 [0.266, 0.4574] & 1 [1, 1] & 1 [1, 1] \\
+gpt-4.1-mini & 0.9057 [0.8491, 0.9528] & 0.75 [0.6667, 0.8252] & 0.975 [0.9375, 1] & 0.8298 [0.7551, 0.8936] & 1 [1, 1] & 0.925 [0.8625, 0.975] \\
+qwen-plus-latest & 0.7642 [0.6792, 0.8396] & 0.7667 [0.6917, 0.8417] & 0.975 [0.9375, 1] & 0.7447 [0.6596, 0.8298] & 1 [1, 1] & 0.9875 [0.9625, 1] \\
+gpt-5-chat-latest & 0.9906 [0.9717, 1] & 0.675 [0.5917, 0.7583] & 1 [1, 1] & 1 [1, 1] & 1 [1, 1] & 1 [1, 1] \\
+\bottomrule
+\end{tabular}
+\caption{Per-slice bootstrap 95\% percentile intervals for action accuracy on day-1 development.}
+\label{tab:day1-scale-reasoning-ci-slices}
+\end{table*}

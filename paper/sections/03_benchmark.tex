@@ -1,0 +1,26 @@
+The benchmark combines four slices under one action ontology. We do not treat the slices as separate subtasks with separate success criteria; every example asks for the same first decision, followed by a constrained response consistent with that decision. Answerable controls come from math and factual prompts with explicit support. False-premise examples alter a key premise so the assistant should interrupt before continuing\citep{yu-etal-2023-crepe,thorne-etal-2018-fever,lin-etal-2022-truthfulqa}. Stale-premise examples pair a query with evidence that an assumed fact changed\citep{kasai-etal-2023-realtimeqa,vu-etal-2023-freshllms,zhang-choi-2021-situatedqa}. Conflicting-evidence examples include retrieval disagreement, but are labeled according to whether sufficient support remains for a direct answer\citep{shaier-etal-2024-adaptive,liu-etal-2025-open,nakano-etal-2021-webgpt,menick-etal-2022-quotes}.
+
+The current paper-facing Day-1 split (expanded canonical 560) has 560 examples (\texttt{answer}=200, \texttt{ask}=80, \texttt{challenge}=200, \texttt{abstain}=80) across six slices: \texttt{answerable\_control}=106, \texttt{false\_premise}=120, \texttt{stale\_premise}=80, \texttt{conflicting\_evidence}=94, \texttt{ambiguous\_intent}=80, and \texttt{insufficient\_evidence}=80. We also keep compact comparison splits for historical baselines: day1\_dev\_120 (120 examples, 40 per answerable/false-premise/conflict slice) and quick\_stale\_pool\_51 (51 examples, including 15 grounded stale-premise cases and balanced answerable/false-premise/conflict samples). Those compact splits remain useful for diagnostic ablations, while the 560-example split is used for the paper-facing benchmark claims.
+
+The Day-1 empirical matrix stresses the boundary between \texttt{answer} and \texttt{challenge}. In the same framework, \texttt{ask} and hard \texttt{abstain} cases are defined by the ontology rather than handled as external exceptions.
+
+The current draft keeps the contribution narrow and auditable: strong claims are anchored in slices with completed paper-facing coverage, while \texttt{ask} and \texttt{abstain} are included as explicit evaluation modes but interpreted through slice-scoped evidence rather than treated as hidden side goals. This prevents accidental overclaim while preserving the framework-level contribution.
+
+We visualize the paper-facing candidate distribution to make coverage and action-balance transparent: panel A reports per-slice volume, and panel B reports per-action volume after candidate promotion.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/figure4_coverage_overview.pdf}
+\caption{Expanded paper-facing dataset coverage for the draft split: panel A shows counts per slice and panel B shows counts per gold action. This view helps bound slice-level and action-level claims before interpreting model-level behavior.}
+\label{fig:coverage-overview}
+\end{figure*}
+
+All source items are normalized into a common record with an identifier, source tag, user prompt, optional evidence passages, gold action, gold answer when applicable, and metadata describing the slice and construction rationale. This normalization is important for the evaluation: a math false-premise item, a stale ticker question, and a noisy retrieved-evidence question all become instances of the same decision problem rather than separately tuned subtasks.
+
+\input{tables/day1_dataset_slice_summary.tex}
+
+Two boundary rules are especially important for reproducibility. First, a recoverable false or stale premise is still labeled \texttt{challenge}; silently repairing the question and answering would hide the action-selection failure. Second, retrieval conflict alone does not force \texttt{abstain}; if passages still provide enough reliable support for one answer, the gold action remains \texttt{answer}. \texttt{Abstain} is reserved for cases where support is missing, too weak, or irreconcilably conflicting.
+
+This boundary set is intentionally explicit because reviewers are likely to ask whether the benchmark is just a retagged collection of prior tasks. The answer is no: the source of the defect matters for construction, but the gold target is the same first action across all defects.
+
+To reduce subjectivity, we maintain a human-validation work queue for the active evidence bundle. The queue contains 61 checks: 51 example-level gold-label checks and 10 artifact-level checks covering split accounting, headline metrics, scale/style deltas, and stale-premise failure-audit claims. Each row records the source artifact, validation question, AI prefill used only for triage, the human decision, and reviewer notes when needed. The active queue is complete: 61/61 rows have recorded human decisions, and the validation script reports zero invalid decision labels. We use this validation pass as evidence that the current benchmark slice labels and paper-facing arithmetic are internally consistent, while still treating the action ontology as a modeling choice rather than an objective ground truth.

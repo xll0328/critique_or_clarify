@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrrr}
+\toprule
+Model & Family & Style & Utility & Action Acc. & Answer Contains & Over-Answer & Challenge Prec. & JSON Parse \\
+\midrule
+Qwen2.5-0.5B-Instruct & Qwen2.5 & instruct & -0.4354 & 0.35 & 0.05 & 0.075 & 0 & 0.0667 \\
+Qwen2.5-1.5B-Instruct & Qwen2.5 & instruct & \textbf{-0.2229} & \textbf{0.7667} & \textbf{0.475} & \textbf{0.0083} & 0.5909 & 0.8083 \\
+DeepSeek-R1-Distill-Qwen-1.5B & DeepSeek/Qwen & reasoning & -0.5125 & 0.3833 & 0.15 & 0.15 & 0 & 0.0083 \\
+Qwen2.5-Coder-7B-Instruct & Qwen2.5-Coder & instruct & -0.2792 & 0.6 & \textbf{0.475} & \textbf{0.0083} & \textbf{0.9474} & \textbf{0.9417} \\
+DeepSeek-R1-Distill-Qwen-7B & DeepSeek/Qwen & reasoning & -0.4313 & 0.3667 & 0.3125 & 0.05 & 0.8 & 0.0583 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Day-1 development comparison for the completed local model matrix. The main decision metrics are utility, action accuracy, and over-answer rate; answer containment and JSON parse rate diagnose content and protocol adherence. Higher is better except over-answer rate.}
+\label{tab:day1-scale-reasoning-main}
+\end{table*}

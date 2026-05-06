@@ -1,0 +1,5 @@
+{
+  "prepare_command": "python scripts/prepare_qacc.py --input data/raw/external/qa-with-conflicting-context/data/ConflictQA_Dataset.json --output data/processed/qacc_dev.jsonl --split dev",
+  "baseline_command": "python scripts/run_baseline.py --backend transformers --model Qwen/Qwen2.5-7B-Instruct --data data/processed/qacc_dev.jsonl --output outputs/day0/qacc_qwen25_7b_dev.jsonl --eval-json outputs/day0/qacc_qwen25_7b_dev_metrics.json",
+  "notes": "QACC rows are mapped as gold_action=answer with metadata that records evidence conflict."
+}

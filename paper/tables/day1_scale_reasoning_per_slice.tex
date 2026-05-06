@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.0pt}
+\begin{tabular}{lccc}
+\toprule
+Model & Answerable & False Premise & Conflicting Evidence \\
+\midrule
+Qwen2.5-0.5B-Instruct & -0.4188 / 0.425 & -0.4188 / 0 & -0.4688 / 0.625 \\
+Qwen2.5-1.5B-Instruct & -0.625 / 0.35 & 0.4625 / 0.975 & -0.5062 / 0.975 \\
+DeepSeek-R1-Distill-Qwen-1.5B & -0.4688 / 0.5 & -0.5875 / 0 & -0.4813 / 0.65 \\
+Qwen2.5-Coder-7B-Instruct & -0.4062 / 0.35 & 0.0688 / 0.45 & -0.5 / 1 \\
+DeepSeek-R1-Distill-Qwen-7B & -0.5062 / 0.2 & -0.2875 / 0.1 & -0.5 / 0.8 \\
+\bottomrule
+\end{tabular}
+\caption{Per-slice utility / action-accuracy pairs on Day-1 development. The slice table shows that model errors are structured by input defect type rather than explained by a single pooled score.}
+\label{tab:day1-scale-reasoning-slices}
+\end{table*}

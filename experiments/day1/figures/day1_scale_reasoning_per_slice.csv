@@ -1,0 +1,16 @@
+label,model,style,slice_name,slice_display_name,action_accuracy,avg_utility
+qwen25_05b_day1_dev,Qwen2.5-0.5B-Instruct,instruct,answerable_control,Answerable,0.425,-0.4188
+qwen25_05b_day1_dev,Qwen2.5-0.5B-Instruct,instruct,false_premise,False Premise,0.0,-0.4188
+qwen25_05b_day1_dev,Qwen2.5-0.5B-Instruct,instruct,conflicting_evidence,Conflicting Evidence,0.625,-0.4688
+qwen25_15b_day1_dev,Qwen2.5-1.5B-Instruct,instruct,answerable_control,Answerable,0.35,-0.625
+qwen25_15b_day1_dev,Qwen2.5-1.5B-Instruct,instruct,false_premise,False Premise,0.975,0.4625
+qwen25_15b_day1_dev,Qwen2.5-1.5B-Instruct,instruct,conflicting_evidence,Conflicting Evidence,0.975,-0.5062
+deepseek_r1_qwen15b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-1.5B,reasoning,answerable_control,Answerable,0.5,-0.4688
+deepseek_r1_qwen15b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-1.5B,reasoning,false_premise,False Premise,0.0,-0.5875
+deepseek_r1_qwen15b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-1.5B,reasoning,conflicting_evidence,Conflicting Evidence,0.65,-0.4813
+qwen25_coder_7b_day1_dev,Qwen2.5-Coder-7B-Instruct,instruct,answerable_control,Answerable,0.35,-0.4062
+qwen25_coder_7b_day1_dev,Qwen2.5-Coder-7B-Instruct,instruct,false_premise,False Premise,0.45,0.0688
+qwen25_coder_7b_day1_dev,Qwen2.5-Coder-7B-Instruct,instruct,conflicting_evidence,Conflicting Evidence,1.0,-0.5
+deepseek_r1_qwen7b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-7B,reasoning,answerable_control,Answerable,0.2,-0.5062
+deepseek_r1_qwen7b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-7B,reasoning,false_premise,False Premise,0.1,-0.2875
+deepseek_r1_qwen7b_day1_dev_useronlyfixed_reparsed,DeepSeek-R1-Distill-Qwen-7B,reasoning,conflicting_evidence,Conflicting Evidence,0.8,-0.5

@@ -1,0 +1,17 @@
+{
+  "num_examples": 160,
+  "candidate_status": "promoted_to_expanded_split",
+  "by_action": {
+    "abstain": 80,
+    "ask": 80
+  },
+  "by_slice": {
+    "ambiguous_intent": 80,
+    "insufficient_evidence": 80
+  },
+  "by_source": {
+    "synthetic-expansion-candidate": 160
+  },
+  "paper_facing": true,
+  "next_step": "Run expanded-dev model matrix and regenerate day-level tables/figures from data/processed/emnlp2026_expanded_dev.jsonl."
+}

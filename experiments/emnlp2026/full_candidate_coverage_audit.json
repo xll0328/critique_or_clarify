@@ -1,0 +1,216 @@
+{
+  "splits": [
+    {
+      "path": "data/processed/day1_dev.jsonl",
+      "rows": 120,
+      "unique_ids": 120,
+      "by_slice": {
+        "answerable_control": 40,
+        "false_premise": 40,
+        "conflicting_evidence": 40
+      },
+      "by_action": {
+        "answer": 80,
+        "challenge": 40
+      },
+      "by_source": {
+        "PCBench": 80,
+        "QACC": 40
+      }
+    },
+    {
+      "path": "data/processed/day1_quick_plus_stale_pool.jsonl",
+      "rows": 51,
+      "unique_ids": 51,
+      "by_slice": {
+        "answerable_control": 12,
+        "false_premise": 12,
+        "stale_premise": 15,
+        "conflicting_evidence": 12
+      },
+      "by_action": {
+        "answer": 24,
+        "challenge": 27
+      },
+      "by_source": {
+        "PCBench": 24,
+        "QACC": 12,
+        "stale-fact-seed": 15
+      }
+    },
+    {
+      "path": "data/processed/stale_fact_pool.jsonl",
+      "rows": 15,
+      "unique_ids": 15,
+      "by_slice": {
+        "stale_premise": 15
+      },
+      "by_action": {
+        "challenge": 15
+      },
+      "by_source": {
+        "stale-fact-seed": 15
+      }
+    },
+    {
+      "path": "data/candidates/emnlp2026_ask_abstain_seed_candidates.jsonl",
+      "rows": 160,
+      "unique_ids": 160,
+      "by_slice": {
+        "ambiguous_intent": 80,
+        "insufficient_evidence": 80
+      },
+      "by_action": {
+        "ask": 80,
+        "abstain": 80
+      },
+      "by_source": {
+        "synthetic-expansion-candidate": 160
+      }
+    },
+    {
+      "path": "data/candidates/emnlp2026_answer_challenge_seed_candidates.jsonl",
+      "rows": 181,
+      "unique_ids": 181,
+      "by_slice": {
+        "answerable_control": 24,
+        "false_premise": 68,
+        "stale_premise": 65,
+        "conflicting_evidence": 24
+      },
+      "by_action": {
+        "answer": 48,
+        "challenge": 133
+      },
+      "by_source": {
+        "synthetic-expansion-candidate": 181
+      }
+    }
+  ],
+  "combined_unique": {
+    "input_rows": 527,
+    "unique_examples": 500,
+    "duplicate_ids": 27,
+    "by_slice": {
+      "answerable_control": 76,
+      "false_premise": 120,
+      "stale_premise": 80,
+      "conflicting_evidence": 64,
+      "ambiguous_intent": 80,
+      "insufficient_evidence": 80
+    },
+    "by_action": {
+      "answer": 140,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    },
+    "by_source": {
+      "PCBench": 104,
+      "QACC": 40,
+      "stale-fact-seed": 15,
+      "synthetic-expansion-candidate": 341
+    }
+  },
+  "targets": {
+    "total_unique": 500,
+    "by_slice": {
+      "answerable_control": 120,
+      "false_premise": 120,
+      "stale_premise": 80,
+      "conflicting_evidence": 120,
+      "ambiguous_intent": 80,
+      "insufficient_evidence": 80
+    },
+    "by_action": {
+      "answer": 200,
+      "ask": 80,
+      "challenge": 200,
+      "abstain": 80
+    }
+  },
+  "gaps": {
+    "total_unique": {
+      "current": 500,
+      "target": 500,
+      "gap": 0
+    },
+    "by_slice": {
+      "answerable_control": {
+        "current": 76,
+        "target": 120,
+        "gap": 44
+      },
+      "false_premise": {
+        "current": 120,
+        "target": 120,
+        "gap": 0
+      },
+      "stale_premise": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "conflicting_evidence": {
+        "current": 64,
+        "target": 120,
+        "gap": 56
+      },
+      "ambiguous_intent": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "insufficient_evidence": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    },
+    "by_action": {
+      "answer": {
+        "current": 140,
+        "target": 200,
+        "gap": 60
+      },
+      "ask": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      },
+      "challenge": {
+        "current": 200,
+        "target": 200,
+        "gap": 0
+      },
+      "abstain": {
+        "current": 80,
+        "target": 80,
+        "gap": 0
+      }
+    }
+  },
+  "priority_build_queue": [
+    {
+      "dimension": "action",
+      "name": "answer",
+      "current": 140,
+      "target": 200,
+      "gap": 60
+    },
+    {
+      "dimension": "slice",
+      "name": "conflicting_evidence",
+      "current": 64,
+      "target": 120,
+      "gap": 56
+    },
+    {
+      "dimension": "slice",
+      "name": "answerable_control",
+      "current": 76,
+      "target": 120,
+      "gap": 44
+    }
+  ]
+}

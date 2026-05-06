@@ -1,0 +1,3232 @@
+[
+  {
+    "model_id": "coding-glm-4.6-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "coding-glm-4.7-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5-turbo-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-minimax-m2-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.5-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.7-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "crush-glm-5-turbo",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "crush-glm-5-turbo-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "crush-glm-5.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-3-flash-preview-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "glm-4.6",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 131072
+  },
+  {
+    "model_id": "glm-4.7-flash-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,structured_outputs,function_calling",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4.1-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "gpt-4.1-mini-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "gpt-4.1-nano-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "gpt-4o-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "k2.6-code-preview-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "kimi-for-coding-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "ling-2.6-flash-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "long_context",
+    "context_length": 262100,
+    "max_output": 32000
+  },
+  {
+    "model_id": "mimo-v2-flash-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "web",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "qwen3.6-plus-preview-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "thinking,long_context",
+    "context_length": 1000000,
+    "max_output": 65535
+  },
+  {
+    "model_id": "step-3.5-flash-free",
+    "types": "llm",
+    "input_price": 0.0,
+    "output_price": 0.0,
+    "blended_price": 0.0,
+    "features": "",
+    "context_length": 256000,
+    "max_output": 0
+  },
+  {
+    "model_id": "DeepSeek-OCR",
+    "types": "llm",
+    "input_price": 0.02,
+    "output_price": 0.02,
+    "blended_price": 0.02,
+    "features": "",
+    "context_length": 8000,
+    "max_output": 0
+  },
+  {
+    "model_id": "ernie-4.5-0.3b",
+    "types": "llm",
+    "input_price": 0.0136,
+    "output_price": 0.0544,
+    "blended_price": 0.033999999999999996,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.0-flash-exp",
+    "types": "llm,image_generation",
+    "input_price": 0.02,
+    "output_price": 0.08,
+    "blended_price": 0.05,
+    "features": "long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "jina-deepsearch-v1",
+    "types": "llm,search",
+    "input_price": 0.05,
+    "output_price": 0.05,
+    "blended_price": 0.05,
+    "features": "thinking,web,deepsearch",
+    "context_length": 1000000,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen-turbo",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.092,
+    "blended_price": 0.069,
+    "features": "long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen-turbo-2024-11-01",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.092,
+    "blended_price": 0.069,
+    "features": "long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen-turbo-2025-04-28",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.092,
+    "blended_price": 0.069,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen-turbo-latest",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.092,
+    "blended_price": 0.069,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-MiniMax-M2",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2.1",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2.5",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2.5-highspeed",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2.7",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-minimax-m2.7-highspeed",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "mm-minimax-m2.7-highspeed",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.1,
+    "blended_price": 0.1,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-vl-flash",
+    "types": "llm",
+    "input_price": 0.0206,
+    "output_price": 0.206,
+    "blended_price": 0.1133,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 254000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "qwen3-vl-flash-2026-01-22",
+    "types": "llm",
+    "input_price": 0.0206,
+    "output_price": 0.206,
+    "blended_price": 0.1133,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 254000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "AiHubmix-Phi-4-mini-reasoning",
+    "types": "llm",
+    "input_price": 0.12,
+    "output_price": 0.12,
+    "blended_price": 0.12,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 4000
+  },
+  {
+    "model_id": "cc-glm-5",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-glm-5-turbo",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-glm-5.1",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-4.6",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-4.7",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5-turbo",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "coding-glm-5.1",
+    "types": "llm",
+    "input_price": 0.06,
+    "output_price": 0.22,
+    "blended_price": 0.14,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3.5-flash",
+    "types": "llm",
+    "input_price": 0.0282,
+    "output_price": 0.282,
+    "blended_price": 0.1551,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "doubao-seed-2-0-mini",
+    "types": "llm",
+    "input_price": 0.030136,
+    "output_price": 0.30136,
+    "blended_price": 0.165748,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "ernie-4.5",
+    "types": "llm",
+    "input_price": 0.068,
+    "output_price": 0.272,
+    "blended_price": 0.17,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 160000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "inclusionAI/Ling-mini-2.0",
+    "types": "llm",
+    "input_price": 0.068,
+    "output_price": 0.272,
+    "blended_price": 0.17,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.0-flash-lite",
+    "types": "llm",
+    "input_price": 0.076,
+    "output_price": 0.304,
+    "blended_price": 0.19,
+    "features": "long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.0-flash-thinking-exp-01-21",
+    "types": "llm",
+    "input_price": 0.076,
+    "output_price": 0.304,
+    "blended_price": 0.19,
+    "features": "thinking,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "doubao-seed-1-8",
+    "types": "llm",
+    "input_price": 0.10959,
+    "output_price": 0.273975,
+    "blended_price": 0.19178250000000002,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen-plus-latest",
+    "types": "llm",
+    "input_price": 0.11,
+    "output_price": 0.275,
+    "blended_price": 0.1925,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "step-3.5-flash",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.3,
+    "blended_price": 0.2,
+    "features": "",
+    "context_length": 256000,
+    "max_output": 0
+  },
+  {
+    "model_id": "AiHubmix-Phi-4-reasoning",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking",
+    "context_length": 128000,
+    "max_output": 4000
+  },
+  {
+    "model_id": "coding-minimax-m2",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.1",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.5",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.5-highspeed",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.7",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "coding-minimax-m2.7-highspeed",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 13100
+  },
+  {
+    "model_id": "llama-4-maverick",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 32000
+  },
+  {
+    "model_id": "llama-4-scout",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.2,
+    "blended_price": 0.2,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 131000,
+    "max_output": 131000
+  },
+  {
+    "model_id": "gpt-5-nano",
+    "types": "llm",
+    "input_price": 0.05,
+    "output_price": 0.4,
+    "blended_price": 0.225,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "deepseek-v4-flash",
+    "types": "llm",
+    "input_price": 0.154,
+    "output_price": 0.308,
+    "blended_price": 0.23099999999999998,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 1000000,
+    "max_output": 384000
+  },
+  {
+    "model_id": "deepseek-v4-flash-think",
+    "types": "llm",
+    "input_price": 0.154,
+    "output_price": 0.308,
+    "blended_price": 0.23099999999999998,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 1000000,
+    "max_output": 384000
+  },
+  {
+    "model_id": "deepinfra-gemma-4-26b-a4b-it",
+    "types": "llm",
+    "input_price": 0.088,
+    "output_price": 0.385,
+    "blended_price": 0.2365,
+    "features": "",
+    "context_length": 262100,
+    "max_output": 131100
+  },
+  {
+    "model_id": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "types": "llm",
+    "input_price": 0.24,
+    "output_price": 0.24,
+    "blended_price": 0.24,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "doubao-seed-1-6-flash",
+    "types": "llm",
+    "input_price": 0.044,
+    "output_price": 0.44,
+    "blended_price": 0.242,
+    "features": "thinking，tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 33000
+  },
+  {
+    "model_id": "gemini-2.0-flash",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 8192
+  },
+  {
+    "model_id": "gemini-2.0-flash-exp-search",
+    "types": "llm,search",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "web,tools,function_calling,structured_outputs,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.0-flash-preview-image-generation",
+    "types": "llm,image_generation",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.0-flash-search",
+    "types": "llm,search",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "web",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-flash-lite",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-lite-nothink",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-lite-preview-09-2025-nothink",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gpt-4.1-nano",
+    "types": "llm",
+    "input_price": 0.1,
+    "output_price": 0.4,
+    "blended_price": 0.25,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "qwen3-0.6b",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.46,
+    "blended_price": 0.253,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-1.7b",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.46,
+    "blended_price": 0.253,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-4b",
+    "types": "llm",
+    "input_price": 0.046,
+    "output_price": 0.46,
+    "blended_price": 0.253,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3.5-35b-a3b",
+    "types": "llm",
+    "input_price": 0.0564,
+    "output_price": 0.4512,
+    "blended_price": 0.25379999999999997,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3-vl-30b-a3b-instruct",
+    "types": "llm",
+    "input_price": 0.1028,
+    "output_price": 0.4112,
+    "blended_price": 0.257,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "gemma-4-26b-a4b-it",
+    "types": "llm",
+    "input_price": 0.14,
+    "output_price": 0.39998,
+    "blended_price": 0.26999,
+    "features": "",
+    "context_length": 262100,
+    "max_output": 131100
+  },
+  {
+    "model_id": "gemma-4-31b-it",
+    "types": "llm",
+    "input_price": 0.14,
+    "output_price": 0.39998,
+    "blended_price": 0.26999,
+    "features": "",
+    "context_length": 262100,
+    "max_output": 131100
+  },
+  {
+    "model_id": "ernie-4.5-turbo-128k-preview",
+    "types": "llm",
+    "input_price": 0.108,
+    "output_price": 0.432,
+    "blended_price": 0.27,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "glm-4.6v",
+    "types": "llm",
+    "input_price": 0.137,
+    "output_price": 0.411,
+    "blended_price": 0.274,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "ernie-4.5-turbo-latest",
+    "types": "llm",
+    "input_price": 0.11,
+    "output_price": 0.44,
+    "blended_price": 0.275,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 135000,
+    "max_output": 12000
+  },
+  {
+    "model_id": "claude-3-haiku-20240229",
+    "types": "llm",
+    "input_price": 0.275,
+    "output_price": 0.275,
+    "blended_price": 0.275,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "aihub-Phi-4",
+    "types": "llm",
+    "input_price": 0.12,
+    "output_price": 0.48,
+    "blended_price": 0.3,
+    "features": "",
+    "context_length": 16400,
+    "max_output": 16400
+  },
+  {
+    "model_id": "aihub-Phi-4-mini-instruct",
+    "types": "llm",
+    "input_price": 0.12,
+    "output_price": 0.48,
+    "blended_price": 0.3,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 4000
+  },
+  {
+    "model_id": "aihub-Phi-4-multimodal-instruct",
+    "types": "llm",
+    "input_price": 0.12,
+    "output_price": 0.48,
+    "blended_price": 0.3,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 4000
+  },
+  {
+    "model_id": "doubao-seed-2-0-lite",
+    "types": "llm",
+    "input_price": 0.09041,
+    "output_price": 0.54246,
+    "blended_price": 0.316435,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "gpt-oss-20b",
+    "types": "llm",
+    "input_price": 0.11,
+    "output_price": 0.55,
+    "blended_price": 0.33,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "nvidia-nemotron-3-super-120b-a12b",
+    "types": "llm",
+    "input_price": 0.11,
+    "output_price": 0.55,
+    "blended_price": 0.33,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 1000000,
+    "max_output": 0
+  },
+  {
+    "model_id": "ERNIE-X1.1-Preview",
+    "types": "llm",
+    "input_price": 0.136,
+    "output_price": 0.544,
+    "blended_price": 0.34,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 119000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "ernie-x1-turbo",
+    "types": "llm",
+    "input_price": 0.136,
+    "output_price": 0.544,
+    "blended_price": 0.34,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 50500,
+    "max_output": 28000
+  },
+  {
+    "model_id": "inclusionAI/Ling-flash-2.0",
+    "types": "llm",
+    "input_price": 0.136,
+    "output_price": 0.544,
+    "blended_price": 0.34,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "inclusionAI/Ring-flash-2.0",
+    "types": "llm",
+    "input_price": 0.136,
+    "output_price": 0.544,
+    "blended_price": 0.34,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-coder-flash",
+    "types": "llm",
+    "input_price": 0.136,
+    "output_price": 0.544,
+    "blended_price": 0.34,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 65536
+  },
+  {
+    "model_id": "kat-dev",
+    "types": "llm",
+    "input_price": 0.137,
+    "output_price": 0.548,
+    "blended_price": 0.3425,
+    "features": "tools",
+    "context_length": 128000,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-coder-next",
+    "types": "llm",
+    "input_price": 0.137,
+    "output_price": 0.548,
+    "blended_price": 0.3425,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "DeepSeek-V3.2-Exp",
+    "types": "llm",
+    "input_price": 0.274,
+    "output_price": 0.411,
+    "blended_price": 0.3425,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 163000,
+    "max_output": 163000
+  },
+  {
+    "model_id": "DeepSeek-V3.2-Exp-Think",
+    "types": "llm",
+    "input_price": 0.274,
+    "output_price": 0.411,
+    "blended_price": 0.3425,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 131000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3-next-80b-a3b-instruct",
+    "types": "llm",
+    "input_price": 0.138,
+    "output_price": 0.552,
+    "blended_price": 0.34500000000000003,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "grok-4-1-fast-non-reasoning",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.5,
+    "blended_price": 0.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4-1-fast-reasoning",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.5,
+    "blended_price": 0.35,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4-fast-non-reasoning",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.5,
+    "blended_price": 0.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 30000
+  },
+  {
+    "model_id": "grok-4-fast-reasoning",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.5,
+    "blended_price": 0.35,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 30000
+  },
+  {
+    "model_id": "grok-code-fast-1",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.5,
+    "blended_price": 0.35,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 10000
+  },
+  {
+    "model_id": "Qwen/QwQ-32B",
+    "types": "llm",
+    "input_price": 0.14,
+    "output_price": 0.56,
+    "blended_price": 0.35000000000000003,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen-mt-turbo",
+    "types": "llm",
+    "input_price": 0.192,
+    "output_price": 0.534912,
+    "blended_price": 0.363456,
+    "features": "",
+    "context_length": 16000,
+    "max_output": 8000
+  },
+  {
+    "model_id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.534,
+    "blended_price": 0.367,
+    "features": "thinking，tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "doubao-seed-1-6-lite",
+    "types": "llm",
+    "input_price": 0.082,
+    "output_price": 0.656,
+    "blended_price": 0.369,
+    "features": "thinking，tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "gpt-4o-mini",
+    "types": "llm",
+    "input_price": 0.15,
+    "output_price": 0.6,
+    "blended_price": 0.375,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-4o-mini-2024-07-18",
+    "types": "llm",
+    "input_price": 0.15,
+    "output_price": 0.6,
+    "blended_price": 0.375,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4o-mini-audio-preview",
+    "types": "llm",
+    "input_price": 0.15,
+    "output_price": 0.6,
+    "blended_price": 0.375,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4o-mini-search-preview",
+    "types": "llm,search",
+    "input_price": 0.15,
+    "output_price": 0.6,
+    "blended_price": 0.375,
+    "features": "web,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "deepseek-v3.2",
+    "types": "llm",
+    "input_price": 0.302,
+    "output_price": 0.453,
+    "blended_price": 0.3775,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 128000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "deepseek-v3.2-think",
+    "types": "llm",
+    "input_price": 0.302,
+    "output_price": 0.453,
+    "blended_price": 0.3775,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 128000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3.5-27b",
+    "types": "llm",
+    "input_price": 0.0846,
+    "output_price": 0.6768,
+    "blended_price": 0.3807,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3.5-plus",
+    "types": "llm",
+    "input_price": 0.1096,
+    "output_price": 0.6576,
+    "blended_price": 0.3836,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "mimo-v2-flash",
+    "types": "llm",
+    "input_price": 0.1918,
+    "output_price": 0.5754,
+    "blended_price": 0.3836,
+    "features": "web",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-8b",
+    "types": "llm",
+    "input_price": 0.08,
+    "output_price": 0.8,
+    "blended_price": 0.44,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "aihubmix-command-r-08-2024",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.8,
+    "blended_price": 0.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "command-r-08-2024",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.8,
+    "blended_price": 0.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-coder-30b-a3b-instruct",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 0.8,
+    "blended_price": 0.5,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 262000
+  },
+  {
+    "model_id": "Qwen/Qwen2.5-VL-72B-Instruct",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 0.5,
+    "blended_price": 0.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "llama2-70b-4096",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 0.5,
+    "blended_price": 0.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "llama2-70b-40960",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 0.5,
+    "blended_price": 0.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3.5-122b-a10b",
+    "types": "llm",
+    "input_price": 0.1126,
+    "output_price": 0.9008,
+    "blended_price": 0.5067,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "gpt-oss-120b",
+    "types": "llm",
+    "input_price": 0.18,
+    "output_price": 0.9,
+    "blended_price": 0.54,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 131072,
+    "max_output": 32768
+  },
+  {
+    "model_id": "glm-4.5v",
+    "types": "llm,ocr",
+    "input_price": 0.274,
+    "output_price": 0.822,
+    "blended_price": 0.548,
+    "features": "",
+    "context_length": 64000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "qwen3-vl-30b-a3b-thinking",
+    "types": "llm",
+    "input_price": 0.1028,
+    "output_price": 1.028,
+    "blended_price": 0.5654,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "qwen3.5-397b-a17b",
+    "types": "llm",
+    "input_price": 0.1644,
+    "output_price": 0.9864,
+    "blended_price": 0.5754,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3.6-flash",
+    "types": "llm",
+    "input_price": 0.169,
+    "output_price": 1.014,
+    "blended_price": 0.5915,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "DeepSeek-V3",
+    "types": "llm",
+    "input_price": 0.272,
+    "output_price": 1.088,
+    "blended_price": 0.68,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1638000,
+    "max_output": 1638000
+  },
+  {
+    "model_id": "glm-4.7",
+    "types": "llm",
+    "input_price": 0.273974,
+    "output_price": 1.095896,
+    "blended_price": 0.684935,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "bai-qwen3-vl-235b-a22b-instruct",
+    "types": "llm",
+    "input_price": 0.274,
+    "output_price": 1.096,
+    "blended_price": 0.685,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-vl-235b-a22b-instruct",
+    "types": "llm",
+    "input_price": 0.274,
+    "output_price": 1.096,
+    "blended_price": 0.685,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 131000,
+    "max_output": 33000
+  },
+  {
+    "model_id": "qwen3-235b-a22b",
+    "types": "llm",
+    "input_price": 0.28,
+    "output_price": 1.12,
+    "blended_price": 0.7000000000000001,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 131100,
+    "max_output": 128000
+  },
+  {
+    "model_id": "qwen3-235b-a22b-instruct-2507",
+    "types": "llm",
+    "input_price": 0.28,
+    "output_price": 1.12,
+    "blended_price": 0.7000000000000001,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 262144
+  },
+  {
+    "model_id": "deepseek-v4-pro",
+    "types": "llm",
+    "input_price": 0.478,
+    "output_price": 0.956,
+    "blended_price": 0.717,
+    "features": "tools,function_calling,structured_outputs,thinking",
+    "context_length": 1000000,
+    "max_output": 384000
+  },
+  {
+    "model_id": "minimax-m2",
+    "types": "llm",
+    "input_price": 0.288,
+    "output_price": 1.152,
+    "blended_price": 0.72,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 192000
+  },
+  {
+    "model_id": "minimax-m2.1",
+    "types": "llm",
+    "input_price": 0.288,
+    "output_price": 1.152,
+    "blended_price": 0.72,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 192000
+  },
+  {
+    "model_id": "minimax-m2.5",
+    "types": "llm",
+    "input_price": 0.288,
+    "output_price": 1.152,
+    "blended_price": 0.72,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 192000
+  },
+  {
+    "model_id": "minimax-m2.5-highspeed",
+    "types": "llm",
+    "input_price": 0.288,
+    "output_price": 1.152,
+    "blended_price": 0.72,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 192000
+  },
+  {
+    "model_id": "gpt-5.4-nano",
+    "types": "llm",
+    "input_price": 0.2,
+    "output_price": 1.25,
+    "blended_price": 0.725,
+    "features": "tools,function_calling,structured_outputs,thinking,web",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "minimax-m2.7",
+    "types": "llm",
+    "input_price": 0.2958,
+    "output_price": 1.1832,
+    "blended_price": 0.7395,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "qwen3-vl-plus",
+    "types": "llm",
+    "input_price": 0.137,
+    "output_price": 1.37,
+    "blended_price": 0.7535000000000001,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "qwen3-next-80b-a3b-thinking",
+    "types": "llm",
+    "input_price": 0.138,
+    "output_price": 1.38,
+    "blended_price": 0.7589999999999999,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "baidu/ERNIE-4.5-300B-A47B",
+    "types": "llm",
+    "input_price": 0.32,
+    "output_price": 1.28,
+    "blended_price": 0.8,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-ernie-4.5-300b-a47b",
+    "types": "llm",
+    "input_price": 0.32,
+    "output_price": 1.28,
+    "blended_price": 0.8,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "ernie-4.5-turbo-vl",
+    "types": "llm",
+    "input_price": 0.4,
+    "output_price": 1.2,
+    "blended_price": 0.8,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 139000,
+    "max_output": 16000
+  },
+  {
+    "model_id": "claude-3-haiku-20240307",
+    "types": "llm",
+    "input_price": 0.275,
+    "output_price": 1.375,
+    "blended_price": 0.825,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "claude-3-haiku@20240307",
+    "types": "llm",
+    "input_price": 0.275,
+    "output_price": 1.375,
+    "blended_price": 0.825,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-max",
+    "types": "llm",
+    "input_price": 0.34246,
+    "output_price": 1.36984,
+    "blended_price": 0.85615,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 65536
+  },
+  {
+    "model_id": "qwen3-max-2026-01-23",
+    "types": "llm",
+    "input_price": 0.34246,
+    "output_price": 1.36984,
+    "blended_price": 0.85615,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 252000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "gemini-3.1-flash-lite-preview",
+    "types": "llm",
+    "input_price": 0.25,
+    "output_price": 1.5,
+    "blended_price": 0.875,
+    "features": "thinking,tools,function_calling,structured_outputs,web,deepsearch,long_context",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "gemini-3.1-flash-lite-preview-nothink",
+    "types": "llm",
+    "input_price": 0.25,
+    "output_price": 1.5,
+    "blended_price": 0.875,
+    "features": "thinking,tools,function_calling,structured_outputs,web,deepsearch,long_context",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3-14b",
+    "types": "llm",
+    "input_price": 0.16,
+    "output_price": 1.6,
+    "blended_price": 0.88,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3.6-35b-a3b",
+    "types": "llm",
+    "input_price": 0.254,
+    "output_price": 1.524,
+    "blended_price": 0.889,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 254000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen-mt-plus",
+    "types": "llm",
+    "input_price": 0.492,
+    "output_price": 1.476,
+    "blended_price": 0.984,
+    "features": "",
+    "context_length": 16000,
+    "max_output": 8000
+  },
+  {
+    "model_id": "qwen3.6-plus",
+    "types": "llm",
+    "input_price": 0.282,
+    "output_price": 1.692,
+    "blended_price": 0.987,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 991000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "doubao-seed-1-6",
+    "types": "llm",
+    "input_price": 0.18,
+    "output_price": 1.8,
+    "blended_price": 0.99,
+    "features": "thinking，tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "doubao-seed-1-6-thinking",
+    "types": "llm",
+    "input_price": 0.18,
+    "output_price": 1.8,
+    "blended_price": 0.99,
+    "features": "thinking，tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "ahm-Phi-3-5-vision-instruct",
+    "types": "llm",
+    "input_price": 0.4,
+    "output_price": 1.6,
+    "blended_price": 1.0,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "aihubmix-router",
+    "types": "llm",
+    "input_price": 0.4,
+    "output_price": 1.6,
+    "blended_price": 1.0,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4.1-mini",
+    "types": "llm",
+    "input_price": 0.4,
+    "output_price": 1.6,
+    "blended_price": 1.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "mistral-large-3",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 1.5,
+    "blended_price": 1.0,
+    "features": "function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 256000
+  },
+  {
+    "model_id": "DeepSeek-V3.1-Terminus",
+    "types": "llm",
+    "input_price": 0.56,
+    "output_price": 1.68,
+    "blended_price": 1.12,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 160000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "DeepSeek-V3.1-Think",
+    "types": "llm",
+    "input_price": 0.56,
+    "output_price": 1.68,
+    "blended_price": 1.12,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "cc-deepseek-v3.1",
+    "types": "llm",
+    "input_price": 0.56,
+    "output_price": 1.68,
+    "blended_price": 1.12,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-5-mini",
+    "types": "llm",
+    "input_price": 0.25,
+    "output_price": 2.0,
+    "blended_price": 1.125,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.1-codex-mini",
+    "types": "llm",
+    "input_price": 0.25,
+    "output_price": 2.0,
+    "blended_price": 1.125,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "deepseek-v3.2-speciale",
+    "types": "llm",
+    "input_price": 0.58,
+    "output_price": 1.680028,
+    "blended_price": 1.130014,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "DeepSeek-R1",
+    "types": "llm",
+    "input_price": 0.4,
+    "output_price": 2.0,
+    "blended_price": 1.2,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1638000,
+    "max_output": 1638000
+  },
+  {
+    "model_id": "deepseek-r1-distill-llama-70b",
+    "types": "llm",
+    "input_price": 0.8,
+    "output_price": 1.6,
+    "blended_price": 1.2000000000000002,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "deepseek-math-v2",
+    "types": "llm",
+    "input_price": 0.492,
+    "output_price": 1.968,
+    "blended_price": 1.23,
+    "features": "thinking,web",
+    "context_length": 163000,
+    "max_output": 163000
+  },
+  {
+    "model_id": "aihubmix-Cohere-command-r",
+    "types": "llm",
+    "input_price": 0.64,
+    "output_price": 1.92,
+    "blended_price": 1.28,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "command-r",
+    "types": "llm",
+    "input_price": 0.64,
+    "output_price": 1.92,
+    "blended_price": 1.28,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "mimo-v2-omni",
+    "types": "llm",
+    "input_price": 0.44,
+    "output_price": 2.2,
+    "blended_price": 1.32,
+    "features": "web",
+    "context_length": 256000,
+    "max_output": 0
+  },
+  {
+    "model_id": "xiaomi-mimo-v2.5",
+    "types": "llm",
+    "input_price": 0.44,
+    "output_price": 2.2,
+    "blended_price": 1.32,
+    "features": "web",
+    "context_length": 256000,
+    "max_output": 0
+  },
+  {
+    "model_id": "kimi-k2-0711",
+    "types": "llm",
+    "input_price": 0.54,
+    "output_price": 2.16,
+    "blended_price": 1.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 131000,
+    "max_output": 131000
+  },
+  {
+    "model_id": "kimi-k2-instruct",
+    "types": "llm",
+    "input_price": 0.54,
+    "output_price": 2.16,
+    "blended_price": 1.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-coder-plus",
+    "types": "llm",
+    "input_price": 0.54,
+    "output_price": 2.16,
+    "blended_price": 1.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "qwen3-coder-plus-2025-07-22",
+    "types": "llm",
+    "input_price": 0.54,
+    "output_price": 2.16,
+    "blended_price": 1.35,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 65536
+  },
+  {
+    "model_id": "qwen-plus-2025-04-28",
+    "types": "llm",
+    "input_price": 0.13,
+    "output_price": 2.6,
+    "blended_price": 1.365,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "Kimi-K2-0905",
+    "types": "llm",
+    "input_price": 0.548,
+    "output_price": 2.192,
+    "blended_price": 1.37,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 262144
+  },
+  {
+    "model_id": "inclusionAI/Ling-1T",
+    "types": "llm",
+    "input_price": 0.548,
+    "output_price": 2.192,
+    "blended_price": 1.37,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "inclusionAI/Ring-1T",
+    "types": "llm",
+    "input_price": 0.548,
+    "output_price": 2.192,
+    "blended_price": 1.37,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "kimi-k2-thinking",
+    "types": "llm",
+    "input_price": 0.548,
+    "output_price": 2.192,
+    "blended_price": 1.37,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 262144
+  },
+  {
+    "model_id": "gemini-2.5-flash",
+    "types": "llm",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-image",
+    "types": "image_generation,llm",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "",
+    "context_length": 32800,
+    "max_output": 8000
+  },
+  {
+    "model_id": "gemini-2.5-flash-nothink",
+    "types": "llm",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-preview-05-20-nothink",
+    "types": "llm",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-preview-05-20-search",
+    "types": "llm,search",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-preview-09-2025",
+    "types": "llm",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-flash-search",
+    "types": "llm,search",
+    "input_price": 0.3,
+    "output_price": 2.499,
+    "blended_price": 1.3995,
+    "features": "web,tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "DeepSeek-V3-Fast",
+    "types": "llm",
+    "input_price": 0.56,
+    "output_price": 2.24,
+    "blended_price": 1.4000000000000001,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 32000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "doubao-seed-2-0-code-preview",
+    "types": "llm",
+    "input_price": 0.4822,
+    "output_price": 2.411,
+    "blended_price": 1.4466,
+    "features": "thinking,web,tools,function_calling",
+    "context_length": 256000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "doubao-seed-2-0-pro",
+    "types": "llm",
+    "input_price": 0.4822,
+    "output_price": 2.411,
+    "blended_price": 1.4466,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "qwen3.6-27b",
+    "types": "llm",
+    "input_price": 0.422,
+    "output_price": 2.532,
+    "blended_price": 1.477,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 254000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "command",
+    "types": "llm",
+    "input_price": 1.0,
+    "output_price": 2.0,
+    "blended_price": 1.5,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-vl-235b-a22b-thinking",
+    "types": "llm",
+    "input_price": 0.274,
+    "output_price": 2.74,
+    "blended_price": 1.5070000000000001,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 131000,
+    "max_output": 33000
+  },
+  {
+    "model_id": "qwen3-235b-a22b-thinking-2507",
+    "types": "llm",
+    "input_price": 0.28,
+    "output_price": 2.8,
+    "blended_price": 1.54,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 262144
+  },
+  {
+    "model_id": "gemini-3-flash-preview",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 3.0,
+    "blended_price": 1.75,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-3-flash-preview-search",
+    "types": "llm",
+    "input_price": 0.5,
+    "output_price": 3.0,
+    "blended_price": 1.75,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 1048576,
+    "max_output": 1048576
+  },
+  {
+    "model_id": "gemini-3.1-flash-image-preview",
+    "types": "image_generation,llm",
+    "input_price": 0.5,
+    "output_price": 3.0,
+    "blended_price": 1.75,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "qwen3-32b",
+    "types": "llm",
+    "input_price": 0.32,
+    "output_price": 3.2,
+    "blended_price": 1.76,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "kimi-k2.5",
+    "types": "llm",
+    "input_price": 0.6,
+    "output_price": 3.0,
+    "blended_price": 1.8,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 256000,
+    "max_output": 0
+  },
+  {
+    "model_id": "glm-5",
+    "types": "llm",
+    "input_price": 0.88,
+    "output_price": 2.816,
+    "blended_price": 1.8479999999999999,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 202752,
+    "max_output": 0
+  },
+  {
+    "model_id": "glm-5v-turbo",
+    "types": "llm",
+    "input_price": 0.7042,
+    "output_price": 3.09848,
+    "blended_price": 1.90134,
+    "features": "",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "qwen3-coder-480b-a35b-instruct",
+    "types": "llm",
+    "input_price": 0.82,
+    "output_price": 3.28,
+    "blended_price": 2.05,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 262000,
+    "max_output": 262000
+  },
+  {
+    "model_id": "ernie-5.0-thinking-exp",
+    "types": "llm",
+    "input_price": 0.82192,
+    "output_price": 3.28768,
+    "blended_price": 2.0548,
+    "features": "thinking",
+    "context_length": 119000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "ernie-5.0-thinking-preview",
+    "types": "llm",
+    "input_price": 0.822,
+    "output_price": 3.288,
+    "blended_price": 2.0549999999999997,
+    "features": "thinking,structured_outputs,function_calling",
+    "context_length": 183000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen3-max-preview",
+    "types": "llm",
+    "input_price": 0.822,
+    "output_price": 3.288,
+    "blended_price": 2.0549999999999997,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "glm-5.1",
+    "types": "llm",
+    "input_price": 0.845,
+    "output_price": 3.38,
+    "blended_price": 2.1125,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "DeepSeek-V3.1-Fast",
+    "types": "llm",
+    "input_price": 1.096,
+    "output_price": 3.288,
+    "blended_price": 2.192,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 163000,
+    "max_output": 163000
+  },
+  {
+    "model_id": "deepseek-v3.2-fast",
+    "types": "llm",
+    "input_price": 1.096,
+    "output_price": 3.288,
+    "blended_price": 2.192,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "cc-kimi-k2-instruct",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 3.3,
+    "blended_price": 2.2,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "cc-kimi-k2-instruct-0905",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 3.3,
+    "blended_price": 2.2,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "mimo-v2-pro",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 3.3,
+    "blended_price": 2.2,
+    "features": "web",
+    "context_length": 1000000,
+    "max_output": 0
+  },
+  {
+    "model_id": "xiaomi-mimo-v2.5-pro",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 3.3,
+    "blended_price": 2.2,
+    "features": "web",
+    "context_length": 1000000,
+    "max_output": 0
+  },
+  {
+    "model_id": "kimi-k2.6",
+    "types": "llm",
+    "input_price": 0.95,
+    "output_price": 3.9995,
+    "blended_price": 2.47475,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 32768
+  },
+  {
+    "model_id": "glm-5-turbo",
+    "types": "llm",
+    "input_price": 1.2,
+    "output_price": 3.9996,
+    "blended_price": 2.5998,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 202752,
+    "max_output": 0
+  },
+  {
+    "model_id": "zai-glm-5-turbo",
+    "types": "llm",
+    "input_price": 1.2,
+    "output_price": 3.9996,
+    "blended_price": 2.5998,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-5.4-mini",
+    "types": "llm",
+    "input_price": 0.75,
+    "output_price": 4.5,
+    "blended_price": 2.625,
+    "features": "tools,function_calling,structured_outputs,web",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "o3-mini",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 4.4,
+    "blended_price": 2.75,
+    "features": "thinking",
+    "context_length": 200000,
+    "max_output": 100000
+  },
+  {
+    "model_id": "o4-mini",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 4.4,
+    "blended_price": 2.75,
+    "features": "thinking,tool,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 100000
+  },
+  {
+    "model_id": "kimi-k2-turbo-preview",
+    "types": "llm",
+    "input_price": 1.2,
+    "output_price": 4.8,
+    "blended_price": 3.0,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 262144,
+    "max_output": 262144
+  },
+  {
+    "model_id": "gemini-2.0-pro-exp-02-05",
+    "types": "llm,image_generation",
+    "input_price": 1.25,
+    "output_price": 5.0,
+    "blended_price": 3.125,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro-exp-03-25",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 5.0,
+    "blended_price": 3.125,
+    "features": "structured_outputs,tools,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "claude-3-5-haiku",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 5.5,
+    "blended_price": 3.3,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 8192
+  },
+  {
+    "model_id": "claude-haiku-4-5",
+    "types": "llm",
+    "input_price": 1.1,
+    "output_price": 5.5,
+    "blended_price": 3.3,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 204800,
+    "max_output": 131072
+  },
+  {
+    "model_id": "codex-mini-latest",
+    "types": "llm",
+    "input_price": 1.5,
+    "output_price": 6.0,
+    "blended_price": 3.75,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "grok-4-20-non-reasoning",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4-20-reasoning",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4.20-beta-0309-non-reasoning",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4.20-beta-0309-reasoning",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4.20-multi-agent-0309",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "grok-4.20-multi-agent-beta-0309",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 6.0,
+    "blended_price": 4.0,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 2000000,
+    "max_output": 2000000
+  },
+  {
+    "model_id": "qwen3.6-max-preview",
+    "types": "llm",
+    "input_price": 1.268,
+    "output_price": 7.608,
+    "blended_price": 4.438,
+    "features": "tools,function_calling,structured_outputs,web,long_context,thinking",
+    "context_length": 240000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "qwen2.5-vl-72b-instruct",
+    "types": "llm",
+    "input_price": 2.4,
+    "output_price": 7.2,
+    "blended_price": 4.8,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4.1",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 8.0,
+    "blended_price": 5.0,
+    "features": "tools,function_calling,structured_outputs,long_context",
+    "context_length": 1047576,
+    "max_output": 32768
+  },
+  {
+    "model_id": "o3",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 8.0,
+    "blended_price": 5.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 100000
+  },
+  {
+    "model_id": "grok-2-vision-1212",
+    "types": "llm",
+    "input_price": 1.8,
+    "output_price": 9.0,
+    "blended_price": 5.4,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "tools,function_calling,structured_outputs,long_context,web,thinking,deepsearch",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-03-25",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-03-25-search",
+    "types": "llm,search",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,web,tools,function_calling,structured_outputs,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-05-06",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-05-06-search",
+    "types": "llm,search",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,web",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-06-05",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gemini-2.5-pro-preview-06-05-search",
+    "types": "llm,search",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,web,tools,function_calling,structured_outputs,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-2.5-pro-search",
+    "types": "llm,search",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,web,tools,function_calling,structured_outputs,long_context",
+    "context_length": 1048576,
+    "max_output": 65536
+  },
+  {
+    "model_id": "gpt-5",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5-chat-latest",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5-codex",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.1",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,web,tools,deepsearch,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.1-chat-latest",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-5.1-codex",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.1-codex-max",
+    "types": "llm",
+    "input_price": 1.25,
+    "output_price": 10.0,
+    "blended_price": 5.625,
+    "features": "function_calling,structured_outputs,thinking",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "cohere-command-a",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "command-a-03-2025",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-4o",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-4o-2024-11-20",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-4o-audio-preview",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-4o-search-preview",
+    "types": "llm,search",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "web,function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-4o-zh",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 10.0,
+    "blended_price": 6.25,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-3-pro-image-preview",
+    "types": "image_generation,llm",
+    "input_price": 2.0,
+    "output_price": 12.0,
+    "blended_price": 7.0,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gemini-3.1-pro-preview",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 12.0,
+    "blended_price": 7.0,
+    "features": "thinking,tools,function_calling,structured_outputs,web,deepsearch,long_context",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "gemini-3.1-pro-preview-customtools",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 12.0,
+    "blended_price": 7.0,
+    "features": "thinking,tools,function_calling,structured_outputs,web,deepsearch,long_context",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "gemini-3.1-pro-preview-search",
+    "types": "llm",
+    "input_price": 2.0,
+    "output_price": 12.0,
+    "blended_price": 7.0,
+    "features": "thinking,web,deepsearch,tools,function_calling,structured_outputs,long_context",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "aihubmix-command-r-plus-08-2024",
+    "types": "llm",
+    "input_price": 2.8,
+    "output_price": 11.2,
+    "blended_price": 7.0,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "command-r-plus-08-2024",
+    "types": "llm",
+    "input_price": 2.8,
+    "output_price": 11.2,
+    "blended_price": 7.0,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "gpt-5.2",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "thinking,function_calling,structured_outputs,web,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.2-chat-latest",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-5.2-codex",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.2-high",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "thinking,function_calling,web,structured_outputs,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.2-low",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "thinking,function_calling,web,structured_outputs,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.3-chat-latest",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "function_calling,structured_outputs",
+    "context_length": 128000,
+    "max_output": 16384
+  },
+  {
+    "model_id": "gpt-5.3-codex",
+    "types": "llm",
+    "input_price": 1.75,
+    "output_price": 14.0,
+    "blended_price": 7.875,
+    "features": "thinking,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.4",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 15.0,
+    "blended_price": 8.75,
+    "features": "thinking,function_calling,structured_outputs,web,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.4-high",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 15.0,
+    "blended_price": 8.75,
+    "features": "thinking,function_calling,web,structured_outputs,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.4-low",
+    "types": "llm",
+    "input_price": 2.5,
+    "output_price": 15.0,
+    "blended_price": 8.75,
+    "features": "thinking,function_calling,web,structured_outputs,tools",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "claude-sonnet-4-6",
+    "types": "llm",
+    "input_price": 3.0,
+    "output_price": 15.0,
+    "blended_price": 9.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "claude-sonnet-4-6-think",
+    "types": "llm",
+    "input_price": 3.0,
+    "output_price": 15.0,
+    "blended_price": 9.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-3-5-sonnet",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 8192
+  },
+  {
+    "model_id": "claude-3-5-sonnet-20240620",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "",
+    "context_length": 200000,
+    "max_output": 8192
+  },
+  {
+    "model_id": "claude-3-7-sonnet",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "claude-3-sonnet-20240229",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "claude-sonnet-4-0",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "claude-sonnet-4-5",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "claude-sonnet-4-5-think",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 1000000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "grok-4",
+    "types": "llm",
+    "input_price": 3.3,
+    "output_price": 16.5,
+    "blended_price": 9.9,
+    "features": "function_calling,structured_outputs,thinking",
+    "context_length": 256000,
+    "max_output": 64000
+  },
+  {
+    "model_id": "grok-vision-beta",
+    "types": "llm",
+    "input_price": 5.6,
+    "output_price": 16.8,
+    "blended_price": 11.2,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "aihubmix-command-r-plus",
+    "types": "llm",
+    "input_price": 3.84,
+    "output_price": 19.2,
+    "blended_price": 11.52,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "command-r-plus",
+    "types": "llm",
+    "input_price": 3.84,
+    "output_price": 19.2,
+    "blended_price": 11.52,
+    "features": "",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "anthropic-opus-4-6",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-5",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-5-think",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-6",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-6-think",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-7",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-7-think",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 25.0,
+    "blended_price": 15.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "gpt-5.5",
+    "types": "llm",
+    "input_price": 5.0,
+    "output_price": 30.0,
+    "blended_price": 17.5,
+    "features": "thinking,function_calling,structured_outputs,web,tools",
+    "context_length": 1050000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "o1",
+    "types": "llm",
+    "input_price": 15.0,
+    "output_price": 60.0,
+    "blended_price": 37.5,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "o1-2024-12-17",
+    "types": "llm",
+    "input_price": 15.0,
+    "output_price": 60.0,
+    "blended_price": 37.5,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "o1-preview",
+    "types": "llm",
+    "input_price": 15.0,
+    "output_price": 60.0,
+    "blended_price": 37.5,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  },
+  {
+    "model_id": "claude-opus-4-0",
+    "types": "llm",
+    "input_price": 16.5,
+    "output_price": 82.5,
+    "blended_price": 49.5,
+    "features": "tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "claude-opus-4-1",
+    "types": "llm",
+    "input_price": 16.5,
+    "output_price": 82.5,
+    "blended_price": 49.5,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 32000
+  },
+  {
+    "model_id": "o3-pro",
+    "types": "llm",
+    "input_price": 20.0,
+    "output_price": 80.0,
+    "blended_price": 50.0,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 200000,
+    "max_output": 100000
+  },
+  {
+    "model_id": "gpt-5-pro",
+    "types": "llm",
+    "input_price": 15.0,
+    "output_price": 120.0,
+    "blended_price": 67.5,
+    "features": "thinking,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.2-pro",
+    "types": "llm",
+    "input_price": 21.0,
+    "output_price": 168.0,
+    "blended_price": 94.5,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 400000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "gpt-5.4-pro",
+    "types": "llm",
+    "input_price": 30.0,
+    "output_price": 180.0,
+    "blended_price": 105.0,
+    "features": "thinking,web,tools,function_calling,structured_outputs",
+    "context_length": 1050000,
+    "max_output": 128000
+  },
+  {
+    "model_id": "o1-pro",
+    "types": "llm",
+    "input_price": 170.0,
+    "output_price": 680.0,
+    "blended_price": 425.0,
+    "features": "thinking",
+    "context_length": 0,
+    "max_output": 0
+  }
+]
