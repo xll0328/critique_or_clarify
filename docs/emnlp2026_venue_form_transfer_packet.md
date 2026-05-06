@@ -1,6 +1,6 @@
 # EMNLP 2026 Venue Form Transfer Packet
 
-Date: 2026-04-27
+Date: 2026-05-06
 
 Status: form-ready internal packet for responsible-NLP, reproducibility, artifacts, and anonymization answers. This is not the official venue form and not a substitute for final human sign-off.
 
@@ -77,7 +77,7 @@ Expected current gate outputs:
 - `human_validation_queue_ok completed=61/61`
 - DeepSeek-R1-Distill-Qwen-7B dev action accuracy `0.3667`, utility `-0.4313`
 - DeepSeek-R1-Distill-Qwen-7B quick+stale action accuracy `0.4500`, utility `-0.4750`
-- full test suite `129 passed`
+- full pytest suite passes under the final lock gate
 - `paper/main.pdf`, 13 pages
 - anonymous review package under `_review_package/critique_or_clarify_emnlp2026_review.zip`
 - `submission_lock_checks_ok`

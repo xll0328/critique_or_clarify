@@ -46,3 +46,29 @@ def test_oral_best_paper_readiness_audit_records_current_hard_gaps(tmp_path: Pat
     else:
         assert "related_work_too_thin" not in markdown
     assert "missing_validated_actions" not in markdown
+
+
+def test_legacy_oral_bench_readiness_audit_points_to_canonical_dashboard() -> None:
+    legacy = Path(__file__).resolve().parents[1] / "experiments" / "emnlp2026" / "oral_bench_readiness_audit.md"
+    text = legacy.read_text(encoding="utf-8")
+
+    required_fragments = [
+        "superseded legacy pointer",
+        "docs/emnlp2026_oral_best_paper_quality_audit.md",
+        "docs/emnlp2026_oral_best_paper_quality_audit.json",
+        "Paper-facing unique examples: `560` / `500`.",
+        "Main model rows: `10`",
+        "Bibliography entries: `35`.",
+        "600-example slice-balanced split as stress evidence",
+    ]
+    missing = [fragment for fragment in required_fragments if fragment not in text]
+    assert missing == []
+
+    stale_fragments = [
+        "Date: 2026-04-28",
+        "Main model rows: `8`",
+        "Bibliography entries: `26`",
+        "Add one more distinct robustness control",
+    ]
+    present = [fragment for fragment in stale_fragments if fragment in text]
+    assert present == []

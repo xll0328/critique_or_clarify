@@ -34,7 +34,7 @@ def test_venue_form_transfer_packet_preserves_scoped_gate_outputs() -> None:
         "not from private user logs",
         "human_validation_queue_ok completed=61/61",
         "DeepSeek-R1-Distill-Qwen-7B dev action accuracy `0.3667`",
-        "full test suite `129 passed`",
+        "full pytest suite passes under the final lock gate",
         "`paper/main.pdf`, 13 pages",
         "submission_lock_checks_ok",
         "Do not invent energy, emissions, or hardware utilization numbers.",

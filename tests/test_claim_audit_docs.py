@@ -15,7 +15,7 @@ def test_numeric_claim_audit_uses_final_lock_gate() -> None:
         "paper/tables/day1_scale_reasoning_macros.tex",
         "paper/tables/day1_quick_stale_macros.tex",
         "paper/tables/qwen25_15b_quick_plus_stale_intervention_macros.tex",
-        "Full test suite `129 passed`",
+        "Full pytest suite passes under the final artifact package lock.",
         "data/candidates/emnlp2026_ask_abstain_seed_candidates_manifest.json",
         "experiments/emnlp2026/ask_abstain_candidate_coverage_audit.json",
         "scripts/promote_validated_expansion_candidates.py",
@@ -33,12 +33,35 @@ def test_numeric_claim_audit_no_longer_lists_manual_final_gate_sequence() -> Non
     text = (DOCS / "emnlp2026_numeric_claim_audit.md").read_text(encoding="utf-8")
 
     stale_fragments = [
+        "`129 passed`",
+        "`132 passed`",
         "./scripts/make_day1_scale_reasoning_comparison.sh\n./scripts/sync_paper_assets.sh",
         "python scripts/validate_human_validation_queue.py \\\n  --queue _assets/human_validation_work_queue.csv",
     ]
 
     present = [fragment for fragment in stale_fragments if fragment in text]
     assert present == []
+
+
+def test_submission_docs_do_not_pin_stale_pytest_counts() -> None:
+    stale_fragments = ["`129 passed`", "`132 passed`"]
+    docs_to_check = [
+        DOCS / "emnlp2026_numeric_claim_audit.md",
+        DOCS / "emnlp2026_responsible_nlp_checklist.md",
+        DOCS / "emnlp2026_reviewer_attack_memo.md",
+        DOCS / "emnlp2026_reproducibility_appendix.md",
+        DOCS / "emnlp2026_venue_form_transfer_packet.md",
+        DOCS / "emnlp2026_oral_best_paper_sprint_plan.md",
+    ]
+
+    offenders = []
+    for path in docs_to_check:
+        text = path.read_text(encoding="utf-8")
+        for fragment in stale_fragments:
+            if fragment in text:
+                offenders.append(f"{path.relative_to(REPO_ROOT)} contains {fragment}")
+
+    assert offenders == []
 
 
 def test_claim_ledger_scopes_decision_first_to_quick_stale() -> None:

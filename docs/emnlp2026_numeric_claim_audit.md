@@ -1,8 +1,8 @@
 # EMNLP 2026 Numeric Claim Audit
 
-Date: 2026-04-27
+Date: 2026-05-06
 
-Status: current submission-freeze audit after DeepSeek-R1-Distill-Qwen-7B completion, manuscript macro wiring, story-flow lock, responsible-NLP preflight, and final lock gate.
+Status: current submission-freeze audit after DeepSeek-R1-Distill-Qwen-7B completion, manuscript macro wiring, story-flow lock, responsible-NLP preflight, slice-balanced stress-split scoping, and final lock gate.
 
 ## Audit Principle
 
@@ -27,7 +27,7 @@ Paper-facing numbers should come from generated artifacts whenever possible. The
 | Decision-first quick+stale utility `-0.1375`, action accuracy `0.8500`, over-answer rate `0.0000`, answer-supported accuracy `0.7500`, and defective-premise accuracy `1.0000`. | Intervention | `paper/tables/qwen25_15b_quick_plus_stale_intervention_macros.tex`; `outputs/day1/interventions/qwen25_15b_day1_quick_plus_stale_decision_first_metrics.json` | macro-backed |
 | DeepSeek-R1-Distill-Qwen-7B quick+stale action accuracy `0.4500`, utility `-0.4750`. | Results and dashboard docs | `\DayOneQuickStaleDeepSeekSevenBActionAcc`; `\DayOneQuickStaleDeepSeekSevenBUtility` | macro-backed |
 | DeepSeek-R1-Distill-Qwen-7B stale-premise action accuracy `0.2500`, over-answer rate `0.7500`. | Results | `\DayOneQuickStaleDeepSeekSevenBStalePremiseAcc`; `\DayOneQuickStaleDeepSeekSevenBStalePremiseOverAnswer` | macro-backed |
-| Full test suite `129 passed` and final artifact package lock. | Reproducibility / submission-support docs | `./scripts/run_submission_lock_checks.sh`; `submission_lock_checks_ok` | lock-gate-backed |
+| Full pytest suite passes under the final artifact package lock. | Reproducibility / submission-support docs | `./scripts/run_submission_lock_checks.sh`; `submission_lock_checks_ok` | lock-gate-backed |
 | Expanded paper-facing split: `560` unique examples with `answer=200`, `ask=80`, `challenge=200`, `abstain=80`; residual slice gaps `answerable_control=14`, `conflicting_evidence=26`. | Oral sprint planning | `experiments/emnlp2026/expanded_dev_with_answer_topup_coverage_audit.json`; `data/processed/emnlp2026_expanded_dev_with_answer_topup_manifest.json` | generated-audit-backed |
 | Slice-balanced 600 stress split now has frontier/high/medium/low API rows with bootstrap intervals: gpt-5-chat-latest, qwen-plus-latest, gpt-4.1-mini, and qwen-turbo all have positive action-accuracy point deltas under full-minus-canonical comparison, but the delta intervals overlap zero; gpt-5-chat-latest adds `Δaction=+0.0047`, `Δutility=-0.0363`. | Results / oral sprint planning | `outputs/day1/aihubmix_gpt5chatlatest_day1_expanded_dev_with_full_answer_topup_metrics.json`; `experiments/day1/tables/day1_full_split_sensitivity.tex`; `docs/emnlp2026_oral_best_paper_quality_audit.json` | generated-audit-backed |
 | Candidate pipeline: `160` accepted rows were promoted; canonical paper-facing split is now `560` examples. | Oral sprint planning | `data/candidates/emnlp2026_ask_abstain_seed_candidates_manifest.json`; `_assets/emnlp2026_expansion_candidate_validation_queue.csv`; `experiments/emnlp2026/ask_abstain_candidate_coverage_audit.json`; `scripts/promote_validated_expansion_candidates.py`; `data/processed/emnlp2026_expanded_dev_with_answer_topup.jsonl` | generated-audit-backed |

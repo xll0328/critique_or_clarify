@@ -18,7 +18,7 @@ def test_reviewer_attack_memo_reflects_closed_submission_gates() -> None:
         "dev utility `-0.4313`",
         "quick+stale action accuracy `0.4500`",
         "quick+stale utility `-0.4750`",
-        "`129 passed`",
+        "a passing pytest suite",
         "experiments/day1/benchmark_expansion_coverage_audit.md",
         "docs/emnlp2026_oral_best_paper_quality_audit.md",
         "_assets/emnlp2026_expansion_candidate_validation_queue.csv",

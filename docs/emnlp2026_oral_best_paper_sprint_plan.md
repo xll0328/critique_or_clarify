@@ -1,6 +1,6 @@
 # EMNLP 2026 Oral / Best Paper Sprint Plan
 
-Date: 2026-04-27
+Date: 2026-05-06
 
 Target venue: EMNLP 2026 main conference, long paper.
 
@@ -66,18 +66,18 @@ Closed gates:
 - Oral/best-paper quality audit is generated at `docs/emnlp2026_oral_best_paper_quality_audit.md` and currently marks the artifact `not oral-ready` because statistical depth and final human sign-off remain below target, even though coverage, action balance, API/frontier stress rows, automated full-PDF visual readiness, and the 35-entry bibliography threshold are now met.
 - Slice-balanced 600 stress evidence now includes frontier/high/medium/low API rows: `gpt-5-chat-latest`, `qwen-plus-latest`, `gpt-4.1-mini`, and `qwen-turbo`; the frontier `gpt-5-chat-latest` row is stored at `outputs/day1/aihubmix_gpt5chatlatest_day1_expanded_dev_with_full_answer_topup_metrics.json` and appears in `experiments/day1/tables/day1_full_split_sensitivity.tex`.
 - Full execution plan for the oral/best-paper sprint is locked at `docs/emnlp2026_oral_best_paper_sprint_execution_plan.md`.
-- Final artifact lock passes `./scripts/run_submission_lock_checks.sh`, including asset sync, scale/reasoning checks, complete human validation, `129 passed`, PDF build, LaTeX log scan, anonymous review-package build, and package hygiene scan.
+- Final artifact lock passes `./scripts/run_submission_lock_checks.sh`, including asset sync, scale/reasoning checks, complete human validation, the full pytest suite, PDF build, LaTeX log scan, anonymous review-package build, and package hygiene scan.
 
 ### Readiness Diagnosis (hard view)
 
 Answer to your direct question: **not Oral-ready, and not Best-Paper-ready** in the current state.
 
 - Current position against top-level venue criteria:
-  - Novel problem framing: **partially met** (core framing exists, but needs sharper paper-wide anchoring)
-  - Experimental strength: **not yet at oral level** (model frontier, confidence intervals, and negative controls are still thin relative to oral-level expectations)
+  - Novel problem framing: **mostly met but fragile** (core action-selection framing is now repeated across the paper; late edits should preserve it)
+  - Experimental strength: **not yet at oral level** (model/frontier coverage has improved, but uncertainty propagation and final human PDF review remain below oral-level expectations)
   - Reproducibility / benchmark discipline: **good** (strong human-validated baseline, but not yet broadened)
-  - Visual communication: **insufficient for oral review** (results focus is there, but lacks intuitive/diagnostic views)
-  - Citation coverage: **below oral expectation** in manuscript body (enough in raw count but uneven claim support)
+  - Visual communication: **acceptable for the current freeze, not yet oral-polished** (six paper-facing figures exist, but final human readability review is still required)
+  - Citation coverage: **threshold met, still claim-alignment sensitive** (the bibliography has reached the 35-entry target, but final citation placement should be checked against concrete claims)
   - Writing clarity and first-two-page narrative: **currently acceptable but fragile** (locked, but sensitive to any new evidence insertion)
 
 Concrete score (0-5):

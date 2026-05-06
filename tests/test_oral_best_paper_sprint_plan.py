@@ -11,14 +11,14 @@ def test_oral_best_paper_plan_reflects_submission_freeze_lock() -> None:
     text = PLAN.read_text(encoding="utf-8")
 
     required_fragments = [
-        "Date: 2026-04-27",
+        "Date: 2026-05-06",
         "Submission-freeze candidate, not final external submission.",
         "human_validation_queue_ok completed=61/61",
         "DeepSeek-R1-Distill-Qwen-7B metrics are complete",
         "dev action accuracy `0.3667`",
         "quick+stale action accuracy `0.4500`",
         "Final artifact lock passes `./scripts/run_submission_lock_checks.sh`",
-        "`129 passed`",
+        "the full pytest suite",
         "experiments/day1/benchmark_expansion_coverage_audit.md",
         "docs/emnlp2026_oral_best_paper_quality_audit.md",
         "data/candidates/emnlp2026_ask_abstain_seed_candidates.jsonl",
@@ -40,6 +40,8 @@ def test_oral_best_paper_plan_no_longer_tracks_closed_blockers() -> None:
     text = PLAN.read_text(encoding="utf-8")
 
     stale_fragments = [
+        "`129 passed`",
+        "`132 passed`",
         "while the 7B run finishes",
         "Active watcher for the DeepSeek-R1-Distill-Qwen-7B pipeline",
         "7B download/run fails",

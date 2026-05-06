@@ -57,7 +57,7 @@ Do not replace these with generic failure samples. The examples are serving a re
 ### CLOSED 5: Final artifact lock is scripted.
 
 Current evidence:
-`./scripts/run_submission_lock_checks.sh` syncs paper assets, checks scale/reasoning artifacts, requires complete human validation, runs the full test suite, builds the PDF, scans LaTeX logs, builds the anonymous review package, and scans the package. The current expected terminal state is `129 passed` and `submission_lock_checks_ok`.
+`./scripts/run_submission_lock_checks.sh` syncs paper assets, checks scale/reasoning artifacts, requires complete human validation, runs the full pytest suite, builds the PDF, scans LaTeX logs, builds the anonymous review package, and scans the package. The current expected terminal state is a passing pytest suite and `submission_lock_checks_ok`.
 
 Current oral-sprint coverage audit:
 `experiments/day1/benchmark_expansion_coverage_audit.md` and `experiments/emnlp2026/expanded_dev_with_answer_topup_coverage_audit.md` record `560` paper-facing examples, with all four actions represented and a `0` example gap to the oral target size.

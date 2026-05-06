@@ -1,6 +1,6 @@
 # EMNLP 2026 Reproducibility Appendix Draft
 
-Date: 2026-04-29
+Date: 2026-05-06
 
 Status: command block for the current Day-1 artifact freeze. Update after any new experiment run or artifact-freeze change.
 
@@ -46,7 +46,7 @@ LaTeX aux/log files or internal repository paths.
 - Ask/abstain candidate audit: `experiments/emnlp2026/ask_abstain_candidate_coverage_audit.md`; accepted rows have been validated and promoted into the paper-facing expanded split.
 - Validated candidate promotion tool: `scripts/promote_validated_expansion_candidates.py`
 - Oral/best-paper quality audit: `docs/emnlp2026_oral_best_paper_quality_audit.md`
-- Full test suite: `129 passed`
+- Full pytest suite: passes under `./scripts/run_submission_lock_checks.sh`
 - Paper build: `paper/main.pdf`, 13 pages, no overfull or undefined/fatal/error log findings in the final scan
 - Review package: `_review_package/critique_or_clarify_emnlp2026_review.zip`, with source, figures, tables, styles, and `main.pdf` but no LaTeX aux/log/bbl files
 - Venue-form packet: `docs/emnlp2026_venue_form_transfer_packet.md`

@@ -57,7 +57,7 @@ The paper's intended claim is narrow: under the completed Day-1 local checkpoint
 ./scripts/run_submission_lock_checks.sh
 ```
 
-- Expected current gate outputs include `human_validation_queue_ok completed=61/61`, `129 passed`, a 13-page `paper/main.pdf`, and `submission_lock_checks_ok`.
+- Expected current gate outputs include `human_validation_queue_ok completed=61/61`, a passing full pytest suite, a 13-page `paper/main.pdf`, and `submission_lock_checks_ok`.
 - Release only generated tables, figures, metric summaries, paper source, and anonymized split artifacts appropriate for review.
 - Keep raw local model-cache paths, internal process logs, and human-validation work packets out of the review package.
 - Include validation commands and manifest or checksum pointers for any released split files.

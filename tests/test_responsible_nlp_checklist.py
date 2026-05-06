@@ -23,7 +23,7 @@ def test_responsible_nlp_checklist_covers_submission_risk_areas() -> None:
         "utility encodes an asymmetric harm ordering",
         "completed local checkpoint matrix and prompt protocol",
         "./scripts/run_submission_lock_checks.sh",
-        "`129 passed`",
+        "a passing full pytest suite",
         "scripts/promote_validated_expansion_candidates.py",
         "submission_lock_checks_ok",
         "environmental or compute disclosure if requested by the form",
