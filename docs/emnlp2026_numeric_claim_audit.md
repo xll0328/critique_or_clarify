@@ -8,6 +8,16 @@ Status: current submission-freeze audit after DeepSeek-R1-Distill-Qwen-7B comple
 
 Paper-facing numbers should come from generated artifacts whenever possible. The main development-scale model numbers are exposed through `paper/tables/day1_scale_reasoning_macros.tex`, quick+stale model numbers are exposed through `paper/tables/day1_quick_stale_macros.tex`, and intervention numbers are exposed through `paper/tables/qwen25_15b_quick_plus_stale_intervention_macros.tex`. These files are copied from `experiments/day1/tables/` by `scripts/sync_paper_assets.sh` and checked by the final submission lock gate.
 
+## Final-Push Result Claim Sync
+
+This pass covers paper-facing and reviewer-facing edits started on 2026-05-06:
+
+- Abstract first-move framing: `paper/sections/00_abstract.tex` now leads with answer quality being incomplete without choosing the right first move. This is a framing claim, not a new numeric result.
+- Reviewer-response seed synchronization: `docs/emnlp2026_reviewer_response_seed_memo.md` now preserves the same answer-quality-incomplete and right-first-move frame. This introduces no new metric.
+- Oral/best-paper gap closure plan: `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` reuses existing audit-backed quantities: `560` paper-facing examples, `61/61` active validation rows, `10` model rows, `6` figures, `35` bibliography entries, `600` stress split, and the internal `3.1 / 5` readiness estimate from `docs/emnlp2026_oral_best_paper_sprint_plan.md`.
+
+Current result-claim status: no post-2026-05-06 prose edit promotes a new paper-facing numeric result beyond the macro-, metric-, audit-, or lock-backed rows below. Re-run this sync after any Results, Limitations, table, figure, abstract, or reviewer-response edit that introduces or reframes a number.
+
 ## Main Manuscript Numbers
 
 | Claim / Number | Manuscript Location | Source Artifact | Status |
@@ -41,6 +51,7 @@ Paper-facing numbers should come from generated artifacts whenever possible. The
 | Dashboard and process-doc numbers can drift from regenerated artifacts. | Keep submission-facing numbers in generated LaTeX macros or tables; use docs only as trace notes. |
 | Human-validation counts are prose-backed rather than macro-backed. | Acceptable for now because the validator is a blocking command; final appendix can include a generated summary table. |
 | Page count may change as text is edited. | `paper/README.md` should be updated only after final build checks. |
+| Final-push planning docs may repeat audit-backed quantities out of context. | Keep `docs/emnlp2026_oral_best_paper_gap_closure_plan.md`, `docs/emnlp2026_final_push_todo.md`, and reviewer-response seeds tied to this audit whenever they quote `560`, `600`, `61/61`, model rows, figure counts, bibliography counts, or readiness estimates. |
 
 ## Required Final Audit Command Block
 

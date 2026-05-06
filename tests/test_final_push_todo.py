@@ -30,6 +30,9 @@ def test_final_push_todo_tracks_deadline_scope_and_stop_conditions() -> None:
         "tightening the abstract around the line that answer quality is incomplete",
         "Synchronized the reviewer-response seed memo with the tightened abstract wording",
         "submission-close, oral medium-far, best-paper far",
+        "closed-current",
+        "Completed a final-push result-claim sync",
+        "introduce no unsupported new numeric result",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]

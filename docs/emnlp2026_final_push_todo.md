@@ -56,7 +56,7 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 | closed | Keep canonical split at `560` paper-facing examples. | `docs/emnlp2026_claim_ledger.md` |
 | closed | Treat `600` rows as sensitivity or stress evidence only. | `paper/sections/05_results.tex`, `paper/sections/08_limitations.tex` |
 | closed | Add response seed for statistics/CI overclaim. | `docs/emnlp2026_reviewer_response_seed_memo.md` |
-| pending | Re-check that every new result sentence added after 2026-05-06 is macro-, metric-, audit-, or lock-backed. | `docs/emnlp2026_numeric_claim_audit.md` |
+| closed-current | Re-check that every new result sentence added after 2026-05-06 is macro-, metric-, audit-, or lock-backed. Re-run after the next Results, Limitations, table, figure, abstract, or reviewer-response edit that introduces or reframes a number. | `docs/emnlp2026_numeric_claim_audit.md` |
 | pending | Keep delta intervals scoped when discussing full-minus-canonical comparisons. | `experiments/day1/tables/day1_full_split_sensitivity.tex` |
 
 ### C. Benchmark Validity
@@ -123,4 +123,5 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Started the first paper-facing final-push edit by tightening the abstract around the line that answer quality is incomplete without choosing the right first move.
 - Synchronized the reviewer-response seed memo with the tightened abstract wording so rebuttal prep preserves the answer-quality-incomplete and right-first-move frame.
 - Launched `docs/emnlp2026_oral_best_paper_gap_closure_plan.md` to make the hard distance answer actionable: submission-close, oral medium-far, best-paper far.
+- Completed a final-push result-claim sync in `docs/emnlp2026_numeric_claim_audit.md`: post-2026-05-06 framing, response-seed, and gap-plan edits introduce no unsupported new numeric result.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.
