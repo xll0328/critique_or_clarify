@@ -1,8 +1,8 @@
 # EMNLP 2026 Reviewer Response Seed Memo
 
-Date: 2026-04-27
+Date: 2026-05-06
 
-Status: reviewer-attack hardening pass after the first-two-page story, visual-balance, validation, and lock-gate audits.
+Status: reviewer-attack hardening pass synchronized with the 2026-05-06 final-push abstract framing, first-two-page story, visual-balance, validation, and lock-gate audits.
 
 ## Severity Summary
 
@@ -18,6 +18,8 @@ Tracked major attack-path slugs: benchmark-soup, utility-weight, reasoning-overc
 
 Core discipline: do not claim broad assistant helpfulness from utility alone.
 
+Latest first-move wording anchor: the abstract now opens with `Answer quality is an incomplete target` when the user input itself may be defective, because the assistant must choose the right first move before generating. Rebuttal language should preserve this scoped target: next-action calibration, not broad assistant helpfulness or final-answer quality alone.
+
 ## R1: Benchmark Soup / Dataset Mixture
 
 Likely attack:
@@ -28,10 +30,11 @@ Paper-side defense:
 - The evaluated object is one action decision: answer, ask, challenge, or abstain.
 - Each row follows the same input/evidence -> action -> constrained response pipeline.
 - Figure 1 and the first two pages present the benchmark as next-action selection under defective inputs, not as four unrelated subtasks.
+- The abstract frames final-answer quality as incomplete without the right first move, keeping the benchmark contribution ahead of the prompt intervention.
 - The Day-1 evidence is strongest for answer-vs-challenge and evidence-conflict calibration; the paper should not imply that every slice is equally mature.
 
 Response seed:
-The benchmark does not score four unrelated tasks. It scores the same first-move decision under different ways an input can become unreliable: missing intent, false premise, stale premise, or conflicting evidence. We agree that slice coverage is uneven at Day-1 scale, so the claim is scoped to a shared action ontology and to the answer-vs-challenge/conflict calibration patterns supported by the current results.
+The benchmark does not score four unrelated tasks. It scores the same first-move decision under different ways an input can become unreliable: missing intent, false premise, stale premise, or conflicting evidence. The central target is not final-answer quality alone, but whether the assistant chooses the right first move before generating. We agree that slice coverage is uneven at Day-1 scale, so the claim is scoped to a shared action ontology and to the answer-vs-challenge/conflict calibration patterns supported by the current results.
 
 Do not say:
 
@@ -195,3 +198,4 @@ For each real review:
 3. Point to the relevant table, figure, section, or audit.
 4. Avoid universal claims, deployment claims, and broad model-family claims.
 5. Do not claim broad assistant helpfulness from utility alone.
+6. Preserve the first-move framing: answer quality is incomplete if the model chooses the wrong action first.

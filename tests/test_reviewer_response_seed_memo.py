@@ -23,6 +23,8 @@ def test_reviewer_response_seed_memo_covers_major_attack_paths() -> None:
         "reasoning-overclaim",
         "intervention-overclaim",
         "statistics-overclaim",
+        "Answer quality is an incomplete target",
+        "right first move",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]
@@ -41,6 +43,8 @@ def test_reviewer_response_seed_memo_enforces_scope_constraints() -> None:
         "local uncertainty checks over the current split samples",
         "avoid fine-grained model-ranking claims",
         "the 600-example split is sensitivity evidence rather than a replacement benchmark",
+        "not broad assistant helpfulness or final-answer quality alone",
+        "answer quality is incomplete if the model chooses the wrong action first",
         "Do not say:",
     ]
 

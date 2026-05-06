@@ -27,6 +27,7 @@ def test_final_push_todo_tracks_deadline_scope_and_stop_conditions() -> None:
         "Opened `docs/emnlp2026_final_pdf_human_review_worksheet.md`",
         "Started the worksheet with a Codex-only PDF text preflight",
         "tightening the abstract around the line that answer quality is incomplete",
+        "Synchronized the reviewer-response seed memo with the tightened abstract wording",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]

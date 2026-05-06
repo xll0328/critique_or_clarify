@@ -119,4 +119,5 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Opened `docs/emnlp2026_final_pdf_human_review_worksheet.md` as the first human-facing final-signoff prep artifact.
 - Started the worksheet with a Codex-only PDF text preflight: `paper/main.pdf` is `13` pages, pages 1-2 expose the first-story anchors, and pages 5-7 expose the main-result anchors.
 - Started the first paper-facing final-push edit by tightening the abstract around the line that answer quality is incomplete without choosing the right first move.
+- Synchronized the reviewer-response seed memo with the tightened abstract wording so rebuttal prep preserves the answer-quality-incomplete and right-first-move frame.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.
