@@ -211,7 +211,7 @@ Required deliverables:
 - Reviewer-2 pass: benchmark validity, label subjectivity, and boundary cases.
 - Reviewer-3 pass: experimental design, metrics, confidence intervals, and model coverage.
 - Devil's Advocate pass: "why is this a unified scientific setting rather than a mixed benchmark?"
-- A revision memo with must-fix, should-fix, and appendix-only buckets.
+- A revision memo with must-fix, should-fix, and appendix-only buckets. Current artifact: `docs/emnlp2026_reviewer_triage_revision_memo.md`.
 
 Experiment policy:
 

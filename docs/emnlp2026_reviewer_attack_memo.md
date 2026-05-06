@@ -76,6 +76,9 @@ Run the lock gate after every paper-facing change. Treat a fresh lock run as the
 Current evidence:
 `docs/emnlp2026_reviewer_response_seed_memo.md` gives paper-side defenses, response seeds, do-not-say constraints, and evidence links for benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, plus ask and hard abstain coverage.
 
+Current triage:
+`docs/emnlp2026_reviewer_triage_revision_memo.md` converts these risks into must-fix, should-fix, appendix-only, and defer buckets for the final 2026-05-25 ARR push.
+
 Residual action:
 Use the memo when editing paper or writing a rebuttal. Keep the final author response tailored to actual reviewer text.
 
@@ -141,7 +144,7 @@ The negative prompt variants are useful: they show that simply adding more cauti
 
 ## Top Three Next Checks
 
-1. Keep `docs/emnlp2026_reviewer_response_seed_memo.md` synchronized with any paper-facing claim change.
+1. Keep `docs/emnlp2026_reviewer_response_seed_memo.md` and `docs/emnlp2026_reviewer_triage_revision_memo.md` synchronized with any paper-facing claim change.
 2. Keep `docs/emnlp2026_citation_coverage_audit.md` synchronized with any related-work or novelty-claim change.
 3. Re-read the final PDF first two pages for flow after every layout change.
 
