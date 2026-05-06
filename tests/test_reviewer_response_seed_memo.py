@@ -51,6 +51,8 @@ def test_reviewer_response_seed_memo_enforces_scope_constraints() -> None:
         "local uncertainty checks over the current split samples",
         "avoid fine-grained model-ranking claims",
         "the 600-example split is sensitivity evidence rather than a replacement benchmark",
+        "all five API rows have their weakest slice on `false_premise` or `conflicting_evidence`",
+        "experiments/day1/day1_api_slice_breakdown.md",
         "not broad assistant helpfulness or final-answer quality alone",
         "answer quality is incomplete if the model chooses the wrong action first",
         "Do not say:",

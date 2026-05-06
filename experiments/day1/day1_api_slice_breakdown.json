@@ -1,0 +1,717 @@
+{
+  "date": "2026-05-06",
+  "metric_paths": [
+    "outputs/day1/aihubmix_qwenturbo_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt4omini_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt41mini_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_qwenpluslatest_day1_expanded_dev_with_answer_topup_metrics.json",
+    "outputs/day1/aihubmix_gpt5chatlatest_day1_expanded_dev_with_answer_topup_metrics.json"
+  ],
+  "aggregate": {
+    "num_runs": 5,
+    "hardest_slice_counts": {
+      "conflicting_evidence": 2,
+      "false_premise": 3
+    },
+    "all_hardest_slices_are_boundary": true,
+    "top_action_accuracy_model": "gpt-5-chat-latest",
+    "top_action_accuracy": 0.9286,
+    "top_action_accuracy_hardest_slice": "false_premise",
+    "top_action_accuracy_hardest_slice_action_accuracy": 0.675,
+    "top_utility_model": "qwen-plus-latest",
+    "top_utility": 0.1571,
+    "top_utility_hardest_slice": "conflicting_evidence"
+  },
+  "runs": [
+    {
+      "model": "qwen-turbo",
+      "display_model": "qwen-turbo",
+      "metric_path": "outputs/day1/aihubmix_qwenturbo_day1_expanded_dev_with_answer_topup_metrics.json",
+      "num_examples": 560,
+      "action_accuracy": 0.8393,
+      "avg_utility": 0.0353,
+      "json_parse_rate": 0.7625,
+      "over_answer_rate": 0.05,
+      "pred_action_counts": {
+        "abstain": 101,
+        "answer": 190,
+        "challenge": 173,
+        "ask": 96
+      },
+      "hardest_slice": "false_premise",
+      "hardest_slice_action_accuracy": 0.7,
+      "hardest_slice_over_answer_rate": 0.1667,
+      "boundary_over_answer_rate": 0.0953,
+      "per_slice": {
+        "ambiguous_intent": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "ask": 80
+          },
+          "gold_action_counts": {
+            "ask": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "answerable_control": {
+          "count": 106,
+          "action_accuracy": 0.8396,
+          "avg_utility": -0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.6132,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.7736,
+          "pred_action_counts": {
+            "abstain": 15,
+            "answer": 89,
+            "ask": 1,
+            "challenge": 1
+          },
+          "gold_action_counts": {
+            "answer": 106
+          },
+          "wrong_pred_action_counts": {
+            "abstain": 15,
+            "ask": 1,
+            "challenge": 1
+          }
+        },
+        "conflicting_evidence": {
+          "count": 94,
+          "action_accuracy": 0.7766,
+          "avg_utility": -0.5027,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.7021,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.7021,
+          "pred_action_counts": {
+            "answer": 73,
+            "challenge": 11,
+            "ask": 10
+          },
+          "gold_action_counts": {
+            "answer": 94
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 11,
+            "ask": 10
+          }
+        },
+        "false_premise": {
+          "count": 120,
+          "action_accuracy": 0.7,
+          "avg_utility": 0.15,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.1667,
+          "json_parse_rate": 0.7667,
+          "pred_action_counts": {
+            "abstain": 14,
+            "challenge": 84,
+            "answer": 20,
+            "ask": 2
+          },
+          "gold_action_counts": {
+            "challenge": 120
+          },
+          "wrong_pred_action_counts": {
+            "abstain": 14,
+            "answer": 20,
+            "ask": 2
+          }
+        },
+        "insufficient_evidence": {
+          "count": 80,
+          "action_accuracy": 0.9,
+          "avg_utility": 0.425,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.95,
+          "pred_action_counts": {
+            "abstain": 72,
+            "challenge": 5,
+            "ask": 3
+          },
+          "gold_action_counts": {
+            "abstain": 80
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 5,
+            "ask": 3
+          }
+        },
+        "stale_premise": {
+          "count": 80,
+          "action_accuracy": 0.9,
+          "avg_utility": 0.35,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.1,
+          "json_parse_rate": 0.3875,
+          "pred_action_counts": {
+            "answer": 8,
+            "challenge": 72
+          },
+          "gold_action_counts": {
+            "challenge": 80
+          },
+          "wrong_pred_action_counts": {
+            "answer": 8
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-4o-mini",
+      "display_model": "gpt-4o-mini",
+      "metric_path": "outputs/day1/aihubmix_gpt4omini_day1_expanded_dev_with_answer_topup_metrics.json",
+      "num_examples": 560,
+      "action_accuracy": 0.7679,
+      "avg_utility": 0.0799,
+      "json_parse_rate": 0.8946,
+      "over_answer_rate": 0.0089,
+      "pred_action_counts": {
+        "challenge": 227,
+        "answer": 108,
+        "ask": 141,
+        "abstain": 84
+      },
+      "hardest_slice": "conflicting_evidence",
+      "hardest_slice_action_accuracy": 0.3617,
+      "hardest_slice_over_answer_rate": 0.0,
+      "boundary_over_answer_rate": 0.017,
+      "per_slice": {
+        "ambiguous_intent": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "ask": 80
+          },
+          "gold_action_counts": {
+            "ask": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "answerable_control": {
+          "count": 106,
+          "action_accuracy": 0.6509,
+          "avg_utility": -0.4269,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.5755,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.8302,
+          "pred_action_counts": {
+            "ask": 33,
+            "answer": 69,
+            "challenge": 2,
+            "abstain": 2
+          },
+          "gold_action_counts": {
+            "answer": 106
+          },
+          "wrong_pred_action_counts": {
+            "ask": 33,
+            "challenge": 2,
+            "abstain": 2
+          }
+        },
+        "conflicting_evidence": {
+          "count": 94,
+          "action_accuracy": 0.3617,
+          "avg_utility": -0.6543,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.3085,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.883,
+          "pred_action_counts": {
+            "answer": 34,
+            "challenge": 58,
+            "abstain": 2
+          },
+          "gold_action_counts": {
+            "answer": 94
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 58,
+            "abstain": 2
+          }
+        },
+        "false_premise": {
+          "count": 120,
+          "action_accuracy": 0.725,
+          "avg_utility": 0.2625,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0417,
+          "json_parse_rate": 0.7583,
+          "pred_action_counts": {
+            "challenge": 87,
+            "answer": 5,
+            "ask": 28
+          },
+          "gold_action_counts": {
+            "challenge": 120
+          },
+          "wrong_pred_action_counts": {
+            "answer": 5,
+            "ask": 28
+          }
+        },
+        "insufficient_evidence": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "abstain": 80
+          },
+          "gold_action_counts": {
+            "abstain": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "stale_premise": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.9875,
+          "pred_action_counts": {
+            "challenge": 80
+          },
+          "gold_action_counts": {
+            "challenge": 80
+          },
+          "wrong_pred_action_counts": {}
+        }
+      }
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "display_model": "gpt-4.1-mini",
+      "metric_path": "outputs/day1/aihubmix_gpt41mini_day1_expanded_dev_with_answer_topup_metrics.json",
+      "num_examples": 560,
+      "action_accuracy": 0.8857,
+      "avg_utility": 0.0558,
+      "json_parse_rate": 0.85,
+      "over_answer_rate": 0.0411,
+      "pred_action_counts": {
+        "challenge": 188,
+        "answer": 197,
+        "ask": 101,
+        "abstain": 74
+      },
+      "hardest_slice": "false_premise",
+      "hardest_slice_action_accuracy": 0.75,
+      "hardest_slice_over_answer_rate": 0.175,
+      "boundary_over_answer_rate": 0.0782,
+      "per_slice": {
+        "ambiguous_intent": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "ask": 80
+          },
+          "gold_action_counts": {
+            "ask": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "answerable_control": {
+          "count": 106,
+          "action_accuracy": 0.9057,
+          "avg_utility": -0.4953,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.566,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.5943,
+          "pred_action_counts": {
+            "answer": 96,
+            "ask": 6,
+            "challenge": 4
+          },
+          "gold_action_counts": {
+            "answer": 106
+          },
+          "wrong_pred_action_counts": {
+            "ask": 6,
+            "challenge": 4
+          }
+        },
+        "conflicting_evidence": {
+          "count": 94,
+          "action_accuracy": 0.8298,
+          "avg_utility": -0.5372,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.7872,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.9574,
+          "pred_action_counts": {
+            "answer": 78,
+            "ask": 1,
+            "challenge": 15
+          },
+          "gold_action_counts": {
+            "answer": 94
+          },
+          "wrong_pred_action_counts": {
+            "ask": 1,
+            "challenge": 15
+          }
+        },
+        "false_premise": {
+          "count": 120,
+          "action_accuracy": 0.75,
+          "avg_utility": 0.1812,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.175,
+          "json_parse_rate": 0.7,
+          "pred_action_counts": {
+            "challenge": 90,
+            "answer": 21,
+            "ask": 9
+          },
+          "gold_action_counts": {
+            "challenge": 120
+          },
+          "wrong_pred_action_counts": {
+            "answer": 21,
+            "ask": 9
+          }
+        },
+        "insufficient_evidence": {
+          "count": 80,
+          "action_accuracy": 0.925,
+          "avg_utility": 0.4437,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "abstain": 74,
+            "challenge": 1,
+            "ask": 5
+          },
+          "gold_action_counts": {
+            "abstain": 80
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 1,
+            "ask": 5
+          }
+        },
+        "stale_premise": {
+          "count": 80,
+          "action_accuracy": 0.975,
+          "avg_utility": 0.4625,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.025,
+          "json_parse_rate": 0.9875,
+          "pred_action_counts": {
+            "challenge": 78,
+            "answer": 2
+          },
+          "gold_action_counts": {
+            "challenge": 80
+          },
+          "wrong_pred_action_counts": {
+            "answer": 2
+          }
+        }
+      }
+    },
+    {
+      "model": "qwen-plus-latest",
+      "display_model": "qwen-plus-latest",
+      "metric_path": "outputs/day1/aihubmix_qwenpluslatest_day1_expanded_dev_with_answer_topup_metrics.json",
+      "num_examples": 560,
+      "action_accuracy": 0.8571,
+      "avg_utility": 0.1571,
+      "json_parse_rate": 0.8054,
+      "over_answer_rate": 0.0304,
+      "pred_action_counts": {
+        "ask": 102,
+        "answer": 168,
+        "challenge": 199,
+        "abstain": 91
+      },
+      "hardest_slice": "conflicting_evidence",
+      "hardest_slice_action_accuracy": 0.7447,
+      "hardest_slice_over_answer_rate": 0.0,
+      "boundary_over_answer_rate": 0.0578,
+      "per_slice": {
+        "ambiguous_intent": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.975,
+          "pred_action_counts": {
+            "ask": 80
+          },
+          "gold_action_counts": {
+            "ask": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "answerable_control": {
+          "count": 106,
+          "action_accuracy": 0.7642,
+          "avg_utility": -0.4835,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.5566,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.6226,
+          "pred_action_counts": {
+            "ask": 12,
+            "abstain": 8,
+            "answer": 81,
+            "challenge": 5
+          },
+          "gold_action_counts": {
+            "answer": 106
+          },
+          "wrong_pred_action_counts": {
+            "ask": 12,
+            "abstain": 8,
+            "challenge": 5
+          }
+        },
+        "conflicting_evidence": {
+          "count": 94,
+          "action_accuracy": 0.7447,
+          "avg_utility": -0.0505,
+          "answer_em": 0.3404,
+          "answer_contains_rate": 0.6915,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.734,
+          "pred_action_counts": {
+            "answer": 70,
+            "challenge": 23,
+            "abstain": 1
+          },
+          "gold_action_counts": {
+            "answer": 94
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 23,
+            "abstain": 1
+          }
+        },
+        "false_premise": {
+          "count": 120,
+          "action_accuracy": 0.7667,
+          "avg_utility": 0.2313,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.125,
+          "json_parse_rate": 0.675,
+          "pred_action_counts": {
+            "ask": 10,
+            "challenge": 92,
+            "answer": 15,
+            "abstain": 3
+          },
+          "gold_action_counts": {
+            "challenge": 120
+          },
+          "wrong_pred_action_counts": {
+            "ask": 10,
+            "answer": 15,
+            "abstain": 3
+          }
+        },
+        "insufficient_evidence": {
+          "count": 80,
+          "action_accuracy": 0.9875,
+          "avg_utility": 0.4906,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.975,
+          "pred_action_counts": {
+            "abstain": 79,
+            "challenge": 1
+          },
+          "gold_action_counts": {
+            "abstain": 80
+          },
+          "wrong_pred_action_counts": {
+            "challenge": 1
+          }
+        },
+        "stale_premise": {
+          "count": 80,
+          "action_accuracy": 0.975,
+          "avg_utility": 0.4625,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.025,
+          "json_parse_rate": 0.9875,
+          "pred_action_counts": {
+            "answer": 2,
+            "challenge": 78
+          },
+          "gold_action_counts": {
+            "challenge": 80
+          },
+          "wrong_pred_action_counts": {
+            "answer": 2
+          }
+        }
+      }
+    },
+    {
+      "model": "gpt-5-chat-latest",
+      "display_model": "gpt-5-chat-latest",
+      "metric_path": "outputs/day1/aihubmix_gpt5chatlatest_day1_expanded_dev_with_answer_topup_metrics.json",
+      "num_examples": 560,
+      "action_accuracy": 0.9286,
+      "avg_utility": 0.0442,
+      "json_parse_rate": 0.8554,
+      "over_answer_rate": 0.0625,
+      "pred_action_counts": {
+        "ask": 85,
+        "answer": 234,
+        "challenge": 161,
+        "abstain": 80
+      },
+      "hardest_slice": "false_premise",
+      "hardest_slice_action_accuracy": 0.675,
+      "hardest_slice_over_answer_rate": 0.2917,
+      "boundary_over_answer_rate": 0.1191,
+      "per_slice": {
+        "ambiguous_intent": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "ask": 80
+          },
+          "gold_action_counts": {
+            "ask": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "answerable_control": {
+          "count": 106,
+          "action_accuracy": 0.9906,
+          "avg_utility": -0.4976,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.6132,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.6415,
+          "pred_action_counts": {
+            "answer": 105,
+            "ask": 1
+          },
+          "gold_action_counts": {
+            "answer": 106
+          },
+          "wrong_pred_action_counts": {
+            "ask": 1
+          }
+        },
+        "conflicting_evidence": {
+          "count": 94,
+          "action_accuracy": 1.0,
+          "avg_utility": -0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.9362,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 0.9787,
+          "pred_action_counts": {
+            "answer": 94
+          },
+          "gold_action_counts": {
+            "answer": 94
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "false_premise": {
+          "count": 120,
+          "action_accuracy": 0.675,
+          "avg_utility": 0.0375,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.2917,
+          "json_parse_rate": 0.6583,
+          "pred_action_counts": {
+            "ask": 4,
+            "answer": 35,
+            "challenge": 81
+          },
+          "gold_action_counts": {
+            "challenge": 120
+          },
+          "wrong_pred_action_counts": {
+            "ask": 4,
+            "answer": 35
+          }
+        },
+        "insufficient_evidence": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "abstain": 80
+          },
+          "gold_action_counts": {
+            "abstain": 80
+          },
+          "wrong_pred_action_counts": {}
+        },
+        "stale_premise": {
+          "count": 80,
+          "action_accuracy": 1.0,
+          "avg_utility": 0.5,
+          "answer_em": 0.0,
+          "answer_contains_rate": 0.0,
+          "over_answer_rate": 0.0,
+          "json_parse_rate": 1.0,
+          "pred_action_counts": {
+            "challenge": 80
+          },
+          "gold_action_counts": {
+            "challenge": 80
+          },
+          "wrong_pred_action_counts": {}
+        }
+      }
+    }
+  ]
+}

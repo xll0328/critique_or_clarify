@@ -3,8 +3,8 @@
   "pdf": "paper/main.pdf",
   "page_count": 13,
   "render_dir": "tmp/pdf_review/full_visual",
-  "average_text_chars_per_page": 4582.7,
-  "minimum_text_chars_on_page": 3423,
+  "average_text_chars_per_page": 4588.5,
+  "minimum_text_chars_on_page": 3386,
   "minimum_nonwhite_share": 0.1165,
   "anchors_checked": [
     {
@@ -84,59 +84,59 @@
     },
     {
       "page": 7,
-      "text_chars": 4726,
+      "text_chars": 4658,
       "render_path": "tmp/pdf_review/full_visual/page_07.png",
+      "render_width": 953,
+      "render_height": 1348,
+      "nonwhite_share": 0.1263
+    },
+    {
+      "page": 8,
+      "text_chars": 4190,
+      "render_path": "tmp/pdf_review/full_visual/page_08.png",
+      "render_width": 953,
+      "render_height": 1348,
+      "nonwhite_share": 0.121
+    },
+    {
+      "page": 9,
+      "text_chars": 3386,
+      "render_path": "tmp/pdf_review/full_visual/page_09.png",
+      "render_width": 953,
+      "render_height": 1348,
+      "nonwhite_share": 0.1413
+    },
+    {
+      "page": 10,
+      "text_chars": 4943,
+      "render_path": "tmp/pdf_review/full_visual/page_10.png",
+      "render_width": 953,
+      "render_height": 1348,
+      "nonwhite_share": 0.1314
+    },
+    {
+      "page": 11,
+      "text_chars": 4716,
+      "render_path": "tmp/pdf_review/full_visual/page_11.png",
       "render_width": 953,
       "render_height": 1348,
       "nonwhite_share": 0.1276
     },
     {
-      "page": 8,
-      "text_chars": 4173,
-      "render_path": "tmp/pdf_review/full_visual/page_08.png",
-      "render_width": 953,
-      "render_height": 1348,
-      "nonwhite_share": 0.1202
-    },
-    {
-      "page": 9,
-      "text_chars": 3423,
-      "render_path": "tmp/pdf_review/full_visual/page_09.png",
-      "render_width": 953,
-      "render_height": 1348,
-      "nonwhite_share": 0.1422
-    },
-    {
-      "page": 10,
-      "text_chars": 4946,
-      "render_path": "tmp/pdf_review/full_visual/page_10.png",
-      "render_width": 953,
-      "render_height": 1348,
-      "nonwhite_share": 0.132
-    },
-    {
-      "page": 11,
-      "text_chars": 4703,
-      "render_path": "tmp/pdf_review/full_visual/page_11.png",
-      "render_width": 953,
-      "render_height": 1348,
-      "nonwhite_share": 0.1268
-    },
-    {
       "page": 12,
-      "text_chars": 4847,
+      "text_chars": 4795,
       "render_path": "tmp/pdf_review/full_visual/page_12.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1222
+      "nonwhite_share": 0.1191
     },
     {
       "page": 13,
-      "text_chars": 5388,
+      "text_chars": 5594,
       "render_path": "tmp/pdf_review/full_visual/page_13.png",
       "render_width": 953,
       "render_height": 1348,
-      "nonwhite_share": 0.1408
+      "nonwhite_share": 0.1453
     }
   ],
   "severity_counts": {

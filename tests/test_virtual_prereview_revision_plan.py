@@ -36,6 +36,8 @@ def test_virtual_prereview_revision_plan_has_experiment_queue_and_stop_condition
         "Utility weight sensitivity",
         "Completed for the current local matrix",
         "API slice breakdown",
+        "experiments/day1/day1_api_slice_breakdown.md",
+        "all weakest API slices fall on `false_premise` or `conflicting_evidence`",
         "Human boundary packet",
         "Figure/source stability audit",
         "Stop if raw outputs are missing",

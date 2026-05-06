@@ -87,6 +87,13 @@ def test_confidence_intervals_are_not_overread_as_model_ranking() -> None:
     assert "guard against over-reading point estimates rather than as proof of a stable model ordering" in limitations
 
 
+def test_api_contrast_is_slice_scoped_not_four_action_saturation() -> None:
+    results = _section("05_results.tex")
+
+    assert "persistent boundary difficulty, not API saturation" in results
+    assert "all five API rows have their weakest slice on either \\texttt{false\\_premise} or \\texttt{conflicting\\_evidence}" in results
+
+
 def test_intervention_claim_reports_answerability_guardrail() -> None:
     intervention = _section("06_intervention.tex")
 

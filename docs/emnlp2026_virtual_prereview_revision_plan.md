@@ -33,7 +33,7 @@ The highest-leverage move is not broad polish. It is to close validity objection
 | M5 | Utility weights look ad hoc. | Recompute utility under conservative alternate weight schemes and test whether headline qualitative claims survive without depending on a single score. | `experiments/day1/day1_utility_weight_sensitivity_audit.md`, `scripts/audit_utility_weight_sensitivity.py` | Closed for the current local matrix; re-run after any metric, prediction, or utility-scheme change. |
 | M6 | Figure/caption instability hurts trust. | Remove typo risk (`ISON`), make split names reader-facing, verify figure references/labels from source, and rerun PDF visual audit. | `paper/tables`, `paper/sections/05_results.tex`, tests | Stop if layout changes push the PDF over page budget. |
 | M7 | Related work may be incomplete or hallucinated. | Verify each suggested new citation through literature tools before adding it; add only real, relevant, citable work. | `docs/emnlp2026_virtual_prereview_literature_triage.md`, `paper/references.bib`, `paper/sections/02_related_work.tex` | Stop if a suggested paper cannot be verified. |
-| M8 | API baselines feel under-integrated. | Export slice-level API summaries and confusion/action-mix notes from existing metric JSON; decide whether to add a short prose sentence or appendix table. | `outputs/day1/*expanded_dev_with_answer_topup_metrics.json`, `paper/sections/05_results.tex` | Stop if the main paper cannot absorb the table without crowding. |
+| M8 | API baselines feel under-integrated. | Export slice-level API summaries and confusion/action-mix notes from existing metric JSON; decide whether to add a short prose sentence or appendix table. | `experiments/day1/day1_api_slice_breakdown.md`, `experiments/day1/day1_api_slice_breakdown.json`, `paper/sections/05_results.tex` | Closed for the current API rows; re-run after any API metric change. |
 | M9 | Responsible-use discussion is too generic. | Strengthen over-challenge/over-abstain user impact language, especially non-native, underspecified, or low-confidence users. | `paper/sections/08_limitations.tex`, `docs/emnlp2026_responsible_nlp_checklist.md` | Stop if claims drift into deployment guidance not evaluated here. |
 
 ## Experiment Queue
@@ -42,7 +42,7 @@ The highest-leverage move is not broad polish. It is to close validity objection
 | --- | --- | --- | --- | --- |
 | E1 | Parse sensitivity audit | `python scripts/audit_parse_sensitivity.py` | Completed for the current local matrix; low-adherence runs remain protocol-sensitive. | Limitation and response seed. |
 | E2 | Utility weight sensitivity | `python scripts/audit_utility_weight_sensitivity.py` | Completed for the current local matrix; the best instruct row remains above the best reasoning row under tested schemes. | Limitation and response seed. |
-| E3 | API slice breakdown | `python scripts/export_api_slice_breakdown.py ...` | Shows frontier APIs still have identifiable boundary-slice errors. | One Results paragraph or compact table. |
+| E3 | API slice breakdown | `python scripts/export_api_slice_breakdown.py` | Completed for the current API rows; all weakest API slices fall on `false_premise` or `conflicting_evidence`. | Results paragraph; no main-paper table added. |
 | E4 | Human boundary packet | `python scripts/build_boundary_reliability_packet.py ...` | Produces a packet for human adjudication without filling labels. | Submission or rebuttal support only after humans complete it. |
 | E5 | Figure/source stability audit | `python scripts/audit_full_pdf_visual_readiness.py` plus source tests | No duplicated labels, no missing captions, no `ISON`. | Trust and presentation cleanup. |
 
@@ -70,3 +70,4 @@ Started immediately:
 - Tests that lock the revised wording and prevent `ISON`/stale internal split names in the main table caption.
 - Parse-sensitivity audit from saved raw outputs.
 - Utility-weight sensitivity audit from saved predictions.
+- API slice-level integration audit from saved API metric artifacts.

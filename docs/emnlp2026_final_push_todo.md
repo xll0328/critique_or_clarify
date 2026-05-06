@@ -105,6 +105,7 @@ Distance-to-oral/best-paper control surface: `docs/emnlp2026_oral_best_paper_gap
 | active | Add construction transparency for synthetic candidate generation, validation, promotion, and manifest checks. | `paper/sections/03_benchmark.tex`, `scripts/promote_validated_expansion_candidates.py` |
 | closed-current | Run parse-sensitivity audit from saved raw outputs. | `experiments/day1/day1_parse_sensitivity_audit.md`, `scripts/audit_parse_sensitivity.py` |
 | closed-current | Run utility-weight sensitivity audit from saved predictions. | `experiments/day1/day1_utility_weight_sensitivity_audit.md`, `scripts/audit_utility_weight_sensitivity.py` |
+| closed-current | Run API slice-level integration audit from saved metric artifacts. | `experiments/day1/day1_api_slice_breakdown.md`, `scripts/export_api_slice_breakdown.py` |
 | closed-current | Verify missing-related-work suggestions before adding citations. | `docs/emnlp2026_virtual_prereview_literature_triage.md` |
 
 ## Stop Conditions
@@ -139,5 +140,6 @@ pytest -q tests/test_final_push_todo.py tests/test_reviewer_response_seed_memo.p
 - Completed a 560/600 and CI scope audit in `docs/emnlp2026_560_600_ci_scope_audit.md`; the full-minus-canonical table caption now says the 600 split is not a replacement headline benchmark.
 - Started the virtual-prereview major-revision board in `docs/emnlp2026_virtual_prereview_revision_plan.md` and began the first paper-facing edits for benchmark maturity, construction transparency, and parsing/utility audit planning.
 - Generated parse-sensitivity and utility-weight sensitivity audits from saved prediction artifacts: `experiments/day1/day1_parse_sensitivity_audit.md` and `experiments/day1/day1_utility_weight_sensitivity_audit.md`.
+- Generated API slice-level integration artifacts from saved metric JSON: `experiments/day1/day1_api_slice_breakdown.md` and `experiments/day1/day1_api_slice_breakdown.json`.
 - Started virtual-prereview related-work triage in `docs/emnlp2026_virtual_prereview_literature_triage.md`; unverified suggested citations stay out of `paper/references.bib`.
 - Added tests so status docs keep pointing to the current final-push plan rather than stale sprint notes.

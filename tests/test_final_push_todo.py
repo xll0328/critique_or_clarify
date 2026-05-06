@@ -33,6 +33,8 @@ def test_final_push_todo_tracks_deadline_scope_and_stop_conditions() -> None:
         "closed-current",
         "Completed a final-push result-claim sync",
         "introduce no unsupported new numeric result",
+        "Generated API slice-level integration artifacts",
+        "experiments/day1/day1_api_slice_breakdown.md",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]

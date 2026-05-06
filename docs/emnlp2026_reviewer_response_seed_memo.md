@@ -233,9 +233,10 @@ Paper-side defense:
 - The paper uses CIs to separate coarse patterns from small rank differences.
 - Full-minus-canonical 600-vs-560 deltas are reported as sensitivity evidence because the delta intervals overlap zero.
 - API rows are described as uncertainty-qualified point estimates; the response should emphasize persistent action-boundary difficulty, not every adjacent rank.
+- The API slice audit shows that all five API rows have their weakest slice on `false_premise` or `conflicting_evidence`, so the API result is integrated as boundary-error evidence rather than as broad four-action saturation evidence.
 
 Response seed:
-We agree that the bootstrap intervals should not be read as a full uncertainty model over dataset construction, prompting, or future model releases. We use them as local checks on the current split samples and explicitly avoid fine-grained model-ranking claims. The supported claim is coarser: next-action calibration remains unsaturated, boundary slices remain difficult, and the 600-example split is sensitivity evidence rather than a replacement benchmark.
+We agree that the bootstrap intervals should not be read as a full uncertainty model over dataset construction, prompting, or future model releases. We use them as local checks on the current split samples and explicitly avoid fine-grained model-ranking claims. The supported claim is coarser: next-action calibration remains unsaturated, boundary slices remain difficult, and the 600-example split is sensitivity evidence rather than a replacement benchmark. The API slice audit further localizes the frontier rows: their weakest slices are premise/evidence-boundary slices, not evidence that every action class is equally stressed.
 
 Do not say:
 
@@ -249,6 +250,7 @@ Evidence:
 - `paper/sections/08_limitations.tex`
 - `docs/emnlp2026_oral_best_paper_quality_audit.md`
 - `docs/emnlp2026_reviewer_triage_revision_memo.md`
+- `experiments/day1/day1_api_slice_breakdown.md`
 
 ## Final Response Discipline
 
