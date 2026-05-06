@@ -15,11 +15,13 @@ def test_abstract_presents_unified_action_decision_benchmark() -> None:
     abstract = _section("00_abstract.tex")
 
     required_fragments = [
+        "Answer quality is an incomplete target",
         "evidence-conditioned first-move decision",
         "share one action-decision record",
         "action ontology",
         "completed human-validation queue",
         "completed Day-1 local model-and-prompt matrix",
+        "The scoped claim is that next-action calibration is a distinct capability",
         "do not guarantee the right first move",
     ]
 

@@ -26,6 +26,7 @@ def test_final_push_todo_tracks_deadline_scope_and_stop_conditions() -> None:
         "./scripts/run_submission_lock_checks.sh",
         "Opened `docs/emnlp2026_final_pdf_human_review_worksheet.md`",
         "Started the worksheet with a Codex-only PDF text preflight",
+        "tightening the abstract around the line that answer quality is incomplete",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]
@@ -69,6 +70,8 @@ def test_final_pdf_human_review_worksheet_does_not_auto_complete_signoff() -> No
         "Status: automated preflight started. This is not human approval.",
         "PDF length: `13` pages.",
         "Pages 1-2 contain the first-story anchors",
+        "Answer quality is an incomplete target",
+        "right first move",
         "Pages 5-7 contain the main-result anchors",
         "Open human task: inspect the compiled PDF visually",
     ]

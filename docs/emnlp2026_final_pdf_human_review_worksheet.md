@@ -61,9 +61,9 @@ Status: automated preflight started. This is not human approval.
 Observed from `paper/main.pdf` using PDF text extraction:
 
 - PDF length: `13` pages.
-- Pages 1-2 contain the first-story anchors: `next-action`, `wrong first move`, `answer`, `ask`, `challenge`, `abstain`, `Figure 1`, and `defective`.
+- Pages 1-2 contain the first-story anchors: `Answer quality is an incomplete target`, `next-action`, `wrong first move`, `right first move`, `answer`, `ask`, `challenge`, `abstain`, `Figure 1`, and `defective`.
 - Pages 5-7 contain the main-result anchors: `DeepSeek`, `decision_first`, `confidence`, `bootstrap`, `over-answer`, `utility`, `action accuracy`, `Figure 2`, and `Table`.
-- Commit used for this preflight: `cbbf88a`.
+- Preflight version: rebuilt `paper/main.pdf` tracked with this worksheet revision.
 
 Open human task: inspect the compiled PDF visually at actual review scale and fill the Human Completion Fields above.
 
