@@ -8,9 +8,9 @@ Audit input:
 
 - Rendered `paper/main.pdf` to PNG pages under `tmp/pdf_review/full_visual` with PyMuPDF.
 - Page count: `13`.
-- Average extracted text per page: `4450.5` characters.
-- Minimum extracted text on any page: `3346` characters.
-- Minimum sampled non-white rendered area: `0.087`.
+- Average extracted text per page: `4502.2` characters.
+- Minimum extracted text on any page: `3443` characters.
+- Minimum sampled non-white rendered area: `0.1097`.
 - Checked story anchors across title/task/results/stress/limitations text.
 
 ## Severity Summary
@@ -42,14 +42,14 @@ This audit can catch missing pages, blank renders, and lost story anchors, but i
 | 3 | 4988 | 0.1360 | `tmp/pdf_review/full_visual/page_03.png` |
 | 4 | 5171 | 0.1414 | `tmp/pdf_review/full_visual/page_04.png` |
 | 5 | 4028 | 0.1457 | `tmp/pdf_review/full_visual/page_05.png` |
-| 6 | 4992 | 0.1315 | `tmp/pdf_review/full_visual/page_06.png` |
-| 7 | 4598 | 0.1244 | `tmp/pdf_review/full_visual/page_07.png` |
-| 8 | 4207 | 0.1207 | `tmp/pdf_review/full_visual/page_08.png` |
-| 9 | 3537 | 0.1450 | `tmp/pdf_review/full_visual/page_09.png` |
-| 10 | 4778 | 0.1235 | `tmp/pdf_review/full_visual/page_10.png` |
-| 11 | 4943 | 0.1319 | `tmp/pdf_review/full_visual/page_11.png` |
-| 12 | 4874 | 0.1233 | `tmp/pdf_review/full_visual/page_12.png` |
-| 13 | 3346 | 0.0870 | `tmp/pdf_review/full_visual/page_13.png` |
+| 6 | 4991 | 0.1319 | `tmp/pdf_review/full_visual/page_06.png` |
+| 7 | 4700 | 0.1275 | `tmp/pdf_review/full_visual/page_07.png` |
+| 8 | 4061 | 0.1163 | `tmp/pdf_review/full_visual/page_08.png` |
+| 9 | 3443 | 0.1423 | `tmp/pdf_review/full_visual/page_09.png` |
+| 10 | 4777 | 0.1256 | `tmp/pdf_review/full_visual/page_10.png` |
+| 11 | 4876 | 0.1302 | `tmp/pdf_review/full_visual/page_11.png` |
+| 12 | 4825 | 0.1220 | `tmp/pdf_review/full_visual/page_12.png` |
+| 13 | 4274 | 0.1097 | `tmp/pdf_review/full_visual/page_13.png` |
 
 ## Findings
 

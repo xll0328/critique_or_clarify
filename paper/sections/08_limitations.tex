@@ -2,6 +2,8 @@ This draft reports a curated Day-1 benchmark rather than a final large-scale eva
 
 The slice-balanced 600-example variant is a stress split, not the canonical benchmark. It adds answerable-control and conflicting-evidence rows to probe the residual slice imbalance in the 560-example split, but it also changes the answer count and is therefore used only for sensitivity analysis. Headline benchmark claims remain tied to the canonical 560-example split unless a future version re-validates and freezes a new canonical composition.
 
+The bootstrap intervals are local uncertainty checks over the current split samples. They do not capture uncertainty from example construction, prompt-policy choice, or the decision to treat the 600-example variant as stress evidence. We therefore use them to guard against over-reading point estimates rather than as proof of a stable model ordering.
+
 The DeepSeek reasoning runs also show low JSON adherence. We report this as part of the observed assistant behavior under the protocol, because the task requires an explicit action decision, but broader claims about reasoning models should remain scoped to this prompt and parsing setup until additional format-control runs are complete.
 
 This draft also focuses on action choice before response generation, not on external tool-use policy. Tool-augmented behaviors can change error recovery patterns in practice, but they are not benchmarked in the current split and should be treated as future expansion work rather than implied evidence in this paper\citep{schick-etal-2023-toolformer}.

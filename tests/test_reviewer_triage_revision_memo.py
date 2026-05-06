@@ -22,6 +22,8 @@ def test_reviewer_triage_revision_memo_covers_required_personas_and_buckets() ->
         "Should-Fix Before Submission",
         "Appendix-Only Or Defer",
         "Safe Next Editing Order",
+        "First pass closed in `paper/sections/05_results.tex` and `paper/sections/08_limitations.tex`",
+        "not fine-grained model rankings",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]
@@ -82,4 +84,3 @@ def test_status_docs_point_to_reviewer_triage_revision_memo() -> None:
     ]
 
     assert missing == []
-

@@ -46,6 +46,17 @@ def test_slice_balanced_stress_split_is_not_canonicalized() -> None:
     assert "Headline benchmark claims remain tied to the canonical 560-example split" in limitations
 
 
+def test_confidence_intervals_are_not_overread_as_model_ranking() -> None:
+    results = _section("05_results.tex")
+    limitations = _section("08_limitations.tex")
+
+    assert "coarse patterns from small rank differences" in results
+    assert "not that every adjacent model difference is statistically separated" in results
+    assert "uncertainty-qualified point estimates rather than as a fine-grained significance ranking" in results
+    assert "local uncertainty checks over the current split samples" in limitations
+    assert "guard against over-reading point estimates rather than as proof of a stable model ordering" in limitations
+
+
 def test_intervention_claim_reports_answerability_guardrail() -> None:
     intervention = _section("06_intervention.tex")
 

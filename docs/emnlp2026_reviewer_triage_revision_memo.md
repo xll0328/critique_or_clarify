@@ -45,7 +45,7 @@ misread:
 
 | Item | Best Target | Why It Matters |
 | --- | --- | --- |
-| Confidence narration | Results and appendix pointers | The quality audit still marks statistical depth as below oral/best-paper grade; prose should not over-read point estimates. |
+| Confidence narration | Results and Limitations | First pass closed in `paper/sections/05_results.tex` and `paper/sections/08_limitations.tex`: intervals are framed as local uncertainty checks that support coarse patterns, not fine-grained model rankings. |
 | Reviewer-response synchronization | `docs/emnlp2026_reviewer_response_seed_memo.md` | Every major paper-facing claim should have a scoped response seed and evidence path. |
 | Citation-to-claim alignment | Related Work and citation coverage audit | The bibliography count meets the threshold, but the final risk is claim placement rather than raw citation count. |
 | First-two-page reread | `paper/main.pdf` pages 1-2 | Oral enthusiasm depends on whether the action-selection object is legible before reviewers reach tables. |
@@ -78,4 +78,3 @@ misread:
 - "decision_first is a robust controller"
 - "reasoning models fail at defective inputs"
 - "automated audit is final human sign-off"
-
