@@ -27,7 +27,7 @@ Status: paper-facing gap list after the Day-1 validation, DeepSeek-R1-Distill-Qw
 | Paper claim-scope tests | closed for first draft | `tests/test_paper_claim_scope.py` guards coverage scope, utility interpretation, reasoning-model scope, and intervention guardrails. |
 | Citation coverage audit | first freeze pass closed | `docs/emnlp2026_citation_coverage_audit.md` maps the current related-work clusters to paper claims and records the no-first/only-claim boundary. |
 | Numeric claim audit | current freeze closed | `docs/emnlp2026_numeric_claim_audit.md`; scale/reasoning, quick+stale, intervention, and final lock claims are macro- or gate-backed. |
-| Reviewer-attack response seeds | first pass closed | `docs/emnlp2026_reviewer_response_seed_memo.md` prepares scoped responses for benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, and ask/hard-abstain coverage objections. |
+| Reviewer-attack response seeds | first pass closed | `docs/emnlp2026_reviewer_response_seed_memo.md` prepares scoped responses for benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, ask/hard-abstain coverage, and statistics/CI overclaim objections. |
 | Intervention claim | scoped first pass closed | Section 6 now reports the `decision_first` gain together with answer-supported and defective-premise guardrails; keep the claim exploratory unless a stronger controller lands. |
 | Venue-form transfer packet | form-ready internal draft closed | `docs/emnlp2026_venue_form_transfer_packet.md` consolidates responsible-NLP, reproducibility, privacy, artifact, compute-disclosure, and human-only final-check answers. |
 | Submission checklist | closed for current freeze | Responsible NLP and reproducibility preflights exist; paper-source anonymity and final lock tests cover support files and package hygiene. |
@@ -66,7 +66,7 @@ Status: paper-facing gap list after the Day-1 validation, DeepSeek-R1-Distill-Qw
 | `ask` and hard `abstain` are under-covered in oral-balanced composition. | reduced | `ask` and `abstain` are paper-facing in the canonical split; remaining risk is slice balance (`answerable_control` and `conflicting_evidence`) and model frontier depth. |
 | Evidence bundle is too small for oral/best-paper claims. | major | Sprint execution plan now targets an expanded evidence bundle: `docs/emnlp2026_oral_best_paper_sprint_execution_plan.md`; generated coverage audit tracks the concrete deficits. |
 | Reasoning-model result is overclaimed. | major | Scope to local checkpoint matrix and include JSON adherence caveat. |
-| Reviewer attacks are answered ad hoc. | reduced | `docs/emnlp2026_reviewer_response_seed_memo.md` now gives scoped response seeds and do-not-say constraints for the four major objection paths. |
+| Reviewer attacks are answered ad hoc. | reduced | `docs/emnlp2026_reviewer_response_seed_memo.md` now gives scoped response seeds and do-not-say constraints for the major objection paths, including confidence-interval overclaim risk. |
 | Related Work misses close prior tasks. | reduced | Verified citation pass now covers ambiguity, false premises, stale facts, selective QA / abstention, retrieval conflict, and calibration; `docs/emnlp2026_citation_coverage_audit.md` records the current coverage map. |
 | Oral-level story becomes diluted by late edits. | reduced | `docs/emnlp2026_oral_readability_lock.md` now records the 90-second reviewer takeaway and the page-level anchors that must survive edits. |
 

@@ -7,14 +7,14 @@ Status: reviewer-attack hardening pass after the first-two-page story, visual-ba
 ## Severity Summary
 
 - `CRITICAL`: 0 open for response prep
-- `MAJOR`: 4 hardened
+- `MAJOR`: 5 hardened
 - `MINOR`: 0 open for response prep
 
 ## How To Use
 
 These are not copy-paste rebuttals. They are seeds for planned paper edits and author-response wording after reviewer comments arrive. Keep the final response tailored to the actual review text, acknowledge the concern first, then point to the scoped evidence.
 
-Tracked major attack-path slugs: benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim.
+Tracked major attack-path slugs: benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, statistics-overclaim.
 
 Core discipline: do not claim broad assistant helpfulness from utility alone.
 
@@ -157,6 +157,34 @@ Evidence:
 - `paper/sections/03_benchmark.tex`
 - `paper/sections/08_limitations.tex`
 - `docs/emnlp2026_reviewer_attack_memo.md`
+
+## R6: Statistical Confidence And CI Overclaim
+
+Likely attack:
+The bootstrap intervals may look too local for oral-strength claims, or the API rows may be read as unsupported fine-grained model rankings.
+
+Paper-side defense:
+
+- The intervals are local uncertainty checks over the current split samples, not proof of a stable model ordering.
+- The paper uses CIs to separate coarse patterns from small rank differences.
+- Full-minus-canonical 600-vs-560 deltas are reported as sensitivity evidence because the delta intervals overlap zero.
+- API rows are described as uncertainty-qualified point estimates; the response should emphasize persistent action-boundary difficulty, not every adjacent rank.
+
+Response seed:
+We agree that the bootstrap intervals should not be read as a full uncertainty model over dataset construction, prompting, or future model releases. We use them as local checks on the current split samples and explicitly avoid fine-grained model-ranking claims. The supported claim is coarser: next-action calibration remains unsaturated, boundary slices remain difficult, and the 600-example split is sensitivity evidence rather than a replacement benchmark.
+
+Do not say:
+
+- "the CIs prove a stable model ordering"
+- "every adjacent API difference is statistically separated"
+- "the 600-example stress split is stronger than the canonical benchmark"
+
+Evidence:
+
+- `paper/sections/05_results.tex`
+- `paper/sections/08_limitations.tex`
+- `docs/emnlp2026_oral_best_paper_quality_audit.md`
+- `docs/emnlp2026_reviewer_triage_revision_memo.md`
 
 ## Final Response Discipline
 

@@ -71,10 +71,10 @@ Current oral/best-paper audit:
 Residual action:
 Run the lock gate after every paper-facing change. Treat a fresh lock run as the only valid artifact-freeze signal.
 
-### REDUCED 6: Reviewer response seeds now exist for the four major attack paths.
+### REDUCED 6: Reviewer response seeds now exist for the major attack paths.
 
 Current evidence:
-`docs/emnlp2026_reviewer_response_seed_memo.md` gives paper-side defenses, response seeds, do-not-say constraints, and evidence links for benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, plus ask and hard abstain coverage.
+`docs/emnlp2026_reviewer_response_seed_memo.md` gives paper-side defenses, response seeds, do-not-say constraints, and evidence links for benchmark-soup, utility-weight, reasoning-overclaim, intervention-overclaim, ask and hard abstain coverage, plus statistics/CI overclaim.
 
 Current triage:
 `docs/emnlp2026_reviewer_triage_revision_memo.md` converts these risks into must-fix, should-fix, appendix-only, and defer buckets for the final 2026-05-25 ARR push.

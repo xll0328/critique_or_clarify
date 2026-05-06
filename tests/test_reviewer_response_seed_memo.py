@@ -17,10 +17,12 @@ def test_reviewer_response_seed_memo_covers_major_attack_paths() -> None:
         "Reasoning-Model Overclaim",
         "Intervention Overclaim",
         "Ask And Hard Abstain Coverage",
+        "Statistical Confidence And CI Overclaim",
         "benchmark-soup",
         "utility-weight",
         "reasoning-overclaim",
         "intervention-overclaim",
+        "statistics-overclaim",
     ]
 
     missing = [fragment for fragment in required_fragments if fragment not in text]
@@ -36,6 +38,9 @@ def test_reviewer_response_seed_memo_enforces_scope_constraints() -> None:
         "exploratory calibration probe",
         "do not claim broad assistant helpfulness",
         "not yet balanced evidence for all possible clarification or abstention settings",
+        "local uncertainty checks over the current split samples",
+        "avoid fine-grained model-ranking claims",
+        "the 600-example split is sensitivity evidence rather than a replacement benchmark",
         "Do not say:",
     ]
 
